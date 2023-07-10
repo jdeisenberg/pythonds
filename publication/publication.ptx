@@ -5,8 +5,9 @@
         <directories external="../assets" generated="../generated-assets"/>
     </source>
     <html>
-    <platform host="web" />
-    <knowl exercise-inline="no" example="no" listing="no" />
-    <css style="oscarlevin" colors="blue_red" toc="crc" banner="crc" navbar="crc" shell="crc"/>
+        <platform host="web" />
+        <knowl exercise-inline="no" example="no" listing="no" />
+        <index-page ref="pythonds" />
+        <css style="oscarlevin" colors="blue_red" toc="crc" banner="crc" navbar="crc" shell="crc"/>
     </html>
 </publication>
