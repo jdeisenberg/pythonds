@@ -2,26 +2,12 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="introduction_chapter">
   <title>Introduction</title>
   <introduction>
-    <p>Here are the objectives for this chapter:</p>
     <p>
-    <ul>
-      <li>
-        <p>Review the ideas of computer science, programming, and
-                    problem-solving.</p>
-      </li>
-      <li>
-        <p>Understand abstraction and the role it plays in the
-                    problem-solving process.</p>
-      </li>
-      <li>
-        <p>Understand and implement the notion of an abstract data type.</p>
-      </li>
-      <li>
-        <p>Review the Python programming language.</p>
-      </li>
-    </ul>
-  </p>
-</introduction>
+      This is an introductory paragraph. I am putting it here to attempt to eliminate
+      the warning: A chapter containing sections needs to have other content
+      inside an <c>&lt;introduction&gt;</c> and/or <c>&lt;conclusion&gt;</c>.
+    </p>
+  </introduction>
   <xi:include href="./Objectives.ptx"/>
   <xi:include href="./GettingStarted.ptx"/>
   <xi:include href="./WhatIsComputerScience.ptx"/>
