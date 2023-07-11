@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="basic-ds_queue-simulation-printing-tasks">
   <title>Queue Simulation: Printing Tasks</title>
+  <introduction>
   <p>A more interesting simulation allows us to study the behavior of the
             printing queue described earlier in this section. Recall that as
             students send printing tasks to the shared printer, the tasks are placed
@@ -50,6 +51,7 @@
             to appear. That is the nature of simulation. You want to simulate the
             real situation as closely as possible given that you know general
             parameters.</p>
+        </introduction>
   <subsection xml:id="basic-ds_main-simulation-steps">
     <title>Main Simulation Steps</title>
     <p>Here is the main simulation.</p>

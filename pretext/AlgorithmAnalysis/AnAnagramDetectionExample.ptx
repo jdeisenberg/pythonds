@@ -1,15 +1,17 @@
 <?xml version="1.0"?>
 <section xml:id="algorithm-analysis_an-anagram-detection-example">
   <title>An Anagram Detection Example</title>
+  <introduction>
   <p>A good example problem for showing algorithms with different orders of
             magnitude is the classic anagram detection problem for strings. One
-            string is an <em>anagram</em> of another if the second is simply a rearrangement
+            string is an <term>anagram</term> of another if the second is simply a rearrangement
             of the first. For example, <c>heart</c> and <c>earth</c> are anagrams. The
             strings <c>python</c> and <c>typhon</c> are anagrams as well. For the sake
             of simplicity, we will assume that the two strings in question are of
             equal length and that they are made up of symbols from the set of 26
             lowercase alphabetic characters. Our goal is to write a boolean function
             that will take two strings and return whether they are anagrams.</p>
+        </introduction>
   <subsection xml:id="algorithm-analysis_solution-1-anagram-detection-checking-off">
     <title>Solution 1: Anagram Detection Checking Off</title>
     <p>Our first solution to the anagram problem will check the lengths of the

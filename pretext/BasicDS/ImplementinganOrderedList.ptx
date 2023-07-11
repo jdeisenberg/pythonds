@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="basic-ds_implementing-an-ordered-list">
   <title>Implementing an Ordered List</title>
+  <introduction>
   <p>In order to implement the ordered list, we must remember that the
             relative positions of the items are based on some underlying
             characteristic. The ordered list of integers given above (17, 26, 31,
@@ -213,6 +214,7 @@ print(my_list.search(93))
 print(my_list.search(100))
         </input>
   </program>
+</introduction>
   <subsection xml:id="basic-ds_analysis-of-linked-lists">
     <title>Analysis of Linked Lists</title>
     <p>To analyze the complexity of the linked list operations, we need to
