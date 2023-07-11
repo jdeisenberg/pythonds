@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="advanced_dictionaries-revisited-skip-lists">
   <title>Dictionaries Revisited: Skip Lists</title>
+  <introduction>
   <p>One of the most versatile collections available in Python is the
             <term>dictionary</term>. Dictionaries, often referred to as <term>maps</term>, store a
             collection of key-value pairs. The key, which must be unique, is
@@ -9,7 +10,7 @@
             The abilities to put a key-value pair into the map and then look up a
             data value associated with a given key are the fundamental operations
             that all maps must provide.</p>
-  <p>For example, Figure&#xA0;<url href="#fig_mappic" visual="#fig_mappic">1</url> shows a map containing key-value
+          <p>For example, <xref ref="fig-mappic"/> shows a map containing key-value
             pairs. In this case, the keys are integers and the values are small,
             two-character words. From a logical perspective, there is no inherent
             order or organization within the pairs themselves. However, as the
@@ -19,6 +20,7 @@
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">An Example Map</caption>
     <image source="Advanced/Figures/mappic.png" width="50%" alt="An Example Map"/>
   </figure>
+</introduction>
   <subsection xml:id="advanced_the-map-abstract-data-type">
     <title>The Map Abstract Data Type</title>
     <p>The map abstract data type is defined by the following structure and
@@ -48,15 +50,16 @@
   </subsection>
   <subsection xml:id="advanced_implementing-a-dictionary-in-python">
     <title>Implementing a Dictionary in Python</title>
+    <introduction>
     <p>We have already seen a number of interesting ways to implement the map
-                idea. In Chapter&#xA0;<url href="#sorting-and-searching" visual="#sorting-and-searching">[sorting-and-searching]</url> we
+      idea. In <xref ref="chapter-sort-search"/> we
                 considered the hash table as a means of providing map behavior. Given a
                 set of keys and a hash function, we could place the keys in a collection
                 that allowed us to search and retrieve the associated data value. Our
                 analysis showed that this technique could potentially yield an
                 <m>O(1)</m> search. However, performance degraded due to issues such as
                 table size, collisions, and collision resolution strategy.</p>
-    <p>In Chapter&#xA0;<url href="#trees" visual="#trees">[trees]</url> we considered a binary search tree as a
+    <p>In <xref ref="chapter-trees"/> we considered a binary search tree as a
                 way to store such a collection. In this case the keys were placed in the
                 tree such that searching could be done in <m>O(\log n)</m>. However,
                 this was only true if the tree was balanced; that is, the left and the
@@ -78,26 +81,26 @@
       <image source="Advanced/Figures/initskiplist.png" width="50%" alt="An Example Skip List"/>
     </figure>
     <p>Before moving on to the details of skip-list processing it will be
-                useful to explain some vocabulary. Figure&#xA0;<url href="#fig_vocab1" visual="#fig_vocab1">3</url> shows that
+      useful to explain some vocabulary. <xref ref="fig-vocab1"/> shows that
                 the majority of the skip list structure consists of a collection of data
                 nodes, each of which holds a key and an associated value. In addition,
-                there are two references from each data node.
-                Figure&#xA0;<url href="#fig_skipdatanode" visual="#fig_skipdatanode">4</url> shows a detailed view of a single data
-                node.</p>
+                there are two references from each data node. <xref ref="fig-skipdatanode"/>
+                shows a detailed view of a single data node.</p>
     <figure align="" xml:id="fig-vocab1">
       <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">The Body of the Skip List Is Made Up of Data Nodes</caption>
       <image source="Advanced/Figures/vocabskiplist1.png" width="50%" alt="The Body of the Skip List Is Made Up of Data Nodes"/>
     </figure>
+
     <figure align="" xml:id="fig-skipdatanode">
       <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Single Data Node</caption>
       <image source="Advanced/Figures/datanode.png" width="50%" alt="A Single Data Node"/>
     </figure>
-    <p>Figure&#xA0;<url href="#fig_vocab2" visual="#fig_vocab2">5</url> shows two different vertical columns. The
+    <p><xref ref="fig-vocab2"/> shows two different vertical columns. The
                 leftmost column consists of a linked list of header nodes. Each header
                 node holds two references called <c>down</c> and <c>next</c>. The <c>next</c>
                 reference refers to a linked list of data nodes. The <c>down</c> reference
                 refers to the next lower header node. A detailed view of a header node
-                can be seen in Figure&#xA0;<url href="#fig_headernode" visual="#fig_headernode">6</url>.</p>
+                can be seen in <xref ref="fig-headernode"/>.</p>
     <figure align="" xml:id="fig-vocab2">
       <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Header Nodes and Towers</caption>
       <image source="Advanced/Figures/vocabskiplist2.png" width="50%" alt="Header Nodes and Towers"/>
@@ -111,7 +114,7 @@
                 each tower corresponds to a particular key-value pair, and towers can
                 have different heights. We will explain how the height of the tower is
                 determined later when we consider how to add data to the skip list.</p>
-    <p>Finally, Figure&#xA0;<url href="#fig_vocab3" visual="#fig_vocab3">7</url> shows a horizontal collection of
+    <p>Finally, <xref ref="fig-vocab3"/> shows a horizontal collection of
                 nodes. If you look closely, you will notice that each level is actually
                 an ordered linked list of data nodes where the order is maintained by
                 the key. Each linked list is given a name, commonly referred to as its
@@ -130,9 +133,8 @@
                 constructed in the same fashion as for simple linked lists in the
                 previous section. A header node consists of two references,
                 <c>next</c> and <c>down</c>, both of which are initialized to <c>None</c> in the
-                constructor (see
-                Listing&#xA0;<url href="#lst_headnode" visual="#lst_headnode">[lst_headnode]</url>).</p>
-    <pre>class HeaderNode:
+                constructor (see <xref ref="lst_headnode"/>).</p>
+              <listing xml:id="lst_headnode"><program><input>class HeaderNode:
     def __init__(self):
         self._next = None
         self._down = None
@@ -151,12 +153,15 @@
 
     @down.setter
     def down(self, value):
-        self._down = value</pre>
+        self._down = value
+        </input></program></listing>
     <p>A data node has four fields: two for the
                 key and value, and two additional for the references <c>next</c> and
                 <c>down</c>. Again, the references are initialized to <c>None</c> and wrapped
-                into <c>properties</c> for data manipulation (see Listing&#xA0;<url href="#lst_datanode" visual="#lst_datanode">[lst_datanode]</url>).</p>
-    <pre>class DataNode:
+                into <c>properties</c> for data manipulation (see <xref ref="lst_datanode"/>).</p>
+              <listing xml:id="lst_datanode">
+                <program language="python">
+    <input>class DataNode:
     def __init__(self, key, value):
         self._key = key
         self._data = value
@@ -189,22 +194,24 @@
 
     @down.setter
     def down(self, value):
-        self._down = value</pre>
-    <p>The constructor for the entire skip list is shown in
-                Listing&#xA0;<url href="#lst_constructor" visual="#lst_constructor">[lst_constructor]</url>. When a skip list is
+        self._down = value
+    </input></program></listing>
+    <p>The constructor for the entire skip list is shown in <xref ref="lst_constructor"/>. When a skip list is
                 created, there are no data and therefore no header nodes. The head of the
                 skip list is set to <c>None</c>. As key-value pairs are added to the
                 structure, the list head refers to the first header node which in turn
                 provides access to a linked list of data nodes as well as access to
                 lower levels.</p>
-    <pre>class SkipList:
+              <listing xml:id="lst_constructor"><program><input>class SkipList:
     def __init__(self):
-        self._head = None</pre>
+        self._head = None
+        </input></program></listing>
+</introduction>
     <subsubsection xml:id="advanced_searching-a-skip-list">
       <title>Searching a Skip List</title>
       <p>The search operation for a skip list will require a key. It will find a
                     data node containing that key and return the corresponding value that is
-                    stored in the node. Figure&#xA0;<url href="#fig_searchskip" visual="#fig_searchskip">8</url> shows the search
+                    stored in the node. <xref ref="fig-searchskip"/> shows the search
                     process as it proceeds through the skip list looking for the key 77. The
                     nodes marked by stars represent those that are considered during the
                     search process.</p>
@@ -220,45 +227,42 @@
                     successful and the word <em>of</em> is returned. It is important to note that
                     our first comparison, data node 31, allowed us to skip over 17 and 26.
                     Likewise, from 31 we were able to go directly to 77, bypassing 54.</p>
-      <p>Listing&#xA0;<url href="#lst_skiplistsearchcode" visual="#lst_skiplistsearchcode">[lst_skiplistsearchcode]</url> shows the
+                  <p>The following code block shows the
                     Python implementation of the <c>search</c> method. The search starts at the
                     head of the list and searches through nodes until either the key is
                     found or there are no more nodes to check. The basic idea is to start at
                     the header node of the highest level and begin to look to the right. If
                     no data node is present, the search continues on the next lower level
-                    (lines
-                    <url href="#check1:lst_skiplistsearchcode" visual="#check1:lst_skiplistsearchcode">[check1:lst_skiplistsearchcode]</url>&#x2013;<url href="#down1:lst_skiplistsearchcode" visual="#down1:lst_skiplistsearchcode">[down1:lst_skiplistsearchcode]</url>).
+                    (lines 4-5).
                     On the other hand, if a data node exists, we compare the keys. If there
                     is a match, we have found a data node with the key we are looking for
-                    and we can return its value (lines
-                    <url href="#check2:lst_skiplistsearchcode" visual="#check2:lst_skiplistsearchcode">[check2:lst_skiplistsearchcode]</url>&#x2013;<url href="#found:lst_skiplistsearchcode" visual="#found:lst_skiplistsearchcode">[found:lst_skiplistsearchcode]</url>).</p>
-      <pre>def search(self, key):
-    current = self._head
-    while current:
-        if current.next is None:
-            current = current.down
-        else:
-            if current.next.key == key:
-                return current.next.data  # found
-            if key &lt; current.next.key:
-                current = current.down
-            else:
-                current = current.next
-    return None</pre>
+                    and we can return its value (lines 7-8).</p>
+                  <pre xml:id="lst_skiplistsearchcode">
+  1  def search(self, key):
+  2      current = self._head
+  3      while current:
+  4          if current.next is None:
+  5              current = current.down
+  6          else:
+  7              if current.next.key == key:
+  8                  return current.next.data  # found
+  9              if key &lt; current.next.key:
+ 10                  current = current.down
+ 11              else:
+ 12                  current = current.next
+ 13      return None
+    </pre>
       <p>Since each level is an ordered linked list, a key mismatch provides us
                     with very useful information. If the key we are looking for is less than
-                    the key contained in the data node (line
-                    <url href="#check3:lst_skiplistsearchcode" visual="#check3:lst_skiplistsearchcode">[check3:lst_skiplistsearchcode]</url>),
+                    the key contained in the data node (line 9),
                     we know that no other data node on that level can contain our key since
                     everything to the right has to be greater. In that case, we drop down
-                    one level in that tower (line
-                    <url href="#down2:lst_skiplistsearchcode" visual="#down2:lst_skiplistsearchcode">[down2:lst_skiplistsearchcode]</url>). If
+                    one level in that tower (line 10). If
                     no such level exists (we drop to <c>None</c>), we have discovered that the
                     key is not present in our skip list. We break out of the loop and return
                     <c>None</c>. On the other hand, as long as there are data nodes on the
                     current level with key values less than the key we are looking for, we
-                    continue moving to the next node (line
-                    <url href="#next1:lst_skiplistsearchcode" visual="#next1:lst_skiplistsearchcode">[next1:lst_skiplistsearchcode]</url>).</p>
+                    continue moving to the next node (line 12).</p>
       <p>Once we enter a lower level, we repeat the process of checking to see if
                     there is a next node. Each level lower in the skip list has the
                     potential to provide additional data nodes. If the key is present, it
@@ -274,7 +278,7 @@
       <p>Adding a new key-value pair to the skip list is essentially a two-step
                     process. First, we search the skip list looking for the position where
                     the key should have been. Remember that we are assuming the key is not
-                    already present. Figure&#xA0;<url href="#fig_skiplistadd" visual="#fig_skiplistadd">9</url> shows this process as
+                    already present. <xref ref="fig-skiplistadd"/> shows this process as
                     we look to add the key 65 (data value <q>hi</q>) to the collection. We have
                     used the stars once again to show the path of the search process as it
                     proceeds through the skip list.</p>
@@ -290,7 +294,7 @@
                     causes us to drop down until eventually we hit the <c>None</c> at the base
                     of the tower.</p>
       <p>The second step in the process is to create a new data node and add it
-                    to the level 0 linked list (Figure&#xA0;<url href="#fig_skiplistadd2" visual="#fig_skiplistadd2">10</url>). However,
+        to the level 0 linked list (<xref ref="fig-skiplistadd2"/>). However,
                     if we stop at that point, the best we will ever have is a single linked
                     list of key-value pairs. We also need to build a tower for the new
                     entry, and this is where the skip list gets very interesting. How high
@@ -393,21 +397,24 @@
                     data to the list and search for data that is present, we are in a
                     position to finally implement the map abstract data type. As we
                     discussed above, maps must provide two operations, <c>put</c> and <c>get</c>.
-                    Listing&#xA0;<url href="#lst_mapclass" visual="#lst_mapclass">[lst_mapclass]</url> shows that these operations
+                    <xref ref="lst-mapclass"/> shows that these operations
                     can easily be implemented by constructing an internal skip list
-                    collection (line <url href="#init:lst_mapclass" visual="#init:lst_mapclass">[init:lst_mapclass]</url>) and using
+                    collection (the body of the <c>__init__</c> method) and using
                     the <c>insert</c> and <c>search</c> operations shown in the previous two
                     sections.</p>
-      <pre>class Map:
+                  <listing xml:id="lst-mapclass"><program><input>
+class Map:
     def __init__(self):
-        self.collection = SkipList(). |\label{init:lst_mapclass}|
+        self.collection = SkipList().
 
     def put(self, key, value):
         self.collection.insert(key, value)
 
     def get(self, key):
-        return self.collection.search(key)</pre>
+        return self.collection.search(key)
+        </input></program></listing>
     </subsubsection>
+
     <subsubsection xml:id="advanced_analysis-of-a-skip-list">
       <title>Analysis of a Skip List</title>
       <p>If we had simply stored the key-value pairs in an ordered linked list,
