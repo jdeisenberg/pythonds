@@ -17,7 +17,7 @@
             value (be) is returned.</p>
   <figure align="" xml:id="fig-mappic">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">An Example Map</caption>
-    <image source="Advanced/Figures/mappic.png" width="50%" alt="An Example Map" height="1.5in"/>
+    <image source="Advanced/Figures/mappic.png" width="50%" alt="An Example Map"/>
   </figure>
   <subsection xml:id="advanced_the-map-abstract-data-type">
     <title>The Map Abstract Data Type</title>
@@ -90,7 +90,7 @@
     </figure>
     <figure align="" xml:id="fig-skipdatanode">
       <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Single Data Node</caption>
-      <image source="Advanced/Figures/datanode.png" width="50%" alt="A Single Data Node" height="0.75in"/>
+      <image source="Advanced/Figures/datanode.png" width="50%" alt="A Single Data Node"/>
     </figure>
     <p>Figure&#xA0;<url href="#fig_vocab2" visual="#fig_vocab2">5</url> shows two different vertical columns. The
                 leftmost column consists of a linked list of header nodes. Each header
@@ -104,7 +104,7 @@
     </figure>
     <figure align="" xml:id="fig-headernode">
       <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Each Header Node Holds Two References</caption>
-      <image source="Advanced/Figures/headernode.png" width="50%" alt="Each Header Node Holds Two References" height="0.75in"/>
+      <image source="Advanced/Figures/headernode.png" width="50%" alt="Each Header Node Holds Two References"/>
     </figure>
     <p>The columns of data nodes are known as <term>towers</term>. Towers are linked
                 together by the <c>down</c> reference in the data node. We can see that

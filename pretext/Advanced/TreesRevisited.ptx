@@ -17,7 +17,7 @@
                 arranged to form a picture is shown in Figure&#xA0;<url href="#fig_smallimage" visual="#fig_smallimage">1</url>.</p>
     <figure align="" xml:id="fig-smallimage">
       <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Simple Image Composed of Pixels</caption>
-      <image source="Advanced/Figures/8by8image.png" width="50%" alt="A Simple Image" height="2in"/>
+      <image source="Advanced/Figures/8by8image.png" width="50%" alt="A Simple Image"/>
     </figure>
     <p>In the physical world colors are not discrete quantities. The colors in
                 our physical world have an infinite amount of variation to them. Just as
@@ -137,7 +137,7 @@ simple_quant("bubbles.jpg")</pre>
                 how little of the color cube space is actually used.</p>
     <figure align="" xml:id="fig-colordist">
       <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Plot of Colors Used in Image as Points in Color Cube</caption>
-      <image source="Advanced/Figures/colorcube.png" width="50%" alt="Plot of Colors Used in Image as Points in Color Cube" height="3in"/>
+      <image source="Advanced/Figures/colorcube.png" width="50%" alt="Plot of Colors Used in Image as Points in Color Cube"/>
     </figure>
     <p>To make a better quantized image we need to find a way to do a better
                 job of selecting the set of colors we want to use to represent our
@@ -471,7 +471,7 @@ def compute_index(self, r, g, b, l):  |\label{lst_otninsert:line_otci}|
                 <c>octree</c> may represent a number of similar colors in the color cube.</p>
     <figure align="" xml:id="fig-otindex">
       <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Computing an Index to Insert a Node in an octree</caption>
-      <image source="Advanced/Figures/OctTreeIndex.png" width="50%" alt="Computing an Index to Insert a Node in an octree" height="4.5in"/>
+      <image source="Advanced/Figures/OctTreeIndex.png" width="50%" alt="Computing an Index to Insert a Node in an octree"/>
     </figure>
     <p>The <c>find</c> method, shown in Listing&#xA0;<url href="#lst_otnfind" visual="#lst_otnfind">[lst_otnfind]</url>,
                 uses the same method of index computation as the <c>insert</c> method to
