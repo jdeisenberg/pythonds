@@ -122,7 +122,7 @@
                 text character, this is the situation.</p>
     <figure align="" xml:id="fig-dfagraph">
       <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Deterministic Finite Automaton</caption>
-      <image source="Advanced/Figures/dfa.png" width="50%" alt="A Deterministic Finite Automaton" height="2in"/>
+      <image source="Advanced/Figures/dfa.png" width="50%" alt="A Deterministic Finite Automaton"/>
     </figure>
     <p>The DFA works in a very simple way. We keep track of our current state,
                 setting it to 0 when we start. We read the next character from the text.
@@ -151,7 +151,7 @@
                 combination, the processing through the DFA graph is easy to follow.</p>
     <figure align="" xml:id="fig-statetransitiontable">
       <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Trace of the DFA Pattern Matcher</caption>
-      <image source="Advanced/Figures/steptable.png" width="50%" alt="A Trace of the DFA Pattern Matcher" height="2.75in"/>
+      <image source="Advanced/Figures/steptable.png" width="50%" alt="A Trace of the DFA Pattern Matcher"/>
     </figure>
     <p>Since every character from the text is used once as input to the DFA
                 graph, the complexity of this approach is <m>O(n)</m>. However, we need
@@ -285,7 +285,7 @@
                 successful pattern match.</p>
     <figure align="" xml:id="fig-kmpexample">
       <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Trace of the KMP Pattern Matcher</caption>
-      <image source="Advanced/Figures/steptable2.png" width="50%" alt="A Trace of the KMP Pattern Matcher" height="3in"/>
+      <image source="Advanced/Figures/steptable2.png" width="50%" alt="A Trace of the KMP Pattern Matcher"/>
     </figure>
     <p>As with the DFA graph from the previous section, KMP pattern matching is
                 <m>O(n)</m> since we process each character of the text string.
