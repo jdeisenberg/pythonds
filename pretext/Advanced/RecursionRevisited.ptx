@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="advanced_recursion-revisited">
   <title>Recursion Revisited</title>
+  <introduction>
   <p>One of the most common uses of numerical computing today is in the field
             of cryptography. Each time you check your bank account, sign on to a
             secure website to purchase something, or sign on to your computer, you
@@ -61,6 +62,7 @@
             to stop anyone from stealing your secrets for very long. In the
             remainder of this section, we will build up to a much more secure form
             of encryption, the RSA <term>public key encryption</term> algorithm.</p>
+        </introduction>
   <subsection xml:id="advanced_modular-arithmetic-theorems">
     <title>Modular Arithmetic Theorems</title>
     <p>If two numbers, <m>a</m> and <m>b</m>, give the same remainder when
@@ -274,7 +276,7 @@ d = &amp; ay + b(x \mod{y}) \\
                 does! To check this, note that at each return step in the algorithm the
                 return values satisfy the equation <m>d = ax + by</m>.
                 To understand how our extended GCD algorithm works, let's start with an
-                example: let <m>x = 25</m> and <m>y = 9</m>. Figure&#xA0;<url href="#fig_gcd" visual="#fig_gcd">1</url>
+                example: let <m>x = 25</m> and <m>y = 9</m>. <xref ref="fig-gcd"/>
                 illustrates the call and return values for the recursive function.</p>
     <figure align="" xml:id="fig-gcd">
       <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Call Tree for Extended GCD Algorithm</caption>

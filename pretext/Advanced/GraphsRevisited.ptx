@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="advanced_graphs-revisited-pattern-matching">
   <title>Graphs Revisited: Pattern Matching</title>
+  <introduction>
   <p>Even with the growing interest in computer graphics, processing textual
             information is still an important area of study. Of particular interest
             here is the problem of finding patterns, often referred to as
@@ -19,6 +20,7 @@
   <p>shows that the substring <c>"ab"</c> occurs for the first time starting at
             index position <c>2</c> in the string <c>"ccabababcab"</c>. <c>find</c> also returns
             a <c>-1</c> if the pattern does not occur.</p>
+        </introduction>
   <subsection xml:id="advanced_biological-strings">
     <title>Biological Strings</title>
     <p>Some of the most exciting work in algorithm development is currently

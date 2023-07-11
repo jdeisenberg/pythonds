@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="sort-search_the-binary-search">
   <title>The Binary Search</title>
+  <introduction>
   <p>It is possible to take greater advantage of the ordered list if we are
             clever with our comparisons. In the sequential search, when we compare
             against the first item, there are at most <m>n-1</m> more items to
@@ -20,10 +21,11 @@
             algorithm can quickly find the value 54. The complete function is shown
             in <xref ref="lst-binarysearchpy"/>.</p>
   <figure align="center" xml:id="i13_id1fig-binsearch">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 3: Binary Search of an Ordered List of Integers</caption>
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Binary Search of an Ordered List of Integers</caption>
     <image source="SortSearch/Figures/binsearch.png" width="50%"/>
   </figure>
-  <listing xml:id="lst-binarysearchpy"> <program label="lst-binarysearchpy"   interactive="codelens" language="python">
+  <listing xml:id="lst-binarysearchpy">
+<program label="lst-binarysearchpy"   interactive="codelens" language="python">
     <input>
 def binary_search(a_list, item):
     first = 0
@@ -59,7 +61,8 @@ print(binary_search(test_list, 13))
             search of the right half. Either way, this is a recursive call to the
             binary search function passing a smaller list. <xref ref="lst-recbinarysearch"/>
             shows this recursive version.</p>
-<listing xml:id="lst-recbinarysearch"> <program label="lst-recbinarysearch"  interactive="codelens" language="python">
+<listing xml:id="lst-recbinarysearch">
+<program label="lst-recbinarysearch"  interactive="codelens" language="python">
     <input>
 def binary_search_rec(a_list, item):
     if len(a_list) == 0:
@@ -80,6 +83,7 @@ print(binary_search_rec(test_list, 13))
     </input>
   </program>
 </listing>
+</introduction>
   <subsection xml:id="sort-search_analysis-of-binary-search">
     <title>Analysis of Binary Search</title>
     <p>To analyze the binary search algorithm, we need to recall that each

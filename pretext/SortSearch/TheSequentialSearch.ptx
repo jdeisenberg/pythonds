@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="sort-search_the-sequential-search">
   <title>The Sequential Search</title>
+  <introduction>
   <p>When data items are stored in a collection such as a list, we say that
             they have a linear or sequential relationship. Each data item is stored
             in a position relative to the others. In Python lists, these relative
@@ -14,13 +15,14 @@
             we are looking for or run out of items, which would mean the item
             we were searching for was not present.</p>
   <figure align="center" xml:id="i11_id1fig-seqsearch">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: Sequential Search of a List of Integers</caption>
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Sequential Search of a List of Integers</caption>
     <image source="SortSearch/Figures/seqsearch.png" width="50%"/>
   </figure>
   <p>The Python implementation for this algorithm is shown in
             <xref ref="lst-seqsearchpython"/>. The function needs two items&#x2013;the list and the item we
             are looking for&#x2013;and returns a Boolean value as to whether it is present.</p>
-<listing xml:id="lst-seqsearchpython"> <program label="lst-seqsearchpython"   interactive="codelens" language="python">
+<listing xml:id="lst-seqsearchpython">
+<program label="lst-seqsearchpython"   interactive="codelens" language="python">
     <input>
 def sequential_search(a_list, item):
     pos = 0
@@ -39,6 +41,7 @@ print(sequential_search(test_list, 13))
     </input>
   </program>
 </listing>
+</introduction>
   <subsection xml:id="sort-search_analysis-of-sequential-search">
     <title>Analysis of Sequential Search</title>
     <p>To analyze searching algorithms, we need to decide on a basic unit of
@@ -133,10 +136,11 @@ print(sequential_search(test_list, 13))
                 immediately. <xref ref="lst-seqsearchpython2"/> shows this variation of the
                 sequential search function.</p>
     <figure align="center" xml:id="fig-seqsearch2">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 2: Sequential Search of an Ordered List of Integers</caption>
+      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Sequential Search of an Ordered List of Integers</caption>
       <image source="SortSearch/Figures/seqsearch2.png" width="50%"/>
     </figure>
-<listing xml:id="lst-seqsearchpython2"> <program label="lst-seqsearchpython2"  interactive="codelens" language="python">
+<listing xml:id="lst-seqsearchpython2">
+<program label="lst-seqsearchpython2"  interactive="codelens" language="python">
       <input>
 def ordered_sequential_search(a_list, item):
     pos = 0

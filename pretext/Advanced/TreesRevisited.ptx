@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
 <section xml:id="advanced_trees-revisited-quantizing-images">
   <title>Trees Revisited: Quantizing Images</title>
+  <introduction>
   <p>Next to text, digital images are the most common element found on the
             internet. However, the internet would feel much slower if every
             advertisement-sized image required 196,560&#xA0;bytes of memory. Instead, a
             banner ad image requires only 14,246, just 7.2% of what it could take.
             Where do these numbers come from? How is such a phenomenal savings
             achieved? The answers to these questions are the topic of this section.</p>
+        </introduction>
   <subsection xml:id="advanced_a-quick-review-of-digital-images">
     <title>A Quick Review of Digital Images</title>
     <p>A digital image is composed of thousands of individual components called
