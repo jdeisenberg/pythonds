@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="introduction_input-and-output">
   <title>Input and Output</title>
+  <introduction>
   <p>We often have a need to interact with users,
             either to get data or to provide some sort of result. Most programs
             today use a dialog box as a way of asking the user to provide some type
@@ -44,6 +45,7 @@ Please enter the radius of the circle 10
 &gt;&gt;&gt; diameter = 2 * radius
 &gt;&gt;&gt; diameter
 20.0</pre>
+</introduction>
   <subsection xml:id="introduction_string-formatting">
     <title>String Formatting</title>
     <p>We have already seen that the <c>print</c>

@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="introduction_object-oriented-programming-in-python-defining-classes">
   <title>Object-Oriented Programming in Python: Defining Classes</title>
+  <introduction>
   <p>We stated earlier that Python is an object-oriented programming
     language. So far, we have used a number of built-in classes to show
     examples of data and control structures. One of the most powerful
@@ -14,6 +15,7 @@
     the same time provide the details necessary to actually use the
     abstraction in a program. Whenever we want to implement an abstract data
     type, we will do so with a new class.</p>
+</introduction>
   <subsection xml:id="introduction_a-fraction-class">
     <title>A <c>Fraction</c> Class</title>
     <p>A very common example to show the details of implementing a user-defined
@@ -50,7 +52,8 @@
       <xref ref="introduction_lst-pyconstructor" />.
     </p>
 
-    <listing xml:id="introduction_lst-pyconstructor" names="lst_pyconstructor"> <program label="introduction_lst-pyconstructor" names="lst_pyconstructor"  language="python">
+    <listing xml:id="introduction_lst-pyconstructor" names="lst_pyconstructor">
+<program label="introduction_lst-pyconstructor" names="lst_pyconstructor"  language="python">
         <input>
         class Fraction:
           """Class Fraction"""
@@ -110,7 +113,8 @@
       convert itself into a string. This is what the <c>print</c> function needs
       in order to do its job.
     </p>
-    <listing xml:id="introduction_lst-showmethod" names="lst_showmethod"> <program label="introduction_lst-showmethod" names="lst_showmethod"  language="python">
+    <listing xml:id="introduction_lst-showmethod" names="lst_showmethod">
+<program label="introduction_lst-showmethod" names="lst_showmethod"  language="python">
         <input>
         def show(self):
         print(f"{self.num}/{self.den}")
@@ -140,7 +144,8 @@
       <c>Fraction</c> object is asked to convert itself to a string. Notice the
       various ways that this function is used.
     </p>
-    <listing xml:id="introduction_lst-str" names="lst_str"> <program label="introduction_lst-str" names="lst_str"  language="python">
+    <listing xml:id="introduction_lst-str" names="lst_str">
+<program label="introduction_lst-str" names="lst_str"  language="python">
         <input>
         def __str__(self):
         return f"{self.num}/{self.den}"
@@ -191,7 +196,8 @@ TypeError: unsupported operand type(s) for +: 'Fraction' and 'Fraction'</pre>
       arithmetic expression involving fractions, assigning the result of the
       addition, and then printing our result.
     </p>
-    <listing xml:id="introduction_lst-addmethod" names="lst_addmethod"> <program label="introduction_lst-addmethod" names="lst_addmethod"  language="python">
+    <listing xml:id="introduction_lst-addmethod" names="lst_addmethod">
+<program label="introduction_lst-addmethod" names="lst_addmethod"  language="python">
         <input>
         def __add__(self, other_fraction):
             new_num = self.num * other_fraction.den + \
@@ -249,7 +255,8 @@ TypeError: unsupported operand type(s) for +: 'Fraction' and 'Fraction'</pre>
       the bottom by 2 creates a new fraction, <m>3/4</m> (see
       <xref ref="introduction_lst-newaddmethod" />).
     </p>
-    <listing xml:id="introduction_lst-newaddmethod" names="lst_newaddmethod"> <program label="introduction_lst-newaddmethod" names="lst_newaddmethod"  language="python">
+    <listing xml:id="introduction_lst-newaddmethod" names="lst_newaddmethod">
+<program label="introduction_lst-newaddmethod" names="lst_newaddmethod"  language="python">
         <input>
         def __add__(self, other_fraction):
             new_num = self.num * other_fraction.den + self.den * other_fraction.num
@@ -299,7 +306,8 @@ TypeError: unsupported operand type(s) for +: 'Fraction' and 'Fraction'</pre>
       are other relational operators that can be overridden. For example, the
       <c>__le__</c> method provides the less than or equal functionality.
     </p>
-    <listing xml:id="introduction_lst-cmpmethod" names="lst_cmpmethod"> <program label="introduction_lst-cmpmethod" names="lst_cmpmethod"  language="python">
+    <listing xml:id="introduction_lst-cmpmethod" names="lst_cmpmethod">
+<program label="introduction_lst-cmpmethod" names="lst_cmpmethod"  language="python">
         <input>
         def __eq__(self, other_fraction):
             first_num = self.num * other_fraction.den
@@ -313,7 +321,8 @@ TypeError: unsupported operand type(s) for +: 'Fraction' and 'Fraction'</pre>
       <xref ref="lst-fractioncode" />. We leave the remaining arithmetic and relational
       methods as exercises.
     </p>
-    <listing xml:id="lst-fractioncode"> <program label="lst-fractioncode"   interactive="activecode" language="python">
+    <listing xml:id="lst-fractioncode">
+<program label="lst-fractioncode"   interactive="activecode" language="python">
       <input>
       def gcd(m, n):
           while m % n != 0:
@@ -465,7 +474,8 @@ TypeError: unsupported operand type(s) for +: 'Fraction' and 'Fraction'</pre>
       class is shown in
       <xref ref="introduction_lst-logicgateclass" />.
     </p>
-    <listing xml:id="introduction_lst-logicgateclass" names="lst_logicgateclass"> <program label="introduction_lst-logicgateclass" names="lst_logicgateclass"  language="python">
+    <listing xml:id="introduction_lst-logicgateclass" names="lst_logicgateclass">
+<program label="introduction_lst-logicgateclass" names="lst_logicgateclass"  language="python">
         <input>
         class LogicGate:
             def __init__(self, lbl):
@@ -517,7 +527,8 @@ TypeError: unsupported operand type(s) for +: 'Fraction' and 'Fraction'</pre>
       building class hierarchies. Child class constructors need to call parent
       class constructors and then move on to their own distinguishing data.
     </p>
-    <listing xml:id="introduction_lst-binarygateclass" names="lst_binarygateclass"> <program label="introduction_lst-binarygateclass" names="lst_binarygateclass"  language="python">
+    <listing xml:id="introduction_lst-binarygateclass" names="lst_binarygateclass">
+<program label="introduction_lst-binarygateclass" names="lst_binarygateclass"  language="python">
         <input>
         class BinaryGate(LogicGate):
             def __init__(self, lbl):
@@ -535,7 +546,8 @@ TypeError: unsupported operand type(s) for +: 'Fraction' and 'Fraction'</pre>
         </input>
       </program>
     </listing>
-    <listing xml:id="introduction_lst-unarygateclass" names="lst_unarygateclass"> <program label="introduction_lst-unarygateclass" names="lst_unarygateclass"  language="python">
+    <listing xml:id="introduction_lst-unarygateclass" names="lst_unarygateclass">
+<program label="introduction_lst-unarygateclass" names="lst_unarygateclass"  language="python">
         <input>
         class UnaryGate(LogicGate):
             def __init__(self, lbl):
@@ -575,7 +587,8 @@ TypeError: unsupported operand type(s) for +: 'Fraction' and 'Fraction'</pre>
       return 1 if both input values are 1. The complete class is shown in
       <xref ref="introduction_lst-andgateclass" />.
     </p>
-    <listing xml:id="introduction_lst-andgateclass" names="lst_andgateclass"> <program label="introduction_lst-andgateclass" names="lst_andgateclass"  language="python">
+    <listing xml:id="introduction_lst-andgateclass" names="lst_andgateclass">
+<program label="introduction_lst-andgateclass" names="lst_andgateclass"  language="python">
         <input>
         class AndGate(BinaryGate):
             def __init__(self, lbl):
@@ -660,7 +673,8 @@ Enter pin input for gate G3: 0
       that each <c>to_gate</c> can choose the proper input line for the
       connection.
     </p>
-    <listing xml:id="introduction_lst-connectorclass" names="lst_connectorclass"> <program label="introduction_lst-connectorclass" names="lst_connectorclass"  language="python">
+    <listing xml:id="introduction_lst-connectorclass" names="lst_connectorclass">
+<program label="introduction_lst-connectorclass" names="lst_connectorclass"  language="python">
         <input>
         class Connector:
             def __init__(self, fgate, tgate):
@@ -677,7 +691,8 @@ Enter pin input for gate G3: 0
         </input>
       </program>
     </listing>
-    <listing xml:id="introduction_lst-setpin" names="lst_setpin"> <program label="introduction_lst-setpin" names="lst_setpin"  language="python">
+    <listing xml:id="introduction_lst-setpin" names="lst_setpin">
+<program label="introduction_lst-setpin" names="lst_setpin"  language="python">
         <input>
         def set_next_pin(self, source):
             if self.pin_a == None:
@@ -707,7 +722,8 @@ Enter pin input for gate G3: 0
       circuit works backwards to find the input necessary to finally produce
       output.
     </p>
-    <listing xml:id="introduction_lst-newgetpin" names="lst_newgetpin"> <program label="introduction_lst-newgetpin" names="lst_newgetpin"  language="python">
+    <listing xml:id="introduction_lst-newgetpin" names="lst_newgetpin">
+<program label="introduction_lst-newgetpin" names="lst_newgetpin"  language="python">
         <input>
         def get_pin_a(self):
             if self.pin_a == None:

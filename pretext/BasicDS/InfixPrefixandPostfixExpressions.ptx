@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="basic-ds_infix-prefix-and-postfix-expressions">
   <title>Infix, Prefix, and Postfix Expressions</title>
+  <introduction>
   <p>When you write an arithmetic expression such as B &#xB7; C, the form of the
             expression provides you with information so that you can interpret it
             correctly. In this case we know that the variable B is being multiplied
@@ -212,6 +213,7 @@
       </row>
     </tabular>
   </table>
+</introduction>
   <subsection xml:id="basic-ds_conversion-of-infix-expressions-to-prefix-and-postfix">
     <title>Conversion of Infix Expressions to Prefix and Postfix</title>
     <p>So far, we have used ad hoc methods to convert between infix expressions
@@ -363,7 +365,8 @@
                 lowest value possible. This way any operator that is compared against it
                 will have higher precedence and will be placed on top of it.
                 Line 15 defines the operands to be any upper-case character or digit.</p>
-  <listing xml:id="lst-intopost"> <program label="lst-intopost"  interactive="activecode" language="python">
+  <listing xml:id="lst-intopost">
+<program label="lst-intopost"  interactive="activecode" language="python">
       <input>
 from pythonds3.basic import Stack
 
@@ -496,7 +499,8 @@ print(infix_to_postfix("( A + B ) * C - ( D - E ) * ( F + G )"))
                 in <xref ref="lst-postfixeval"/>. To assist with the arithmetic, a helper
                 function <c>do_math</c> is defined. It will take two operands and an
                 operator and then perform the proper arithmetic operation.</p>
-  <listing xml:id="lst-postfixeval"> <program label="lst-postfixeval"  xml:id="postfixeval" interactive="activecode" language="python">
+  <listing xml:id="lst-postfixeval">
+<program label="lst-postfixeval"  xml:id="postfixeval" interactive="activecode" language="python">
       <input>
 from pythonds3.basic import Stack
 

@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="introduction_getting-started-with-data">
   <title>Getting Started with Data</title>
+  <introduction>
   <p>We stated above that Python supports the object-oriented programming
             paradigm. This means that Python considers data to be the focal point of
             the problem-solving process. In Python, as well as in any other
@@ -10,6 +11,7 @@
             a user of a class only sees the state and behavior of a data item. Data
             items are called <term>objects</term> in the object-oriented paradigm. An object
             is an instance of a class.</p>
+        </introduction>
   <subsection xml:id="introduction_built-in-atomic-data-types">
     <title>Built-in Atomic Data Types</title>
     <p>We will begin our review by considering the atomic data types. Python
