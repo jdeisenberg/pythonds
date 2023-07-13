@@ -9,7 +9,7 @@
             <xref ref="i105_id1fig-orderlinked"/>. Again, the node and link structure is ideal
             for representing the relative positioning of the items.</p>
   <figure align="center" xml:id="i105_id1fig-orderlinked">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 15: An Ordered Linked List</caption>
+    <caption>An Ordered Linked List</caption>
     <image source="BasicDS/Figures/orderlinkedlist.png" width="50%"/>
   </figure>
   <p>To implement the <c>OrderedList</c> class, we will use the same technique
@@ -45,7 +45,7 @@
             the search can stop and return <c>False</c>. There is no way the item could
             exist further out in the linked list.</p>
   <figure align="center" xml:id="i105_id2fig-stopearly">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 16: Searching an Ordered Linked List</caption>
+    <caption>Searching an Ordered Linked List</caption>
     <image source="BasicDS/Figures/orderedsearch.png" width="50%"/>
   </figure>
   <p><xref ref="basic-ds_lst-ordersearch"/> shows the complete <c>search</c> method. It is
@@ -79,7 +79,7 @@
             the item we wish to add. In our example, seeing the value 54 causes us
             to stop.</p>
   <figure align="center" xml:id="fig-orderinsert">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 17: Adding an Item to an Ordered Linked List</caption>
+    <caption>Adding an Item to an Ordered Linked List</caption>
     <image source="BasicDS/Figures/linkedlistinsert.png" width="50%"/>
   </figure>
   <p>As we saw with unordered lists, it is necessary to have an additional

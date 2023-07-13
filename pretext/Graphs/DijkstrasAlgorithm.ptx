@@ -82,27 +82,27 @@ def dijkstra(graph, start):
             <m>z</m> (see <xref ref="fig-dije"/> and <xref ref="fig-dijf"/>). However, no additional changes are found and so the
             priority queue is empty and Dijkstra's algorithm exits.</p>
   <figure align="center" xml:id="i189_id1fig-dija">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 3: Tracing Dijkstra's Algorithm</caption>
+    <caption>Tracing Dijkstra's Algorithm</caption>
     <image source="Graphs/Figures/dijkstraa.png" width="50%"/>
   </figure>
   <figure align="center" xml:id="i189_id2fig-dijb">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4: Tracing Dijkstra's Algorithm</caption>
+    <caption>Tracing Dijkstra's Algorithm</caption>
     <image source="Graphs/Figures/dijkstrab.png" width="50%"/>
   </figure>
   <figure align="center" xml:id="fig-dijc">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 5: Tracing Dijkstra's Algorithm</caption>
+    <caption>Tracing Dijkstra's Algorithm</caption>
     <image source="Graphs/Figures/dijkstrac.png" width="50%"/>
   </figure>
   <figure align="center" xml:id="fig-dijd">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 6: Tracing Dijkstra's Algorithm</caption>
+    <caption>Tracing Dijkstra's Algorithm</caption>
     <image source="Graphs/Figures/dijkstrad.png" width="50%"/>
   </figure>
   <figure align="center" xml:id="fig-dije">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 7: Tracing Dijkstra's Algorithm</caption>
+    <caption>Tracing Dijkstra's Algorithm</caption>
     <image source="Graphs/Figures/dijkstrae.png" width="50%"/>
   </figure>
   <figure align="center" xml:id="fig-dijf">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 8: Tracing Dijkstra's Algorithm</caption>
+    <caption>Tracing Dijkstra's Algorithm</caption>
     <image source="Graphs/Figures/dijkstraf.png" width="50%"/>
   </figure>
   <p>It is important to note that Dijkstra's algorithm works only when the

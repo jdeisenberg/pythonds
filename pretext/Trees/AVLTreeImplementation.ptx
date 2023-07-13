@@ -34,7 +34,8 @@
             <xref ref="lst-updbal"/>. You will notice that the definition for <c>_put</c> is
             exactly the same as in simple binary search trees except for the addition of
             the calls to <c>update_balance</c> on lines&#xA0;9 and&#xA0;17.</p>
-<listing xml:id="lst-updbal"> <program label="lst-updbal"  language="python">
+<listing xml:id="lst-updbal">
+<program label="lst-updbal"  language="python">
     <input>
 def _put(self, key, value, current_node):
     if key &lt; current_node.key:
@@ -87,7 +88,7 @@ def update_balance(self, node):
             is out of balance with a balance factor of -2. To bring this tree into
             balance we will use a left rotation around the subtree rooted at node A.</p>
   <figure align="center" xml:id="i18_id1fig-unbalsimple">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 3: Transforming an Unbalanced Tree Using a Left Rotation</caption>
+    <caption>Transforming an Unbalanced Tree Using a Left Rotation</caption>
     <image source="Trees/Figures/simpleunbalanced.png" width="50%"/>
   </figure>
   <p>To perform a left rotation we essentially do the following:</p>
@@ -117,7 +118,7 @@ def update_balance(self, node):
             rotation. The left side of <xref ref="i18_id2fig-rightrot1"/> shows a tree that is
             left-heavy and with a balance factor of 2 at the root.</p>
   <figure align="center" xml:id="i18_id2fig-rightrot1">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4: Transforming an Unbalanced Tree Using a Right Rotation</caption>
+    <caption>Transforming an Unbalanced Tree Using a Right Rotation</caption>
     <image source="Trees/Figures/rightrotate1.png" width="50%"/>
   </figure>
   <p>To perform a right rotation we essentially do the following:</p>
@@ -159,7 +160,8 @@ def update_balance(self, node):
             Finally we set the parent of the old root to be the new root. This is a
             lot of complicated bookkeeping, so we encourage you to trace through
             this function while looking at <xref ref="i18_id1fig-unbalsimple"/>.</p>
-  <listing xml:id="trees_lst-bothrotations" names="lst_bothrotations"> <program label="trees_lst-bothrotations" names="lst_bothrotations"  language="python">
+  <listing xml:id="trees_lst-bothrotations" names="lst_bothrotations">
+<program label="trees_lst-bothrotations" names="lst_bothrotations"  language="python">
     <input>
 def rotate_left(self, rotation_root):
     new_root = rotation_root.right_child
@@ -193,7 +195,7 @@ def rotate_left(self, rotation_root):
             the heights of the new subtrees? <xref ref="fig-bfderive"/> and the
             following derivation should convince you that these lines are correct.</p>
   <figure align="center" xml:id="fig-bfderive">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 5: A Left Rotation</caption>
+    <caption>A Left Rotation</caption>
     <image source="Trees/Figures/bfderive.png" width="50%"/>
   </figure>
   <p><xref ref="fig-bfderive"/> shows a left rotation. B and D are the pivotal
@@ -247,14 +249,14 @@ rotation_root.balance_factor = (
             factor of -2 we should do a left rotation. But what happens when we do
             the left rotation around A?</p>
   <figure align="center" xml:id="fig-hardrotate">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 6: An Unbalanced Tree that is More Difficult to Balance</caption>
+    <caption>An Unbalanced Tree that is More Difficult to Balance</caption>
     <image source="Trees/Figures/hardunbalanced.png" width="50%"/>
   </figure>
   <p><xref ref="fig-badrotate"/> shows us that after the left rotation we are now
             out of balance the other way. If we do a right rotation to correct the
             situation we are right back where we started.</p>
   <figure align="center" xml:id="fig-badrotate">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 7: After a Left Rotation the Tree is Out of Balance in the Other Direction</caption>
+    <caption>After a Left Rotation the Tree is Out of Balance in the Other Direction</caption>
     <image source="Trees/Figures/badrotate.png" width="50%"/>
   </figure>
   <p>To correct this problem we must use the following set of rules:</p>
@@ -279,7 +281,7 @@ rotation_root.balance_factor = (
             with a right rotation around node C puts the tree in a position where
             the left rotation around A brings the entire subtree back into balance.</p>
   <figure align="center" xml:id="fig-rotatelr">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 8: A Right Rotation Followed by a Left Rotation</caption>
+    <caption>A Right Rotation Followed by a Left Rotation</caption>
     <image source="Trees/Figures/rotatelr.png" width="50%"/>
   </figure>
   <p>The code that implements these rules can be found in our <c>rebalance</c>

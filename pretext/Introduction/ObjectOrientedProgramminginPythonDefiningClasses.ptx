@@ -88,7 +88,7 @@
       object as it is now implemented.
     </p>
     <figure align="center" xml:id="fig-fraction1">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">An Instance of the <literal>Fraction</literal> Class</caption>
+      <caption>An Instance of the <literal>Fraction</literal> Class</caption>
       <image source="Introduction/Figures/fraction1.png" width="50%" />
     </figure>
     <p>The next thing we need to do is implement the behavior that the abstract
@@ -271,7 +271,7 @@ TypeError: unsupported operand type(s) for +: 'Fraction' and 'Fraction'</pre>
       <xref ref="i19_id2fig-fraction2" />.
     </p>
     <figure align="center" xml:id="i19_id2fig-fraction2">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">An Instance of the <literal>Fraction</literal> Class with Two Methods</caption>
+      <caption>An Instance of the <literal>Fraction</literal> Class with Two Methods</caption>
       <image source="Introduction/Figures/fraction2.png" width="50%" />
     </figure>
     <pre>&gt;&gt;&gt; f1 = Fraction(1, 4)
@@ -288,7 +288,7 @@ TypeError: unsupported operand type(s) for +: 'Fraction' and 'Fraction'</pre>
       <xref ref="fig-fraction3" />).
     </p>
     <figure align="center" xml:id="fig-fraction3">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Shallow Equality Versus Deep Equality</caption>
+      <caption>Shallow Equality Versus Deep Equality</caption>
       <image source="Introduction/Figures/fraction3.png" width="50%" />
     </figure>
     <p>We can create <term>deep equality</term>&#x2013;equality by the
@@ -394,7 +394,7 @@ TypeError: unsupported operand type(s) for +: 'Fraction' and 'Fraction'</pre>
       data and operations such as concatenation, repetition, and indexing.
     </p>
     <figure align="center" xml:id="fig-inherit1">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">An Inheritance Hierarchy for Python Collections</caption>
+      <caption>An Inheritance Hierarchy for Python Collections</caption>
       <image source="Introduction/Figures/inheritance1.png" width="50%" />
     </figure>
     <p>Lists, tuples, and strings are all examples of sequential collections. They
@@ -430,7 +430,7 @@ TypeError: unsupported operand type(s) for +: 'Fraction' and 'Fraction'</pre>
       gate.
     </p>
     <figure align="center" xml:id="fig-truthtable">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Three Types of Logic Gates</caption>
+      <caption>Three Types of Logic Gates</caption>
       <image source="Introduction/Figures/truthtable.png" width="50%" />
     </figure>
     <p>By combining these gates in various patterns and then applying a set of
@@ -445,7 +445,7 @@ TypeError: unsupported operand type(s) for +: 'Fraction' and 'Fraction'</pre>
       shows an example with values.
     </p>
     <figure align="center" xml:id="fig-circuit1">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Circuit</caption>
+      <caption>A Circuit</caption>
       <image source="Introduction/Figures/circuit1.png" width="50%" />
     </figure>
     <p>In order to implement a circuit, we will first build a representation
@@ -459,7 +459,7 @@ TypeError: unsupported operand type(s) for +: 'Fraction' and 'Fraction'</pre>
       Below that, the specific logic functions of each appear.
     </p>
     <figure align="center" xml:id="fig-gates">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">An Inheritance Hierarchy for Logic Gates</caption>
+      <caption>An Inheritance Hierarchy for Logic Gates</caption>
       <image source="Introduction/Figures/gates.png" width="50%" />
     </figure>
     <p>We can now start to implement the classes by starting with the most
@@ -653,7 +653,7 @@ Enter pin input for gate G3: 0
     </p>
     <sage/>
     <figure align="center" xml:id="fig-connector">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Connector Connects the Output of One Gate to the Input of Another</caption>
+      <caption>A Connector Connects the Output of One Gate to the Input of Another</caption>
       <image source="Introduction/Figures/connector.png" width="50%" />
     </figure>
     <p>Now, with the <c>Connector</c> class, we say that a <c>Connector</c> Has-a

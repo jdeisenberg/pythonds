@@ -18,7 +18,7 @@
                 primary colors: red, green, and blue. A simple example of how pixels are
                 arranged to form a picture is shown in Figure&#xA0;<url href="#fig_smallimage" visual="#fig_smallimage">1</url>.</p>
     <figure align="" xml:id="fig-smallimage">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Simple Image Composed of Pixels</caption>
+      <caption>A Simple Image Composed of Pixels</caption>
       <image source="Advanced/Figures/8by8image.png" width="50%" alt="A Simple Image"/>
     </figure>
     <p>In the physical world colors are not discrete quantities. The colors in
@@ -91,7 +91,7 @@
                 color in the new cube. Figure&#xA0;<url href="#fig_colorcube" visual="#fig_colorcube">2</url> shows an example of
                 the quantization just described.</p>
     <figure align="" xml:id="fig-colorcube">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Color Quantization</caption>
+      <caption>Color Quantization</caption>
       <image source="Advanced/Figures/quantizeCube.png" width="50%" alt="Color Quantization"/>
     </figure>
     <p>We can turn this simple idea of color quantization into the Python
@@ -138,7 +138,7 @@ simple_quant("bubbles.jpg")</pre>
                 distribution of the colors that are used in the example image. Notice
                 how little of the color cube space is actually used.</p>
     <figure align="" xml:id="fig-colordist">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Plot of Colors Used in Image as Points in Color Cube</caption>
+      <caption>Plot of Colors Used in Image as Points in Color Cube</caption>
       <image source="Advanced/Figures/colorcube.png" width="50%" alt="Plot of Colors Used in Image as Points in Color Cube"/>
     </figure>
     <p>To make a better quantized image we need to find a way to do a better
@@ -472,7 +472,7 @@ def compute_index(self, r, g, b, l):  |\label{lst_otninsert:line_otci}|
                 current node in the color cube. In this way, a leaf node in the
                 <c>octree</c> may represent a number of similar colors in the color cube.</p>
     <figure align="" xml:id="fig-otindex">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Computing an Index to Insert a Node in an octree</caption>
+      <caption>Computing an Index to Insert a Node in an octree</caption>
       <image source="Advanced/Figures/OctTreeIndex.png" width="50%" alt="Computing an Index to Insert a Node in an octree"/>
     </figure>
     <p>The <c>find</c> method, shown in Listing&#xA0;<url href="#lst_otnfind" visual="#lst_otnfind">[lst_otnfind]</url>,
@@ -528,7 +528,7 @@ def compute_index(self, r, g, b, l):  |\label{lst_otninsert:line_otci}|
                 representation of all of them. Figure&#xA0;<url href="#fig_otmerge" visual="#fig_otmerge">5</url> illustrates
                 the merge process for some sibling nodes.</p>
     <figure align="" xml:id="fig-otmerge">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Merging Four Leaf Nodes of an <literal>octree</literal></caption>
+      <caption>Merging Four Leaf Nodes of an <literal>octree</literal></caption>
       <image source="Advanced/Figures/otMerge.png" width="50%" alt="Merging Four Leaf Nodes of an ``octree``"/>
     </figure>
     <p>Figure&#xA0;<url href="#fig_otmerge" visual="#fig_otmerge">5</url> shows the red, green, and blue components
