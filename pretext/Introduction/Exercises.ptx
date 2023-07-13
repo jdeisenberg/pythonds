@@ -1,80 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="introduction_exercises">
-  <title>Exercises</title>
-  <p>
-      <ol>
+  <title>Introduction: Exercises</title>
+  <exercises>
 
-        <li><p>Construct a class hierarchy for people on a college campus. Include
+        <exercise><p>Construct a class hierarchy for people on a college campus. Include
    faculty, staff, and students. What do they have in common? What
-   distinguishes them from one another?</p></li>
+   distinguishes them from one another?</p></exercise>
 
-        <li><p>Construct a class hierarchy for bank accounts.</p></li>
+        <exercise><p>Construct a class hierarchy for bank accounts.</p></exercise>
 
 
-        <li><p>Construct a class hierarchy for different types of computers.</p></li>
+        <exercise><p>Construct a class hierarchy for different types of computers.</p></exercise>
 
-        <li><p>Using the classes provided in the chapter, interactively construct a
-                circuit and test it.</p></li>
+        <exercise><p>Using the classes provided in the chapter, interactively construct a
+                circuit and test it.</p></exercise>
 
-        <li><p>Implement the simple methods <c>get_num</c> and <c>get_den</c> that will
-                return the numerator and denominator of a fraction.</p></li>
+        <exercise><p>Implement the simple methods <c>get_num</c> and <c>get_den</c> that will
+                return the numerator and denominator of a fraction.</p></exercise>
 
-        <li><p>In many ways it would be better if all fractions were maintained in
+        <exercise><p>In many ways it would be better if all fractions were maintained in
     lowest terms right from the start. Modify the constructor for the
     <c>Fraction</c> class so that <c>GCD</c> is used to reduce fractions
     immediately. Notice that this means the <c>__add__</c> function no
-    longer needs to reduce. Make the necessary modifications.</p></li>
+    longer needs to reduce. Make the necessary modifications.</p></exercise>
 
-    <li><p>Implement the remaining simple arithmetic operators (<c>__sub__</c>,
-            <c>__mul__</c>, and <c>__truediv__</c>).</p></li>
+    <exercise><p>Implement the remaining simple arithmetic operators (<c>__sub__</c>,
+            <c>__mul__</c>, and <c>__truediv__</c>).</p></exercise>
 
-    <li><p>Implement the remaining relational operators (<c>__gt__</c>,
-            <c>__ge__</c>, <c>__lt__</c>, <c>__le__</c>, and <c>__ne__</c>).</p></li>
+    <exercise><p>Implement the remaining relational operators (<c>__gt__</c>,
+            <c>__ge__</c>, <c>__lt__</c>, <c>__le__</c>, and <c>__ne__</c>).</p></exercise>
 
-    <li><p>Modify the constructor for the fraction class so that it checks to
+    <exercise><p>Modify the constructor for the fraction class so that it checks to
     make sure that the numerator and denominator are both integers. If
-    either is not an integer, the constructor should raise an exception.</p></li>
+    either is not an integer, the constructor should raise an exception.</p></exercise>
 
-    <li><p>In the definition of fractions we assumed that negative fractions
+    <exercise><p>In the definition of fractions we assumed that negative fractions
     have a negative numerator and a positive denominator. Using a
     negative denominator would cause some of the relational operators to
     give incorrect results. In general, this is an unnecessary
     constraint. Modify the constructor to allow the user to pass a
     negative denominator so that all of the operators continue to work
-    properly.</p></li>
+    properly.</p></exercise>
 
-    <li><p>Research the <c>__radd__</c> method. How does it differ from
-            <c>__add__</c>? When is it used? Implement <c>__radd__</c>.</p></li>
+    <exercise><p>Research the <c>__radd__</c> method. How does it differ from
+            <c>__add__</c>? When is it used? Implement <c>__radd__</c>.</p></exercise>
 
-    <li><p>Repeat the last question but this time consider the <c>__iadd__</c>
-            method.</p></li>
+    <exercise><p>Repeat the last question but this time consider the <c>__iadd__</c>
+            method.</p></exercise>
 
-    <li><p>Research the <c>__repr__</c> method. How does it differ from
-            <c>__str__</c>? When is it used? Implement <c>__repr__</c>.</p></li>
+    <exercise><p>Research the <c>__repr__</c> method. How does it differ from
+            <c>__str__</c>? When is it used? Implement <c>__repr__</c>.</p></exercise>
 
-    <li><p>Research other types of gates that exist (such as NAND, NOR, and
+    <exercise><p>Research other types of gates that exist (such as NAND, NOR, and
     XOR). Add them to the circuit hierarchy. How much additional coding
-    did you need to do?</p></li>
+    did you need to do?</p></exercise>
 
-    <li><p>The most simple arithmetic circuit is known as the half adder.
-            Research the simple half-adder circuit. Implement this circuit.</p></li>
+    <exercise><p>The most simple arithmetic circuit is known as the half adder.
+            Research the simple half-adder circuit. Implement this circuit.</p></exercise>
 
 
-    <li><p>Now extend that circuit and implement an 8-bit full adder.</p></li>
+    <exercise><p>Now extend that circuit and implement an 8-bit full adder.</p></exercise>
 
-    <li><p>The circuit simulation shown in this chapter works in a backward
+    <exercise><p>The circuit simulation shown in this chapter works in a backward
     direction. In other words, given a circuit, the output is produced by
     working back through the input values, which in turn cause other
     outputs to be queried. This continues until external input lines are
     found, at which point the user is asked for values. Modify the
     implementation so that the action is in the forward direction; upon
-    receiving inputs the circuit produces an output.</p></li>
+    receiving inputs the circuit produces an output.</p></exercise>
 
-    <li><p>Design a class to represent a playing card and another one to represent a deck of cards.
-            Using these two classes, implement your favorite card game.</p></li>
+    <exercise><p>Design a class to represent a playing card and another one to represent a deck of cards.
+            Using these two classes, implement your favorite card game.</p></exercise>
 
-    <li><p>Find a Sudoku puzzle online or in the local newspaper. Write a program to solve
-            the puzzle.</p></li>
-  </ol>
-</p>
+    <exercise><p>Find a Sudoku puzzle online or in the local newspaper. Write a program to solve
+            the puzzle.</p></exercise>
+</exercises>
 </section>

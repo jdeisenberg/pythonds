@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="recursion_exercises">
-  <title>Exercises</title>
-  <p>
-      <ol>
+  <title>Recursion: Exercises</title>
+  <exercises>
 
-			<li><p>Draw a call stack for the Tower of Hanoi problem. Assume that you
-   start with a stack of three disks.</p></li>
+            <exercise><p>Draw a call stack for the Tower of Hanoi problem. Assume that you
+   start with a stack of three disks.</p></exercise>
 
-			<li><p>Using the recursive rules as described, draw a
-   Sierpinski triangle using paper and pencil.</p></li>
+            <exercise><p>Using the recursive rules as described, draw a
+   Sierpinski triangle using paper and pencil.</p></exercise>
 
-			<li><p>Using the dynamic programming algorithm for making change, find the
+            <exercise><p>Using the dynamic programming algorithm for making change, find the
    smallest number of coins that you can use to make 33 cents in change.
-   In addition to the usual coins assume that you have an 8 cent coin.</p></li>
+   In addition to the usual coins assume that you have an 8 cent coin.</p></exercise>
 
-			<li><p>Write a recursive function to compute the factorial of a number.</p></li>
+            <exercise><p>Write a recursive function to compute the factorial of a number.</p></exercise>
 
-			<li><p>Write a recursive function to reverse a list.</p></li>
+            <exercise><p>Write a recursive function to reverse a list.</p></exercise>
 
-			<li><p>Modify the recursive tree program using one or all of the following
+            <exercise><p>Modify the recursive tree program using one or all of the following
                     ideas:</p>
                 <p>
                     <ul>
@@ -32,46 +31,46 @@
                     </ul>
                 </p>
       <p>If you implement all of the above ideas you will have a very
-   realistic looking tree.</p></li>
+   realistic looking tree.</p></exercise>
 
-			<li><p>Find or invent an algorithm for drawing a fractal mountain. Hint: one
-   approach to this uses triangles again.</p></li>
+            <exercise><p>Find or invent an algorithm for drawing a fractal mountain. Hint: one
+   approach to this uses triangles again.</p></exercise>
 
-			<li><p>Write a recursive function to compute the Fibonacci sequence. How
+            <exercise><p>Write a recursive function to compute the Fibonacci sequence. How
    does the performance of the recursive function compare to that of an
-   iterative version?</p></li>
+   iterative version?</p></exercise>
 
-			<li><p>Implement a solution to the Tower of Hanoi using three stacks to keep
-   track of the disks.</p></li>
+            <exercise><p>Implement a solution to the Tower of Hanoi using three stacks to keep
+   track of the disks.</p></exercise>
 
-			<li><p>Using the <c>turtle</c> graphics module, write a recursive program to
-   display a Hilbert curve.</p></li>
+            <exercise><p>Using the <c>turtle</c> graphics module, write a recursive program to
+   display a Hilbert curve.</p></exercise>
 
-			<li><p>Using the <c>turtle</c> graphics module, write a recursive program to
-   display a Koch snowflake.</p></li>
+            <exercise><p>Using the <c>turtle</c> graphics module, write a recursive program to
+   display a Koch snowflake.</p></exercise>
 
-			<li><p>Write a program to solve the following problem. You have two jugs: a
+            <exercise><p>Write a program to solve the following problem. You have two jugs: a
    4-gallon jug and a 3-gallon jug. Neither of the jugs have markings on
    them. There is a pump that can be used to fill the jugs with water.
-   How can you get exactly two gallons of water in the 4-gallon jug?</p></li>
+   How can you get exactly two gallons of water in the 4-gallon jug?</p></exercise>
 
-			<li><p>Generalize the problem above so that the parameters to your solution
+            <exercise><p>Generalize the problem above so that the parameters to your solution
    include the sizes of each jug and the final amount of water to be
-   left in the larger jug.</p></li>
+   left in the larger jug.</p></exercise>
 
-			<li><p>Write a program that solves the following problem. Three missionaries
+            <exercise><p>Write a program that solves the following problem. Three missionaries
    and three cannibals come to a river and find a boat that holds two
    people. Everyone must get across the river to continue on the
    journey. However, if the cannibals ever outnumber the missionaries on
    either bank, the missionaries will be eaten. Find a series of
    crossings that will get everyone safely to the other side of the
-   river.</p></li>
+   river.</p></exercise>
 
-			<li><p>Modify the Tower of Hanoi program using <c>turtle</c> graphics to animate
+            <exercise><p>Modify the Tower of Hanoi program using <c>turtle</c> graphics to animate
    the movement of the disks. Hint: you can make multiple turtles and
-   have them shaped like rectangles.</p></li>
+   have them shaped like rectangles.</p></exercise>
 
-			<li><p>Pascal’s triangle is a number triangle with numbers arranged in
+            <exercise><p>Pascal’s triangle is a number triangle with numbers arranged in
                     staggered rows such that</p>
 
    <me>a_{nr} = {n! \over{r! (n-r)!}}</me>
@@ -91,9 +90,9 @@
              </pre>
              <p>Write a program that prints out Pascal’s triangle. Your program
    should accept a parameter that tells how many rows of the triangle to
-   print.</p></li>
+   print.</p></exercise>
 
-			<li><p>Suppose you are a computer scientist/art thief who has broken into a
+            <exercise><p>Suppose you are a computer scientist/art thief who has broken into a
    major art gallery. All you have with you to haul out your stolen art
    is your knapsack which only holds <m>W</m> pounds of art, but for
    every piece of art, you know its value and its weight. Write a dynamic
@@ -109,9 +108,9 @@
           4        5           8
           5        9          10
           </pre>
-          </p></li>
+          </p></exercise>
 
-			<li><p>This problem is called the string edit distance problem, and is quite
+            <exercise><p>This problem is called the string edit distance problem, and is quite
    useful in many areas of research. Suppose that you want to transform
    the word <em>algorithm</em> into the word <em>alligator</em>. For each letter you
    can either copy the letter from one word to another at a cost of 5,
@@ -120,8 +119,7 @@
    spell-check programs to provide suggestions for words that are close
    to one another. Use dynamic programming techniques to develop an
    algorithm that gives you the smallest edit distance between any two
-   words.</p></li>
-</ol>
-</p>
+   words.</p></exercise>
+</exercises>
 </section>
 
