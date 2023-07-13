@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="algorithm_analysis_exercises">
-  <title>Exercises</title>
-  <p>
-      <ol>
-          <li><p>Give the Big O performance of the following code fragment:</p>
+  <title>Algorithm Analysis: Exercises</title>
+  <exercises>
+          <exercise><p>Give the Big O performance of the following code fragment:</p>
 
             <program language="python" xml:id="big_o_nested_loop">
                 <input>
@@ -12,9 +11,9 @@
                         k = 2 + 2
                         </input>
             </program>
-         </li>
+         </exercise>
 
-        <li><p>Give the Big O performance of the following code fragment:</p>
+        <exercise><p>Give the Big O performance of the following code fragment:</p>
 
         <program language="python" xml:id="big_o_for_loop">
             <input>
@@ -22,9 +21,9 @@
                     k = 2 + 2
                 </input>
                 </program>
-        </li>
+        </exercise>
 
-        <li><p>Give the Big O performance of the following code fragment:</p>
+        <exercise><p>Give the Big O performance of the following code fragment:</p>
 
             <program language="python" xml:id="big_o_while_loop">
                 <input>
@@ -34,9 +33,9 @@
                 i = i // 2
             </input>
             </program>
-            </li>
+            </exercise>
 
-        <li><p>Give the Big O performance of the following code fragment:</p>
+        <exercise><p>Give the Big O performance of the following code fragment:</p>
 
    <program language="python" xml:id="big_o_triple_nested_loop">
        <input>
@@ -46,9 +45,9 @@
                 k = 2 + 2
                 </input>
             </program>
-        </li>
+        </exercise>
 
-        <li><p>Give the Big O performance of the following code fragment:</p>
+        <exercise><p>Give the Big O performance of the following code fragment:</p>
 
             <program language="python" xml:id="big_o_three_loops"><input>
        for i in range(n):
@@ -58,27 +57,24 @@
        for k in range(n):
           k = 2 + 2
           </input></program>
-  </li>
+        </exercise>
 
-<li><p>Devise an experiment to verify that the <c>list index</c> operator is
-        <m>O(1)</m>.</p></li>
+    <exercise><p>Devise an experiment to verify that the <c>list index</c> operator is
+        <m>O(1)</m>.</p></exercise>
 
-<li><p>Devise an experiment to verify that <c>get item</c> and <c>set item</c> are
-        <m>O(1)</m> for dictionaries.</p></li>
-
-
-<li><p>Devise an experiment that compares the performance of the <c>del</c>
-   operator on lists and dictionaries.</p></li>
+    <exercise><p>Devise an experiment to verify that <c>get item</c> and <c>set item</c> are
+        <m>O(1)</m> for dictionaries.</p></exercise>
 
 
-   <li><p>Given a list of numbers in random order, write an algorithm that works in <m>O(n\log(n))</m>
-to find the <m>k\text{th}</m> smallest number in the list.</p></li>
+    <exercise><p>Devise an experiment that compares the performance of the <c>del</c>
+   operator on lists and dictionaries.</p></exercise>
 
 
-<li><p>Can you improve the algorithm from the previous problem to be linear? Explain.</p></li>
+   <exercise><p>Given a list of numbers in random order, write an algorithm that works in <m>O(n\log(n))</m>
+to find the <m>k\text{th}</m> smallest number in the list.</p></exercise>
 
 
+    <exercise><p>Can you improve the algorithm from the previous problem to be linear? Explain.</p></exercise>
 
-      </ol>
-  </p>
+</exercises>
 </section>

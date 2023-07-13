@@ -1,46 +1,45 @@
 <?xml version="1.0"?>
 <section xml:id="advanced_exercises">
-  <title>Exercises</title>
-  <p>
-    <ol marker="1">
-      <li>
+  <title>Advanced Topics: Exercises</title>
+  <exercises>
+      <exercise>
         <p>Where do skip lists get their name?</p>
-      </li>
-      <li>
+      </exercise>
+      <exercise>
         <p>Compare the notion of a perfectly balanced binary search tree and a
                     skip list. Can you draw pictures to describe these notions?</p>
-      </li>
-      <li>
+      </exercise>
+      <exercise>
         <p>What would it mean if all towers in a skip list were one level high?</p>
-      </li>
-      <li>
+      </exercise>
+      <exercise>
         <p>Given a set of 20 keys, is it possible that one of the towers could
                     have a height of 20?</p>
-      </li>
-      <li>
+      </exercise>
+      <exercise>
         <p>Run the octree quantization program on an image of your choice.
                     Try some different settings for the maximum depth of the tree as well
                     as the final number of colors.</p>
-      </li>
-      <li>
+      </exercise>
+      <exercise>
         <p>Explain why the indices for an octree node are calculated
                     starting with the most significant bit and going to the least
                     significant bit.</p>
-      </li>
-      <li>
+      </exercise>
+      <exercise>
         <p>Draw the nodes in an octree, down to level 5, after inserting
                     the following two colors: (174, 145, 229) and (92, 145, 85).</p>
-      </li>
-      <li>
+      </exercise>
+      <exercise>
         <p>Draw a DFA graph for the pattern ATC.</p>
-      </li>
-      <li>
+      </exercise>
+      <exercise>
         <p>Compute the mismatched links for the pattern ATC.</p>
-      </li>
-      <li>
+      </exercise>
+      <exercise>
         <p>Create a KMP graph for the pattern ATCCAT.</p>
-      </li>
-      <li>
+      </exercise>
+      <exercise>
         <p>Implement the following methods for the <c>ArrayList</c> class and then
                     analyze their performance.</p>
         <p>
@@ -62,20 +61,24 @@
             </li>
           </ul>
         </p>
-      </li>
-      <li>
+      </exercise>
+
+      <exercise>
         <p>Modify <c>encrypt</c> method of the Caesar cipher (Listing&#xA0;<url href="#lst_enc" visual="#lst_enc">[lst_enc]</url>)
                     to accept a parameter that specifies the encryption key.</p>
-      </li>
-      <li>
+      </exercise>
+
+      <exercise>
         <p>The Python list supports both concatenation and repetition. Add
                     support for the <c>+</c> and <c>*</c> operators to the <c>ArrayList</c>.</p>
-      </li>
-      <li>
+      </exercise>
+
+      <exercise>
         <p>Implement the <c>delete</c> method for a skip list. You can assume that
                     the key is present.</p>
-      </li>
-      <li>
+      </exercise>
+
+      <exercise>
         <p>Implement methods for a skip list that will allow the map to perform
                     the following operations:</p>
         <p>
@@ -92,39 +95,44 @@
             </li>
           </ul>
         </p>
-      </li>
-      <li>
+      </exercise>
+
+      <exercise>
         <p>Implement the <c>__getitem__()</c> and the <c>__setitem__()</c> methods for a skip
                     list.</p>
-      </li>
-      <li>
+      </exercise>
+
+      <exercise>
         <p>Modify the <c>Octree</c> class to improve the performance of the
                     <c>reduce</c> method by using a more efficient data structure for
                     keeping track of the leaf nodes.</p>
-      </li>
-      <li>
+      </exercise>
+
+      <exercise>
         <p>Add two methods to the <c>Octree</c> class, one to write a quantized
                     image to a disk file and one to read a file of the same format you
                     wrote.</p>
-      </li>
-      <li>
+      </exercise>
+
+      <exercise>
         <p>Some versions of <c>Octree</c> quantization look at the total count for
                     all the children of a node and use that information to decide which
                     nodes to reduce. Modify the <c>Octree</c> implementation to use this
                     method of node selection for reducing the tree.</p>
-      </li>
-      <li>
+      </exercise>
+
+      <exercise>
         <p>Implement a version of the simple pattern-matcher that will locate
                     all occurrences of the pattern in the text.</p>
-      </li>
-      <li>
+      </exercise>
+
+      <exercise>
         <p>Modify the graph implementation from Chapter&#xA0;<url href="#graphs" visual="#graphs">[graphs]</url>
                     so that it can be used to represent KMP graphs. Using the
                     <c>mismatched_links</c> method, write a method that will take a pattern
                     and create the complete KMP graph. With the graph complete, write a
                     program that will run an arbitrary text against the KMP graph and
                     return whether a match exists.</p>
-      </li>
-    </ol>
-  </p>
+      </exercise>
+   </exercises>
 </section>
