@@ -101,51 +101,28 @@ print(binary_search_rec(test_list, 13))
           <term>Table 3: Tabular Analysis for a Binary Search</term>
         </title>
         <row header="yes">
-          <cell>
-            <term>Comparisons</term>
-          </cell>
-          <cell>
-            <term>Approximate Number of Items Left</term>
-          </cell>
+          <cell><term>Comparisons</term></cell>
+          <cell><term>Approximate Number of Items Left</term></cell>
         </row>
         <row>
-          <cell>
-                                1
-                            </cell>
-          <cell>
-            <m>\frac {n}{2}</m>
-          </cell>
+          <cell>1</cell>
+          <cell><m>\frac {n}{2}</m></cell>
         </row>
         <row>
-          <cell>
-                                2
-                            </cell>
-          <cell>
-            <m>\frac {n}{4}</m>
-          </cell>
+          <cell>2</cell>
+          <cell><m>\frac {n}{4}</m></cell>
         </row>
         <row>
-          <cell>
-                                3
-                            </cell>
-          <cell>
-            <m>\frac {n}{8}</m>
-          </cell>
+          <cell>3</cell>
+          <cell><m>\frac {n}{8}</m></cell>
         </row>
         <row>
-          <cell>
-                                &#x2026;
-                            </cell>
-          <cell>
-                            </cell>
+          <cell>&#x2026;</cell>
+          <cell></cell>
         </row>
         <row>
-          <cell>
-            <m>i</m>
-          </cell>
-          <cell>
-            <m>\frac {n}{2^i}</m>
-          </cell>
+          <cell><m>i</m></cell>
+          <cell><m>\frac {n}{2^i}</m></cell>
         </row>
       </tabular>
     </table>

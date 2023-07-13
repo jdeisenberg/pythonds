@@ -50,139 +50,112 @@
 </li>
 
 
-			<li><p>Ignoring the weights, perform a breadth-first search on the graph
-   drawn for question 1 or 2.
+            <li><p>Ignoring the weights, perform a breadth-first search on the graph
+                    drawn for question 1 or 2.</p>
 
-.. activecode:: breadthfirst
-   :coach:
+<program xml:id="breadth_first" interactive="activecode" language="python">
+      <input>
+# Your code here.
+        </input>
+    </program>
 
-.. mchoice:: question1_1
-   :answer_a: O(n)
-   :answer_b: O(n<sup>2</sup>)
-   :answer_c: O(1)
-   :answer_d: O(n<sup>3</sup>)
-   :correct: b
-   :feedback_a: O(n) would suggest that there is no nesting. There are several nested for loops.
-   :feedback_b: Correct. The two consecutively nested for loops would dictate that this is in the realm of O(n<sup>2</sup>).
-   :feedback_c: O(1) would suggest that the function is constant. Since there are multiple for loops intertwined, it is not in constant time.
-   :feedback_d: O(n<sup>3</sup>) would suggest that there are three consecutively nested for loops. There are only two.
+            </li>
 
-			</p></li>
+            <!-- big O build graph goes here -->
 
-			<li><p>What is the Big-O running time of the <c>build_graph</c> function?
+            <li><p>Derive the Big-O running time for the topological sort algorithm.</p></li>
 
-.. shortanswer:: BigO
+            <li><p>Derive the Big-O running time for the strongly connected components algorithm.</p></li>
 
-			</p></li>
+            <li><p>Show each step in applying Dijkstra’s algorithm to the graph
+   drawn for question 1 or 2.</p></li>
 
-			<li><p>Derive the Big-O running time for the topological sort algorithm.
-
-.. shortanswer:: BigOTwo
-
-			</p></li>
-
-			<li><p>Derive the Big-O running time for the strongly connected components
-   algorithm.
-
-			</p></li>
-
-			<li><p>Show each step in applying Dijkstra’s algorithm to the graph
-   drawn for question 1 or 2.
-
-			</p></li>
-
-			<li><p>Using Prim’s algorithm, find the minimum weight spanning tree for the graph
+            <li><p>Using Prim’s algorithm, find the minimum weight spanning tree for the graph
    drawn for question 1 or 2.</p>
 
-.. activecode:: primsalg
-   :coach:
+<program xml:id="prims_algorithm_code" interactive="activecode" language="python">
+      <input>
+# Your code here.
+        </input>
+    </program>
+            </li>
 
-			</li>
+            <li><p>Draw a dependency graph illustrating the steps needed to send an
+   email. Perform a topological sort on your graph.</p></li>
 
-			<li><p>Draw a dependency graph illustrating the steps needed to send an
-   email. Perform a topological sort on your graph.
+    <li><p>Express branching factor <m>k</m> as a function of the board size <m>>n</m>.</p></li>
 
-			</p></li>
+            <li><p>Derive an expression for the base of the exponent used in expressing the
+    running time of the knights tour.</p></li>
 
-    <li><p>Express branching factor <m>k</m> as a function of the board size <m>>n</m>.
-			</p></li>
+            <li><p>Explain why the general DFS algorithm is not suitable for solving
+    the knight's tour problem.</p></li>
+    <!-- Prim's algorithm big O exercise here... -->
 
-			<li><p>Derive an expression for the base of the exponent used in expressing the
-    running time of the knights tour.
 
-.. shortanswer:: DFS
+            <li><p>Modify the depth-first search function to produce a topological sort.</p></li>
 
-			</p></li>
+            <li><p>Modify the depth-first search to produce strongly connected
+   components.</p></li>
 
-			<li><p>Explain why the general DFS algorithm is not suitable for solving
-    the knight's tour problem.
+            <li><p>Write the <c>transpose</c> method for the <c>Graph</c> class.</p></li>
 
-.. mchoice:: question1_2
-   :answer_a: O(1)
-   :answer_b: O(n<sup>3</sup>)
-   :answer_c: O(n)
-   :answer_d: O(n<sup>2</sup>)
-   :correct: d
-   :feedback_a: O(1) would mean that the algorithm runs in constant time. This isn't true because there are several comparisons happening in the algorithm.
-   :feedback_b: O(n<sup>3</sup>) suggests that there are three consecutively nested loops. If you look at the example algorithm, it is obvious that there are not three nested loops.
-   :feedback_c: O(n) is linear time. The time it takes for this program to run doesn't grow linearly.
-   :feedback_d: Correct. Since you are not only comparing the weight of a branch but also if the branch has already been connected to, this would make the Big-O of the algorithm O(n<sup>2</sup>)
-
-			</p></li>
-
-			<li><p>What is the Big-O running time for Prim’s minimum
-    spanning tree algorithm?
-
-			</p></li>
-
-			<li><p>Modify the depth-first search function to produce a topological sort.
-
-			</p></li>
-
-			<li><p>Modify the depth-first search to produce strongly connected
-   components.
-
-			</p></li>
-
-			<li><p>Write the <c>transpose</c> method for the <c>Graph</c> class.
-
-			</p></li>
-
-			<li><p>Using breadth-first search write an algorithm that can determine the
+            <li><p>Using breadth-first search, write an algorithm that can determine the
    shortest path from each vertex to every other vertex. This is called
-   the “all pairs shortest path problem.”
+   the “all pairs shortest path problem.”</p></li>
 
-			</p></li>
-
-			<li><p>Using breadth-first search revise the maze program from
-   the Chapter 4 (Recursion) to find the shortest path out of a maze.
-
-			</p></li>
-<!--
-			<li><p>Write a program to solve the following problem: you have two jugs, a
-   4-gallon and a 3-gallon. Neither of the jugs has any markings.
-   There is a pump that can be used to fill the jugs with water. How can
-   you get exactly two gallons of water in the 4-gallon jug?
-
-			</p></li>
-
-			<li><p>Generalize the problem above so that the parameters to your solution
-   include the size of each jug and the final amount of water to be
-   left in the larger jug.
-
-			</p></li>
-
-			<li><p>Write a program that solves the following problem: three missionaries
-   and three cannibals come to a river and find a boat that holds two
-   people. Everyone must get across the river to continue on the
-   journey. However, if the cannibals ever outnumber the missionaries on
-   either bank, the missionaries will be eaten. Find a series of
-   crossings that will get everyone safely to the other side of the
-    river.</p></li>
-    -->
-
+            <li><p>Using breadth-first search revise the maze program from
+   <xref ref="chapter_recursion"/> to find the shortest path out of a maze.</p></li>
 
       </ol>
   </p>
+
+  <exercises>
+                <exercise xml:id="big_o_build_graph_exercise" label="big_o_build_graph">
+                    <statement><p>What is the Big-O running time of the <c>build_graph</c> function?</p></statement>
+                    <choices>
+                    <choice correct="no">
+                        <statement><m>O(n)</m></statement>
+                        <feedback><m>O(n)</m> would suggest that there is no nesting. There are several nested <c>for</c> loops.</feedback>
+                    </choice>
+                    <choice correct="yes">
+                        <statement><m>O(n^2)</m></statement>
+                        <feedback>Correct. The two consecutively nested <c>for</c> loops would dictate that this is in the realm of <m>O(n^2)</m></feedback>
+                    </choice>
+                    <choice correct="no">
+                        <statement><m>O(1)</m></statement>
+                        <feedback><m>O(1)</m> would suggest that the function is constant. Since there are multiple <c>for</c> loops intertwined, it is not in constant time.</feedback>
+                    </choice>
+                    <choice correct="no">
+                        <statement><m>O(n^3)</m></statement>
+                        <feedback><m>O(n^3)</m> would suggest that there are three consecutively nested for loops. There are only two.</feedback>
+                    </choice>
+                </choices>
+                </exercise>
+
+                      <exercise xml:id="prims_algorithm_big_o_exercise" label="prims_algorithm_big_o">
+                    <statement><p>What is the Big-O running time for Prim’s minimum
+                            spanning tree algorithm?</p></statement>
+                    <choices>
+                        <choice correct="no">
+                            <statement><m>O(1)</m></statement>
+                            <feedback><m>O(1)</m> would mean that the algorithm runs in constant time. This isn't true because there are several comparisons happening in the algorithm.</feedback>
+                        </choice>
+                        <choice correct="no">
+                            <statement><m>O(n^3)</m></statement>
+                            <feedback><m>O(n^3)</m> suggests that there are three consecutively nested loops. If you look at the example algorithm, you can see that there are not three nested loops.</feedback>
+                        </choice>
+                        <choice correct="no">
+                            <statement><m>O(n)</m></statement>
+                            <feedback><m>O(n)</m> is linear time. The time it takes for this program to run doesn't grow linearly.</feedback>
+                        </choice>
+                        <choice correct="yes">
+                            <statement><m>O(n^2)</m></statement>
+                            <feedback>Correct. Since you are not only comparing the weight of a branch but also if the branch has already been connected to, this would make the Big-O of the algorithm <m>O(n^2)</m>.</feedback>
+                        </choice>
+                    </choices>
+                </exercise>
+            </exercises>
+
 </section>
 

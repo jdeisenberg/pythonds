@@ -127,140 +127,72 @@ list range:              0.07 milliseconds</pre>
         <term>Table 2: Big O Efficiency of Python List Operators</term>
       </title>
       <row header="yes">
-        <cell>
-                            Operation
-                        </cell>
-        <cell>
-                            Big O Efficiency
-                        </cell>
+        <cell>Operation</cell>
+        <cell>Big O Efficiency</cell>
       </row>
       <row>
-        <cell>
-          <c>index []</c>
-        </cell>
-        <cell>
-                            O(1)
-                        </cell>
+        <cell><c>index []</c></cell>
+        <cell>O(1)</cell>
       </row>
       <row>
-        <cell>
-          <c>index assignment</c>
-        </cell>
-        <cell>
-                            O(1)
-                        </cell>
+        <cell><c>index assignment</c></cell>
+        <cell>O(1)</cell>
       </row>
       <row>
-        <cell>
-          <c>append</c>
-        </cell>
-        <cell>
-                            O(1)
-                        </cell>
+        <cell><c>append</c></cell>
+        <cell>O(1)</cell>
       </row>
       <row>
-        <cell>
-          <c>pop()</c>
-        </cell>
-        <cell>
-                            O(1)
-                        </cell>
+        <cell><c>pop()</c></cell>
+        <cell>O(1)</cell>
       </row>
       <row>
-        <cell>
-          <c>pop(i)</c>
-        </cell>
-        <cell>
-                            O(n)
-                        </cell>
+        <cell><c>pop(i)</c></cell>
+        <cell>O(n)</cell>
       </row>
       <row>
-        <cell>
-          <c>insert(i, item)</c>
-        </cell>
-        <cell>
-                            O(n)
-                        </cell>
+        <cell><c>insert(i, item)</c></cell>
+        <cell>O(n)</cell>
       </row>
       <row>
-        <cell>
-          <c>del operator</c>
-        </cell>
-        <cell>
-                            O(n)
-                        </cell>
+        <cell><c>del operator</c></cell>
+        <cell>O(n)</cell>
       </row>
       <row>
-        <cell>
-          <c>iteration</c>
-        </cell>
-        <cell>
-                            O(n)
-                        </cell>
+        <cell><c>iteration</c></cell>
+        <cell>O(n)</cell>
       </row>
       <row>
-        <cell>
-          <c>contains (in)</c>
-        </cell>
-        <cell>
-                            O(n)
-                        </cell>
+        <cell><c>contains (in)</c></cell>
+        <cell>O(n)</cell>
       </row>
       <row>
-        <cell>
-          <c>get slice [x:y]</c>
-        </cell>
-        <cell>
-                            O(k)
-                        </cell>
+        <cell><c>get slice [x:y]</c></cell>
+        <cell>O(k)</cell>
       </row>
       <row>
-        <cell>
-          <c>del slice</c>
-        </cell>
-        <cell>
-                            O(n)
-                        </cell>
+        <cell><c>del slice</c></cell>
+        <cell>O(n)</cell>
       </row>
       <row>
-        <cell>
-          <c>set slice</c>
-        </cell>
-        <cell>
-                            O(n+k)
-                        </cell>
+        <cell><c>set slice</c></cell>
+        <cell>O(n+k)</cell>
       </row>
       <row>
-        <cell>
-          <c>reverse</c>
-        </cell>
-        <cell>
-                            O(n)
-                        </cell>
+        <cell><c>reverse</c></cell>
+        <cell>O(n)</cell>
       </row>
       <row>
-        <cell>
-          <c>concatenate</c>
-        </cell>
-        <cell>
-                            O(k)
-                        </cell>
+        <cell><c>concatenate</c></cell>
+        <cell>O(k)</cell>
       </row>
       <row>
-        <cell>
-          <c>sort</c>
-        </cell>
-        <cell>
-                            O(n log n)
-                        </cell>
+        <cell><c>sort</c></cell>
+        <cell>O(n log n)</cell>
       </row>
       <row>
-        <cell>
-          <c>multiply</c>
-        </cell>
-        <cell>
-                            O(nk)
-                        </cell>
+        <cell><c>multiply</c></cell>
+        <cell>O(nk)</cell>
       </row>
     </tabular>
   </table>

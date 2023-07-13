@@ -96,82 +96,44 @@ Hello World***&gt;&gt;&gt;</pre>
           <term>Table 9: String Formatting Conversion Characters</term>
         </title>
         <row header="yes">
-          <cell>
-            <term>Character</term>
-          </cell>
-          <cell>
-            <term>Output Format</term>
-          </cell>
+          <cell><term>Character</term></cell>
+          <cell><term>Output Format</term></cell>
         </row>
         <row>
           <cell><c>d</c>, <c>i</c></cell>
-          <cell>
-                                Integer
-                            </cell>
+          <cell>Integer</cell>
         </row>
         <row>
-          <cell>
-            <c>u</c>
-          </cell>
-          <cell>
-                                Unsigned integer
-                            </cell>
+          <cell><c>u</c></cell>
+          <cell>Unsigned integer</cell>
         </row>
         <row>
-          <cell>
-            <c>f</c>
-          </cell>
-          <cell>
-                                Floating point as m.ddddd
-                            </cell>
+          <cell><c>f</c></cell>
+          <cell>Floating point as m.ddddd</cell>
         </row>
         <row>
-          <cell>
-            <c>e</c>
-          </cell>
-          <cell>
-                                Floating point as m.ddddde+/-xx
-                            </cell>
+          <cell><c>e</c></cell>
+          <cell>Floating point as m.ddddde+/-xx</cell>
         </row>
         <row>
-          <cell>
-            <c>E</c>
-          </cell>
-          <cell>
-                                Floating point as m.dddddE+/-xx
-                            </cell>
+          <cell><c>E</c></cell>
+          <cell>Floating point as m.dddddE+/-xx</cell>
         </row>
         <row>
-          <cell>
-            <c>g</c>
-          </cell>
-          <cell>
-                                Use <c>%e</c> for exponents less than <m>-4</m> or greater than <m>+5</m>, otherwise use <c>%f</c>
-                            </cell>
+          <cell><c>g</c></cell>
+          <cell>Use <c>%e</c> for exponents less than <m>-4</m> or greater than <m>+5</m>, otherwise use <c>%f</c></cell>
         </row>
         <row>
-          <cell>
-            <c>c</c>
-          </cell>
-          <cell>
-                                Single character
-                            </cell>
+          <cell><c>c</c></cell>
+          <cell>Single character</cell>
         </row>
         <row>
-          <cell>
-            <c>s</c>
-          </cell>
-          <cell>
-                                String, or any Python data object that can be converted to a string by using the <c>str</c> function
-                            </cell>
+          <cell><c>s</c></cell>
+          <cell>String, or any Python data object that can be converted to a string by using the <c>str</c> function</cell>
         </row>
         <row>
-          <cell>
-            <c>%</c>
-          </cell>
-          <cell>
-                                Insert a literal <c>%</c> character
-                            </cell>
+          <cell><c>%</c></cell>
+          <cell>Insert a literal <c>%</c> character</cell>
         </row>
       </tabular>
     </table>
@@ -187,81 +149,39 @@ Hello World***&gt;&gt;&gt;</pre>
           <term>Table 10: Additional formatting options</term>
         </title>
         <row header="yes">
-          <cell>
-            <term>Modifier</term>
-          </cell>
-          <cell>
-            <term>Example</term>
-          </cell>
-          <cell>
-            <term>Description</term>
-          </cell>
+          <cell><term>Modifier</term></cell>
+          <cell><term>Example</term></cell>
+          <cell><term>Description</term></cell>
         </row>
         <row>
-          <cell>
-                                number
-                            </cell>
-          <cell>
-            <c>%20d</c>
-          </cell>
-          <cell>
-                                Put the value in a field width of 20
-                            </cell>
+          <cell>number</cell>
+          <cell><c>%20d</c></cell>
+          <cell>Put the value in a field width of 20</cell>
         </row>
         <row>
-          <cell>
-            <c>-</c>
-          </cell>
-          <cell>
-            <c>%-20d</c>
-          </cell>
-          <cell>
-                                Put the value in a field 20 characters wide, left-justified
-                            </cell>
+          <cell><c>-</c></cell>
+          <cell><c>%-20d</c></cell>
+          <cell>Put the value in a field 20 characters wide, left-justified</cell>
         </row>
         <row>
-          <cell>
-            <c>+</c>
-          </cell>
-          <cell>
-            <c>%+20d</c>
-          </cell>
-          <cell>
-                                Put the value in a field 20 characters wide, right-justified
-                            </cell>
+          <cell><c>+</c></cell>
+          <cell><c>%+20d</c></cell>
+          <cell>Put the value in a field 20 characters wide, right-justified</cell>
         </row>
         <row>
-          <cell>
-            <c>0</c>
-          </cell>
-          <cell>
-            <c>%020d</c>
-          </cell>
-          <cell>
-                                Put the value in a field 20 characters wide, fill in with leading zeros
-                            </cell>
+          <cell><c>0</c></cell>
+          <cell><c>%020d</c></cell>
+          <cell>Put the value in a field 20 characters wide, fill in with leading zeros</cell>
         </row>
         <row>
-          <cell>
-            <c>.</c>
-          </cell>
-          <cell>
-            <c>%20.2f</c>
-          </cell>
-          <cell>
-                                Put the value in a field 20 characters wide with 2 characters to the right of the decimal point
-                            </cell>
+          <cell><c>.</c></cell>
+          <cell><c>%20.2f</c></cell>
+          <cell>Put the value in a field 20 characters wide with 2 characters to the right of the decimal point</cell>
         </row>
         <row>
-          <cell>
-            <c>(name)</c>
-          </cell>
-          <cell>
-            <c>%(name)d</c>
-          </cell>
-          <cell>
-                                Get the value from the supplied dictionary using <c>name</c> as the key
-                            </cell>
+          <cell><c>(name)</c></cell>
+          <cell><c>%(name)d</c></cell>
+          <cell>Get the value from the supplied dictionary using <c>name</c> as the key</cell>
         </row>
       </tabular>
     </table>
@@ -304,81 +224,39 @@ The banana costs 24 cents</pre>
           <term>Table 11: f-string Formatting Options</term>
         </title>
         <row header="yes">
-          <cell>
-            <term>Modifier</term>
-          </cell>
-          <cell>
-            <term>Example</term>
-          </cell>
-          <cell>
-            <term>Description</term>
-          </cell>
+          <cell><term>Modifier</term></cell>
+          <cell><term>Example</term></cell>
+          <cell><term>Description</term></cell>
         </row>
         <row>
-          <cell>
-                                number
-                            </cell>
-          <cell>
-            <c>:20d</c>
-          </cell>
-          <cell>
-                                Put the value in a field width of 20
-                            </cell>
+          <cell>number</cell>
+          <cell><c>:20d</c></cell>
+          <cell>Put the value in a field width of 20</cell>
         </row>
         <row>
-          <cell>
-            <c>&lt;</c>
-          </cell>
-          <cell>
-            <c>:&lt;20d</c>
-          </cell>
-          <cell>
-                                Put the value in a field 20 characters wide, left-aligned
-                            </cell>
+          <cell><c>&lt;</c></cell>
+          <cell><c>:&lt;20d</c></cell>
+          <cell>Put the value in a field 20 characters wide, left-aligned</cell>
         </row>
         <row>
-          <cell>
-            <c>&gt;</c>
-          </cell>
-          <cell>
-            <c>:&gt;20d</c>
-          </cell>
-          <cell>
-                                Put the value in a field 20 characters wide, right-aligned
-                            </cell>
+          <cell><c>&gt;</c></cell>
+          <cell><c>:&gt;20d</c></cell>
+          <cell>Put the value in a field 20 characters wide, right-aligned</cell>
         </row>
         <row>
-          <cell>
-            <c>^</c>
-          </cell>
-          <cell>
-            <c>:^20d</c>
-          </cell>
-          <cell>
-                                Put the value in a field 20 characters wide, center-aligned
-                            </cell>
+          <cell><c>^</c></cell>
+          <cell><c>:^20d</c></cell>
+          <cell>Put the value in a field 20 characters wide, center-aligned</cell>
         </row>
         <row>
-          <cell>
-            <c>0</c>
-          </cell>
-          <cell>
-            <c>:020d</c>
-          </cell>
-          <cell>
-                                Put the value in a field 20 characters wide, fill in with leading zeros.
-                            </cell>
+          <cell><c>0</c></cell>
+          <cell><c>:020d</c></cell>
+          <cell>Put the value in a field 20 characters wide, fill in with leading zeros.</cell>
         </row>
         <row>
-          <cell>
-            <c>.</c>
-          </cell>
-          <cell>
-            <c>:20.2f</c>
-          </cell>
-          <cell>
-                                Put the value in a field 20 characters wide with 2 characters to the right of the decimal point.
-                            </cell>
+          <cell><c>.</c></cell>
+          <cell><c>:20.2f</c></cell>
+          <cell>Put the value in a field 20 characters wide with 2 characters to the right of the decimal point.</cell>
         </row>
       </tabular>
     </table>

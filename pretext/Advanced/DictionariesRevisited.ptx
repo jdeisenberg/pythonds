@@ -69,8 +69,8 @@
     <p>The problem we would like to address here is to come up with an
                 implementation that has the advantages of an efficient search without
                 the drawbacks described above. One such possibility is called a <term>skip
-                    list</term>. Figure&#xA0;<url href="#fig_initskiplist" visual="#fig_initskiplist">2</url> shows a possible skip list for
-                the collection of key-value pairs shown in Figure&#xA0;<url href="#fig_mappic" visual="#fig_mappic">1</url> (the reason for saying
+                  list</term>. <xref ref="fig-initskiplist"/> shows a possible skip list for
+                the collection of key-value pairs shown in <xref ref="fig-mappic"/> (the reason for saying
                 <q>possible</q> will become apparent later). As you can see, a skip list is
                 basically a two-dimensional linked list where the links all go forward
                 (to the right) or down. The <em>head</em> of the list can be seen in the
@@ -309,7 +309,7 @@
       </figure>
       <p>It is easy to use a random number generator to simulate a coin flip.
                     We can use <c>randrange</c> from the <c>random</c> module and interpret 1 as heads.</p>
-      <p>Listing&#xA0;<url href="#lst_insert" visual="#lst_insert">[lst_insert]</url> shows the
+      <p><xref ref="lst_insert"/> shows the
                     <c>insert</c> method. You will note immediately in line&#xA0;2 that we need to check
                     to see if this is the first node being added to the skip list. This is
                     the same question we asked for simple linked lists. If we are adding to
@@ -325,7 +325,7 @@
                     for every level that we enter as part of the search process. These
                     insert points will be processed in reverse order, so a stack will work
                     nicely to allow us to back up through the linked lists inserting tower
-                    data nodes as necessary. The stars in Figure&#xA0;<url href="#fig_skiplistadd2" visual="#fig_skiplistadd2">10</url>
+                    data nodes as necessary. The stars in <xref ref="fig-skiplistadd2"/>
                     show the insert points that would be stacked in the example. These
                     points represent only those places where we dropped down during the
                     search.</p>
@@ -335,55 +335,58 @@
                     Only after the stack becomes empty will we need to return to creating
                     new header nodes. We leave the remaining details of the implementation
                     for you to trace.</p>
-      <pre>def insert(self, key, value):
-    if self._head is None:
-        self._head = HeaderNode()
-        temp = DataNode(key, value)
-        self._head.next = temp
-        top = temp
-        while randrange(2) == 1:
-            newhead = HeaderNode()
-            temp = DataNode(key, value)
-            temp.down = top
-            newhead.next = temp
-            newhead.down = self._head
-            self._head = newhead
-            top = temp
-    else:
-        tower = Stack()
-        current = self._head
-        while current:
-            if current.next is None:
-                tower.push(current)
-                current = current.down
-            else:
-                if current.next.key &gt; key:
-                    tower.push(current)
-                    current = current.down
-                else:
-                    current = current.next
 
-        lowest_level = tower.pop()
-        temp = DataNode(key, value)
-        temp.next = lowest_level.next
-        lowest_level.next = temp
-        top = temp
-        while randrange(2) == 1:
-            if tower.is_empty():
-                newhead = HeaderNode()
-                temp = DataNode(key, value)
-                temp.down = top
-                newhead.next = temp
-                newhead.down = self._head
-                self._head = newhead
-                top = temp
-            else:
-                next_level = tower.pop()
-                temp = DataNode(key, value)
-                temp.down = top
-                temp.next = next_level.next
-                next_level.next = temp
-                top = temp</pre>
+                  <listing xml:id="lst_insert"><pre>
+  1  def insert(self, key, value):
+  2      if self._head is None:
+  3          self._head = HeaderNode()
+  4          temp = DataNode(key, value)
+  5          self._head.next = temp
+  6          top = temp
+  7          while randrange(2) == 1:
+  8              newhead = HeaderNode()
+  9              temp = DataNode(key, value)
+ 10              temp.down = top
+ 11              newhead.next = temp
+ 12              newhead.down = self._head
+ 13              self._head = newhead
+ 14              top = temp
+ 15      else:
+ 16          tower = Stack()
+ 17          current = self._head
+ 18          while current:
+ 19              if current.next is None:
+ 20                  tower.push(current)
+ 21                  current = current.down
+ 22              else:
+ 23                  if current.next.key > key:
+ 24                      tower.push(current)
+ 25                      current = current.down
+ 26                  else:
+ 27                      current = current.next
+ 28
+ 29          lowest_level = tower.pop()
+ 30          temp = DataNode(key, value)
+ 31          temp.next = lowest_level.next
+ 32          lowest_level.next = temp
+ 33          top = temp
+ 34          while randrange(2) == 1:
+ 35              if tower.is_empty():
+ 36                  newhead = HeaderNode()
+ 37                  temp = DataNode(key, value)
+ 38                  temp.down = top
+ 39                  newhead.next = temp
+ 40                  newhead.down = self._head
+ 41                  self._head = newhead
+ 42                  top = temp
+ 43              else:
+ 44                  next_level = tower.pop()
+ 45                  temp = DataNode(key, value)
+ 46                  temp.down = top
+ 47                  temp.next = next_level.next
+ 48                  next_level.next = temp
+ 49                  top = temp
+ </pre></listing>
       <p>We should make one final note about the structure of the skip list. We
                     had mentioned earlier that there are many possible skip lists for a set
                     of keys, even if they are inserted in the same order. Now we see why.

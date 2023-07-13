@@ -4,35 +4,19 @@
   <table>
     <tabular>
       <row>
-        <cell>
-                            base case
-                        </cell>
-        <cell>
-                            greedy method
-                        </cell>
-        <cell>
-                            stack frame
-                        </cell>
+        <cell>base case</cell>
+        <cell>greedy method</cell>
+        <cell>stack frame</cell>
       </row>
       <row>
-        <cell>
-                            dynamic programming
-                        </cell>
-        <cell>
-                            recursion
-                        </cell>
-        <cell>
-                        </cell>
+        <cell>dynamic programming</cell>
+        <cell>recursion</cell>
+        <cell></cell>
       </row>
       <row>
-        <cell>
-                            fractal
-                        </cell>
-        <cell>
-                            recursive call
-                        </cell>
-        <cell>
-                        </cell>
+        <cell>fractal</cell>
+        <cell>recursive call</cell>
+        <cell></cell>
       </row>
     </tabular>
   </table>

@@ -22,60 +22,32 @@ item</c> and <c>set item</c> operations on a dictionary are <m>O(1)</m>. Another
         <term>Table 3: Big O Efficiency of Python Dictionary Operations</term>
       </title>
       <row header="yes">
-        <cell>
-                            Operation
-                        </cell>
-        <cell>
-                            Big O Efficiency
-                        </cell>
+        <cell>Operation</cell>
+        <cell>Big O Efficiency</cell>
       </row>
       <row>
-        <cell>
-          <c>copy</c>
-        </cell>
-        <cell>
-                            O(n)
-                        </cell>
+        <cell><c>copy</c></cell>
+        <cell>O(n)</cell>
       </row>
       <row>
-        <cell>
-          <c>get item</c>
-        </cell>
-        <cell>
-                            O(1)
-                        </cell>
+        <cell><c>get item</c></cell>
+        <cell>O(1)</cell>
       </row>
       <row>
-        <cell>
-          <c>set item</c>
-        </cell>
-        <cell>
-                            O(1)
-                        </cell>
+        <cell><c>set item</c></cell>
+        <cell>O(1)</cell>
       </row>
       <row>
-        <cell>
-          <c>delete item</c>
-        </cell>
-        <cell>
-                            O(1)
-                        </cell>
+        <cell><c>delete item</c></cell>
+        <cell>O(1)</cell>
       </row>
       <row>
-        <cell>
-          <c>contains (in)</c>
-        </cell>
-        <cell>
-                            O(1)
-                        </cell>
+        <cell><c>contains (in)</c></cell>
+        <cell>O(1)</cell>
       </row>
       <row>
-        <cell>
-          <c>iteration</c>
-        </cell>
-        <cell>
-                            O(n)
-                        </cell>
+        <cell><c>iteration</c></cell>
+        <cell>O(n)</cell>
       </row>
     </tabular>
   </table>

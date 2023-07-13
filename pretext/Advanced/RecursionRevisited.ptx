@@ -122,8 +122,8 @@
                 However, we can do even better using a recursive approach.</p>
     <math_block docname="Advanced/RecursionRevisited"  nowrap="False" number="True" xml:space="preserve">x^n =
    \begin{cases}
-   (x \cdot x)^{ n/2 } &amp; \text{if :math:`n` is even} \\
-   (x \cdot x^{n-1}) = x \cdot (x \cdot x)^{\lfloor n/2 \rfloor} &amp; \text{if :math:`n` is odd}
+   (x \cdot x)^{ n/2 } &amp; \text{if <m>n</m> is even} \\
+   (x \cdot x^{n-1}) = x \cdot (x \cdot x)^{\lfloor n/2 \rfloor} &amp; \text{if <m>n</m> is odd}
    \end{cases}
    \label{eqn:pow}</math_block>
     <p>Remember that for a floating point number <m>n</m> the floor operation,
@@ -339,108 +339,43 @@ d = &amp; ay + b(x \mod{y}) \\
     <table>
       <tabular>
         <row>
-          <cell>
-                                h
-                            </cell>
-          <cell>
-                                e
-                            </cell>
-          <cell>
-                                l
-                            </cell>
-          <cell>
-                                l
-                            </cell>
-          <cell>
-                                o
-                            </cell>
-          <cell>
-                            </cell>
-          <cell>
-                                w
-                            </cell>
-          <cell>
-                                o
-                            </cell>
-          <cell>
-                                r
-                            </cell>
-          <cell>
-                                l
-                            </cell>
-          <cell>
-                                d
-                            </cell>
+          <cell>h</cell>
+          <cell>e</cell>
+          <cell>l</cell>
+          <cell>l</cell>
+          <cell>o</cell>
+          <cell></cell>
+          <cell>w</cell>
+          <cell>o</cell>
+          <cell>r</cell>
+          <cell>l</cell>
+          <cell>d</cell>
         </row>
         <row>
-          <cell>
-                                104
-                            </cell>
-          <cell>
-                                101
-                            </cell>
-          <cell>
-                                108
-                            </cell>
-          <cell>
-                                108
-                            </cell>
-          <cell>
-                                111
-                            </cell>
-          <cell>
-                                32
-                            </cell>
-          <cell>
-                                119
-                            </cell>
-          <cell>
-                                111
-                            </cell>
-          <cell>
-                                114
-                            </cell>
-          <cell>
-                                108
-                            </cell>
-          <cell>
-                                100
-                            </cell>
+          <cell>104</cell>
+          <cell>101</cell>
+          <cell>108</cell>
+          <cell>108</cell>
+          <cell>111</cell>
+          <cell>32</cell>
+          <cell>119</cell>
+          <cell>111</cell>
+          <cell>114</cell>
+          <cell>108</cell>
+          <cell>100</cell>
         </row>
         <row>
-          <cell>
-                                68
-                            </cell>
-          <cell>
-                                65
-                            </cell>
-          <cell>
-                                6c
-                            </cell>
-          <cell>
-                                6c
-                            </cell>
-          <cell>
-                                6f
-                            </cell>
-          <cell>
-                                20
-                            </cell>
-          <cell>
-                                77
-                            </cell>
-          <cell>
-                                6f
-                            </cell>
-          <cell>
-                                72
-                            </cell>
-          <cell>
-                                6c
-                            </cell>
-          <cell>
-                                64
-                            </cell>
+          <cell>68</cell>
+          <cell>65</cell>
+          <cell>6c</cell>
+          <cell>6c</cell>
+          <cell>6f</cell>
+          <cell>20</cell>
+          <cell>77</cell>
+          <cell>6f</cell>
+          <cell>72</cell>
+          <cell>6c</cell>
+          <cell>64</cell>
         </row>
       </tabular>
     </table>
@@ -479,22 +414,10 @@ d = &amp; ay + b(x \mod{y}) \\
     <table>
       <tabular>
         <row>
-          <cell>
-                                :math:`
-                                    m_1 = 6841708`
-                            </cell>
-          <cell>
-                                :math:`
-                                    m_2 = 7106336`
-                            </cell>
-          <cell>
-                                :math:`
-                                    m_3 = 7827314`
-                            </cell>
-          <cell>
-                                :math
-                                    :<title_reference>m_4 = 27748</title_reference>
-                            </cell>
+          <cell><m>m_1 = 6841708</m></cell>
+          <cell><m>m_2 = 7106336</m></cell>
+          <cell><m>m_3 = 7827314</m></cell>
+          <cell><m>m_4 = 27748</m></cell>
         </row>
       </tabular>
     </table>

@@ -13,89 +13,39 @@
         <term>Table 1: Comparing the Performance of Different Map Implementations</term>
       </title>
       <row header="yes">
-        <cell>
-                            operation
-                        </cell>
-        <cell>
-                            Sorted List
-                        </cell>
-        <cell>
-                            Hash Table
-                        </cell>
-        <cell>
-                            Binary Search Tree
-                        </cell>
-        <cell>
-                            AVL Tree
-                        </cell>
+        <cell>operation</cell>
+        <cell>Sorted List</cell>
+        <cell>Hash Table</cell>
+        <cell>Binary Search Tree</cell>
+        <cell>AVL Tree</cell>
       </row>
       <row>
-        <cell>
-          <c>put</c>
-        </cell>
-        <cell>
-          <m>O(n)</m>
-        </cell>
-        <cell>
-          <m>O(1)</m>
-        </cell>
-        <cell>
-          <m>O(n)</m>
-        </cell>
-        <cell>
-          <m>O(\log_2{n})</m>
-        </cell>
+        <cell><c>put</c></cell>
+        <cell><m>O(n)</m></cell>
+        <cell><m>O(1)</m></cell>
+        <cell><m>O(n)</m></cell>
+        <cell><m>O(\log_2{n})</m></cell>
       </row>
       <row>
-        <cell>
-          <c>get</c>
-        </cell>
-        <cell>
-          <m>O(\log_2{n})</m>
-        </cell>
-        <cell>
-          <m>O(1)</m>
-        </cell>
-        <cell>
-          <m>O(n)</m>
-        </cell>
-        <cell>
-          <m>O(\log_2{n})</m>
-        </cell>
+        <cell><c>get</c></cell>
+        <cell><m>O(\log_2{n})</m></cell>
+        <cell><m>O(1)</m></cell>
+        <cell><m>O(n)</m></cell>
+        <cell><m>O(\log_2{n})</m></cell>
       </row>
       <row>
-        <cell>
-          <c>in</c>
-        </cell>
-        <cell>
-          <m>O(\log_2{n})</m>
-        </cell>
-        <cell>
-          <m>O(1)</m>
-        </cell>
-        <cell>
-          <m>O(n)</m>
-        </cell>
-        <cell>
-          <m>O(\log_2{n})</m>
-        </cell>
+        <cell><c>in</c></cell>
+        <cell><m>O(\log_2{n})</m></cell>
+        <cell><m>O(1)</m></cell>
+        <cell><m>O(n)</m></cell>
+        <cell><m>O(\log_2{n})</m></cell>
       </row>
       <row>
-        <cell>
-          <c>del</c>
-        </cell>
-        <cell>
-          <m>O(n)</m>
-        </cell>
-        <cell>
-          <m>O(1)</m>
-        </cell>
-        <cell>
-          <m>O(n)</m>
-        </cell>
-        <cell>
-          <m>O(\log_2{n})</m>
-        </cell>
+        <cell><c>del</c></cell>
+        <cell><m>O(n)</m></cell>
+        <cell><m>O(1)</m></cell>
+        <cell><m>O(n)</m></cell>
+        <cell><m>O(\log_2{n})</m></cell>
       </row>
     </tabular>
   </table>

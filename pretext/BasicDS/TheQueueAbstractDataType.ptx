@@ -41,121 +41,59 @@
         <term>Table 5: Example Queue Operations</term>
       </title>
       <row header="yes">
-        <cell>
-          <term>Queue Operation</term>
-        </cell>
-        <cell>
-          <term>Queue Contents</term>
-        </cell>
-        <cell>
-          <term>Return Value</term>
-        </cell>
+        <cell><term>Queue Operation</term></cell>
+        <cell><term>Queue Contents</term></cell>
+        <cell><term>Return Value</term></cell>
       </row>
       <row>
-        <cell>
-          <c>q.is_empty()</c>
-        </cell>
-        <cell>
-          <c>[]</c>
-        </cell>
-        <cell>
-          <c>True</c>
-        </cell>
+        <cell><c>q.is_empty()</c></cell>
+        <cell><c>[]</c></cell>
+        <cell><c>True</c></cell>
       </row>
       <row>
-        <cell>
-          <c>q.enqueue(4)</c>
-        </cell>
-        <cell>
-          <c>[4]</c>
-        </cell>
-        <cell>
-                        </cell>
+        <cell><c>q.enqueue(4)</c></cell>
+        <cell><c>[4]</c></cell>
+        <cell></cell>
       </row>
       <row>
-        <cell>
-          <c>q.enqueue("dog")</c>
-        </cell>
-        <cell>
-          <c>['dog',4]</c>
-        </cell>
-        <cell>
-                        </cell>
+        <cell><c>q.enqueue("dog")</c></cell>
+        <cell><c>['dog',4]</c></cell>
+        <cell></cell>
       </row>
       <row>
-        <cell>
-          <c>q.enqueue(True)</c>
-        </cell>
-        <cell>
-          <c>[True, 'dog', 4]</c>
-        </cell>
-        <cell>
-                        </cell>
+        <cell><c>q.enqueue(True)</c></cell>
+        <cell><c>[True, 'dog', 4]</c></cell>
+        <cell></cell>
       </row>
       <row>
-        <cell>
-          <c>q.size()</c>
-        </cell>
-        <cell>
-          <c>[True, 'dog', 4]</c>
-        </cell>
-        <cell>
-          <c>3</c>
-        </cell>
+        <cell><c>q.size()</c></cell>
+        <cell><c>[True, 'dog', 4]</c></cell>
+        <cell><c>3</c></cell>
       </row>
       <row>
-        <cell>
-          <c>q.is_empty()</c>
-        </cell>
-        <cell>
-          <c>[True, 'dog', 4]</c>
-        </cell>
-        <cell>
-          <c>False</c>
-        </cell>
+        <cell><c>q.is_empty()</c></cell>
+        <cell><c>[True, 'dog', 4]</c></cell>
+        <cell><c>False</c></cell>
       </row>
       <row>
-        <cell>
-          <c>q.enqueue(8.4)</c>
-        </cell>
-        <cell>
-          <c>[8.4,True, 'dog', 4]</c>
-        </cell>
-        <cell>
-                        </cell>
+        <cell><c>q.enqueue(8.4)</c></cell>
+        <cell><c>[8.4,True, 'dog', 4]</c></cell>
+        <cell></cell>
       </row>
       <row>
-        <cell>
-          <c>q.dequeue()</c>
-        </cell>
-        <cell>
-          <c>[8.4, True, 'dog']</c>
-        </cell>
-        <cell>
-          <c>4</c>
-        </cell>
+        <cell><c>q.dequeue()</c></cell>
+        <cell><c>[8.4, True, 'dog']</c></cell>
+        <cell><c>4</c></cell>
       </row>
       <row>
-        <cell>
-          <c>q.dequeue()</c>
-        </cell>
-        <cell>
-          <c>[8.4, True]</c>
-        </cell>
-        <cell>
-          <c>'dog'</c>
-        </cell>
+        <cell><c>q.dequeue()</c></cell>
+        <cell><c>[8.4, True]</c></cell>
+        <cell><c>'dog'</c></cell>
       </row>
       <row>
-        <cell>
-          <c>q.size()</c>
-        </cell>
-        <cell>
-          <c>[8.4, True]</c>
-        </cell>
-        <cell>
-          <c>2</c>
-        </cell>
+        <cell><c>q.size()</c></cell>
+        <cell><c>[8.4, True]</c></cell>
+        <cell><c>2</c></cell>
       </row>
     </tabular>
   </table>
