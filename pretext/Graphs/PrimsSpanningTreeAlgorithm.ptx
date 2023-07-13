@@ -101,8 +101,8 @@ def prim(graph, start):
                 next_v.distance = new_distance
                 pq.change_priority(next_v, new_distance)</pre>
 </listing>
-  <p>The following sequence of figures (<xref ref="i187_id2fig-mst1"/>
-            through <xref ref="i187_id2fig-mst1"/>) shows the algorithm in operation on our sample
+  <p>The following sequence of figures (<xref ref="file_145_id3"/>
+            through <xref ref="file_145_id9"/>) shows the algorithm in operation on our sample
             tree. We begin with the starting vertex as A. The distances to all the
             other vertices are initialized to infinity. Looking at the neighbors of
             A we can update distances to two of the additional vertices, B and C,
