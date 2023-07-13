@@ -66,37 +66,19 @@
         <term>Table 2: Examples of Infix, Prefix, and Postfix Expressions</term>
       </title>
       <row header="yes">
-        <cell>
-          <term>Infix Expression</term>
-        </cell>
-        <cell>
-          <term>Prefix Expression</term>
-        </cell>
-        <cell>
-          <term>Postfix Expression</term>
-        </cell>
+        <cell><term>Infix Expression</term></cell>
+        <cell><term>Prefix Expression</term></cell>
+        <cell><term>Postfix Expression</term></cell>
       </row>
       <row>
-        <cell>
-                            A + B
-                        </cell>
-        <cell>
-                            + A B
-                        </cell>
-        <cell>
-                            A B +
-                        </cell>
+        <cell>A + B</cell>
+        <cell>+ A B</cell>
+        <cell>A B +</cell>
       </row>
       <row>
-        <cell>
-                            A + B &#xB7; C
-                        </cell>
-        <cell>
-                            + A &#xB7; B C
-                        </cell>
-        <cell>
-                            A B C &#xB7; +
-                        </cell>
+        <cell>A + B &#xB7; C</cell>
+        <cell>+ A &#xB7; B C</cell>
+        <cell>A B C &#xB7; +</cell>
       </row>
     </tabular>
   </table>
@@ -124,26 +106,14 @@
         <term>Table 3: Comparison of Infix, Prefix, and Postfix Expressions</term>
       </title>
       <row header="yes">
-        <cell>
-          <term>Infix Expression</term>
-        </cell>
-        <cell>
-          <term>Prefix Expression</term>
-        </cell>
-        <cell>
-          <term>Postfix Expression</term>
-        </cell>
+        <cell><term>Infix Expression</term></cell>
+        <cell><term>Prefix Expression</term></cell>
+        <cell><term>Postfix Expression</term></cell>
       </row>
       <row>
-        <cell>
-                            (A + B) &#xB7; C
-                        </cell>
-        <cell>
-                            &#xB7; + A B C
-                        </cell>
-        <cell>
-                            A B + C &#xB7;
-                        </cell>
+        <cell>(A + B) &#xB7; C</cell>
+        <cell>&#xB7; + A B C</cell>
+        <cell>A B + C &#xB7;</cell>
       </row>
     </tabular>
   </table>
@@ -157,59 +127,29 @@
         <term>Table 4: Additional Examples of Infix, Prefix, and Postfix Expressions</term>
       </title>
       <row header="yes">
-        <cell>
-          <term>Infix Expression</term>
-        </cell>
-        <cell>
-          <term>Prefix Expression</term>
-        </cell>
-        <cell>
-          <term>Postfix Expression</term>
-        </cell>
+        <cell><term>Infix Expression</term></cell>
+        <cell><term>Prefix Expression</term></cell>
+        <cell><term>Postfix Expression</term></cell>
       </row>
       <row>
-        <cell>
-                            A + B &#xB7; C + D
-                        </cell>
-        <cell>
-                            + + A &#xB7; B C D
-                        </cell>
-        <cell>
-                            A B C &#xB7; + D +
-                        </cell>
+        <cell>A + B &#xB7; C + D</cell>
+        <cell>+ + A &#xB7; B C D</cell>
+        <cell>A B C &#xB7; + D +</cell>
       </row>
       <row>
-        <cell>
-                            (A + B) &#xB7; (C + D)
-                        </cell>
-        <cell>
-                            &#xB7; + A B + C D
-                        </cell>
-        <cell>
-                            A B + C D + &#xB7;
-                        </cell>
+        <cell>(A + B) &#xB7; (C + D)</cell>
+        <cell>&#xB7; + A B + C D</cell>
+        <cell>A B + C D + &#xB7;</cell>
       </row>
       <row>
-        <cell>
-                            A &#xB7; B + C &#xB7; D
-                        </cell>
-        <cell>
-                            + &#xB7; A B &#xB7; C D
-                        </cell>
-        <cell>
-                            A B &#xB7; C D &#xB7; +
-                        </cell>
+        <cell>A &#xB7; B + C &#xB7; D</cell>
+        <cell>+ &#xB7; A B &#xB7; C D</cell>
+        <cell>A B &#xB7; C D &#xB7; +</cell>
       </row>
       <row>
-        <cell>
-                            A + B + C + D
-                        </cell>
-        <cell>
-                            + + + A B C D
-                        </cell>
-        <cell>
-                            A B + C + D +
-                        </cell>
+        <cell>A + B + C + D</cell>
+        <cell>+ + + A B C D</cell>
+        <cell>A B + C + D +</cell>
       </row>
     </tabular>
   </table>

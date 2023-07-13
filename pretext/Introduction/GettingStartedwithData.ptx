@@ -64,114 +64,54 @@ True</pre>
           <term>Table 1: Relational and Logical Operators</term>
         </title>
         <row header="yes">
-          <cell>
-            <term>Operation Name</term>
-          </cell>
-          <cell>
-            <term>Operator</term>
-          </cell>
-          <cell>
-            <term>Explanation</term>
-          </cell>
+          <cell><term>Operation Name</term></cell>
+          <cell><term>Operator</term></cell>
+          <cell><term>Explanation</term></cell>
         </row>
         <row>
-          <cell>
-                                less than
-                            </cell>
-          <cell>
-            <m>&lt;</m>
-          </cell>
-          <cell>
-                                Less than operator
-                            </cell>
+          <cell>less than</cell>
+          <cell><m>&lt;</m></cell>
+          <cell>Less than operator</cell>
         </row>
         <row>
-          <cell>
-                                greater than
-                            </cell>
-          <cell>
-            <m>&gt;</m>
-          </cell>
-          <cell>
-                                Greater than operator
-                            </cell>
+          <cell>greater than</cell>
+          <cell><m>&gt;</m></cell>
+          <cell>Greater than operator</cell>
         </row>
         <row>
-          <cell>
-                                less than or equal
-                            </cell>
-          <cell>
-            <m>&lt;=</m>
-          </cell>
-          <cell>
-                                Less than or equal to operator
-                            </cell>
+          <cell>less than or equal</cell>
+          <cell><m>&lt;=</m></cell>
+          <cell>Less than or equal to operator</cell>
         </row>
         <row>
-          <cell>
-                                greater than or equal
-                            </cell>
-          <cell>
-            <m>&gt;=</m>
-          </cell>
-          <cell>
-                                Greater than or equal to operator
-                            </cell>
+          <cell>greater than or equal</cell>
+          <cell><m>&gt;=</m></cell>
+          <cell>Greater than or equal to operator</cell>
         </row>
         <row>
-          <cell>
-                                equal
-                            </cell>
-          <cell>
-            <m>==</m>
-          </cell>
-          <cell>
-                                Equality operator
-                            </cell>
+          <cell>equal</cell>
+          <cell><m>==</m></cell>
+          <cell>Equality operator</cell>
         </row>
         <row>
-          <cell>
-                                not equal
-                            </cell>
-          <cell>
-            <m>!=</m>
-          </cell>
-          <cell>
-                                Not equal operator
-                            </cell>
+          <cell>not equal</cell>
+          <cell><m>!=</m></cell>
+          <cell>Not equal operator</cell>
         </row>
         <row>
-          <cell>
-                                logical and
-                            </cell>
-          <cell>
-            <m>and</m>
-          </cell>
-          <cell>
-                                Both operands True for result to be True
-                            </cell>
+          <cell>logical and</cell>
+          <cell><m>and</m></cell>
+          <cell>Both operands True for result to be True</cell>
         </row>
         <row>
-          <cell>
-                                logical or
-                            </cell>
-          <cell>
-            <m>or</m>
-          </cell>
-          <cell>
-                                One or the other operand is True for the result to be True
-                            </cell>
+          <cell>logical or</cell>
+          <cell><m>or</m></cell>
+          <cell>One or the other operand is True for the result to be True</cell>
         </row>
         <row>
-          <cell>
-                                logical not
-                            </cell>
-          <cell>
-            <m>not</m>
-          </cell>
-          <cell>
-                                Negates the truth value, False becomes True, True becomes False
-                            </cell>
+          <cell>logical not</cell>
+          <cell><m>not</m></cell>
+          <cell>Negates the truth value, False becomes True, True becomes False</cell>
         </row>
       </tabular>
     </table>
@@ -255,81 +195,39 @@ True</pre>
           <term>Table 2: Operations on Any Sequence in Python</term>
         </title>
         <row header="yes">
-          <cell>
-            <term>Operation Name</term>
-          </cell>
-          <cell>
-            <term>Operator</term>
-          </cell>
-          <cell>
-            <term>Explanation</term>
-          </cell>
+          <cell><term>Operation Name</term></cell>
+          <cell><term>Operator</term></cell>
+          <cell><term>Explanation</term></cell>
         </row>
         <row>
-          <cell>
-                                indexing
-                            </cell>
-          <cell>
-                                [ ]
-                            </cell>
-          <cell>
-                                Access an element of a sequence
-                            </cell>
+          <cell>indexing</cell>
+          <cell>[ ]</cell>
+          <cell>Access an element of a sequence</cell>
         </row>
         <row>
-          <cell>
-                                concatenation
-                            </cell>
-          <cell>
-                                +
-                            </cell>
-          <cell>
-                                Combine sequences together
-                            </cell>
+          <cell>concatenation</cell>
+          <cell>+</cell>
+          <cell>Combine sequences together</cell>
         </row>
         <row>
-          <cell>
-                                repetition
-                            </cell>
-          <cell>
-                                *
-                            </cell>
-          <cell>
-                                Concatenate a repeated number of times
-                            </cell>
+          <cell>repetition</cell>
+          <cell>*</cell>
+          <cell>Concatenate a repeated number of times</cell>
         </row>
         <row>
-          <cell>
-                                membership
-                            </cell>
-          <cell>
-                                in
-                            </cell>
-          <cell>
-                                Ask whether an item is in a sequence
-                            </cell>
+          <cell>membership</cell>
+          <cell>in</cell>
+          <cell>Ask whether an item is in a sequence</cell>
         </row>
         <row>
-          <cell>
-                                length
-                            </cell>
-          <cell>
-                                len
-                            </cell>
-          <cell>
-                                Ask the number of items in the sequence
-                            </cell>
+          <cell>length</cell>
+          <cell>len</cell>
+          <cell>Ask the number of items in the sequence</cell>
         </row>
         <row>
-          <cell>
-                                slicing
-                            </cell>
-          <cell>
-                                [ : ]
-                            </cell>
-          <cell>
-                                Extract a part of a sequence
-                            </cell>
+          <cell>slicing</cell>
+          <cell>[ : ]</cell>
+          <cell>Extract a part of a sequence</cell>
         </row>
       </tabular>
     </table>
@@ -365,125 +263,59 @@ print(big_list)
           <term>Table 3: Methods Provided by Lists in Python</term>
         </title>
         <row header="yes">
-          <cell>
-            <term>Method Name</term>
-          </cell>
-          <cell>
-            <term>Use</term>
-          </cell>
-          <cell>
-            <term>Explanation</term>
-          </cell>
+          <cell><term>Method Name</term></cell>
+          <cell><term>Use</term></cell>
+          <cell><term>Explanation</term></cell>
         </row>
         <row>
-          <cell>
-            <c>append</c>
-          </cell>
-          <cell>
-            <c>a_list.append(item)</c>
-          </cell>
-          <cell>
-                                Adds a new item to the end of a list
-                            </cell>
+          <cell><c>append</c></cell>
+          <cell><c>a_list.append(item)</c></cell>
+          <cell>Adds a new item to the end of a list</cell>
         </row>
         <row>
-          <cell>
-            <c>insert</c>
-          </cell>
-          <cell>
-            <c>a_list.insert(i,item)</c>
-          </cell>
-          <cell>
-                                Inserts an item at the ith position in a list
-                            </cell>
+          <cell><c>insert</c></cell>
+          <cell><c>a_list.insert(i,item)</c></cell>
+          <cell>Inserts an item at the ith position in a list</cell>
         </row>
         <row>
-          <cell>
-            <c>pop</c>
-          </cell>
-          <cell>
-            <c>a_list.pop()</c>
-          </cell>
-          <cell>
-                                Removes and returns the last item in a list
-                            </cell>
+          <cell><c>pop</c></cell>
+          <cell><c>a_list.pop()</c></cell>
+          <cell>Removes and returns the last item in a list</cell>
         </row>
         <row>
-          <cell>
-            <c>pop</c>
-          </cell>
-          <cell>
-            <c>a_list.pop(i)</c>
-          </cell>
-          <cell>
-                                Removes and returns the ith item in a list
-                            </cell>
+          <cell><c>pop</c></cell>
+          <cell><c>a_list.pop(i)</c></cell>
+          <cell>Removes and returns the ith item in a list</cell>
         </row>
         <row>
-          <cell>
-            <c>sort</c>
-          </cell>
-          <cell>
-            <c>a_list.sort()</c>
-          </cell>
-          <cell>
-                                Sorts a list in place
-                            </cell>
+          <cell><c>sort</c></cell>
+          <cell><c>a_list.sort()</c></cell>
+          <cell>Sorts a list in place</cell>
         </row>
         <row>
-          <cell>
-            <c>reverse</c>
-          </cell>
-          <cell>
-            <c>a_list.reverse()</c>
-          </cell>
-          <cell>
-                                Modifies a list to be in reverse order
-                            </cell>
+          <cell><c>reverse</c></cell>
+          <cell><c>a_list.reverse()</c></cell>
+          <cell>Modifies a list to be in reverse order</cell>
         </row>
         <row>
-          <cell>
-            <c>del</c>
-          </cell>
-          <cell>
-            <c>del a_list[i]</c>
-          </cell>
-          <cell>
-                                Deletes the item in the ith position
-                            </cell>
+          <cell><c>del</c></cell>
+          <cell><c>del a_list[i]</c></cell>
+          <cell>Deletes the item in the ith position</cell>
         </row>
         <row>
-          <cell>
-            <c>index</c>
-          </cell>
-          <cell>
-            <c>a_list.index(item)</c>
-          </cell>
-          <cell>
-                                Returns the index of the first occurrence of <c>item</c>
-                            </cell>
+          <cell><c>index</c></cell>
+          <cell><c>a_list.index(item)</c></cell>
+          <cell>Returns the index of the first occurrence of <c>item</c></cell>
         </row>
         <row>
-          <cell>
-            <c>count</c>
-          </cell>
-          <cell>
-            <c>a_list.count(item)</c>
-          </cell>
-          <cell>
-                                Returns the number of occurrences of <c>item</c>
-                            </cell>
+          <cell><c>count</c></cell>
+          <cell><c>a_list.count(item)</c></cell>
+          <cell>Returns the number of occurrences of <c>item</c></cell>
         </row>
         <row>
-          <cell>
-            <c>remove</c>
-          </cell>
-          <cell>
-            <c>a_list.remove(item)</c>
-          </cell>
-          <cell>
-                                Removes the first occurrence of <c>item</c>
-                            </cell>
+          <cell><c>remove</c></cell>
+          <cell><c>a_list.remove(item)</c></cell>
+          <cell>Removes the first occurrence of <c>item</c></cell>
         </row>
       </tabular>
     </table>
@@ -574,92 +406,44 @@ range(5, 10)
           <term>Table 4: Methods Provided by Strings in Python</term>
         </title>
         <row header="yes">
-          <cell>
-            <term>Method Name</term>
-          </cell>
-          <cell>
-            <term>Use</term>
-          </cell>
-          <cell>
-            <term>Explanation</term>
-          </cell>
+          <cell><term>Method Name</term></cell>
+          <cell><term>Use</term></cell>
+          <cell><term>Explanation</term></cell>
         </row>
         <row>
-          <cell>
-            <c>center</c>
-          </cell>
-          <cell>
-            <c>a_string.center(w)</c>
-          </cell>
-          <cell>
-                                Returns a string centered in a field of size <c>w</c>
-                            </cell>
+          <cell><c>center</c></cell>
+          <cell><c>a_string.center(w)</c></cell>
+          <cell>Returns a string centered in a field of size <c>w</c></cell>
         </row>
         <row>
-          <cell>
-            <c>count</c>
-          </cell>
-          <cell>
-            <c>a_string.count(item)</c>
-          </cell>
-          <cell>
-                                Returns the number of occurrences of <c>item</c> in the string
-                            </cell>
+          <cell><c>count</c></cell>
+          <cell><c>a_string.count(item)</c></cell>
+          <cell>Returns the number of occurrences of <c>item</c> in the string</cell>
         </row>
         <row>
-          <cell>
-            <c>ljust</c>
-          </cell>
-          <cell>
-            <c>a_string.ljust(w)</c>
-          </cell>
-          <cell>
-                                Returns a string left-justified in a field of size <c>w</c>
-                            </cell>
+          <cell><c>ljust</c></cell>
+          <cell><c>a_string.ljust(w)</c></cell>
+          <cell>Returns a string left-justified in a field of size <c>w</c></cell>
         </row>
         <row>
-          <cell>
-            <c>lower</c>
-          </cell>
-          <cell>
-            <c>a_string.lower()</c>
-          </cell>
-          <cell>
-                                Returns a string in all lowercase
-                            </cell>
+          <cell><c>lower</c></cell>
+          <cell><c>a_string.lower()</c></cell>
+          <cell>Returns a string in all lowercase</cell>
         </row>
         <row>
-          <cell>
-            <c>rjust</c>
-          </cell>
-          <cell>
-            <c>a_string.rjust(w)</c>
-          </cell>
-          <cell>
-                                Returns a string right-justified in a field of size <c>w</c>
-                            </cell>
+          <cell><c>rjust</c></cell>
+          <cell><c>a_string.rjust(w)</c></cell>
+          <cell>Returns a string right-justified in a field of size <c>w</c></cell>
         </row>
         <row>
-          <cell>
-            <c>find</c>
-          </cell>
-          <cell>
-            <c>a_string.find(item)</c>
-          </cell>
-          <cell>
-                                Returns the index of the first occurrence of <c>item</c>
-                            </cell>
+          <cell><c>find</c></cell>
+          <cell><c>a_string.find(item)</c></cell>
+          <cell>Returns the index of the first occurrence of <c>item</c></cell>
         </row>
         <row>
-          <cell>
-            <c>split</c>
-          </cell>
-          <cell>
-            <c>a_string.split(s_char)</c>
-          </cell>
-          <cell>
-                                Splits a string into substrings at <c>s_char</c>
-                            </cell>
+          <cell><c>split</c></cell>
+          <cell><c>a_string.split(s_char)</c></cell>
+          <cell>Splits a string into substrings at <c>s_char</c></cell>
         </row>
       </tabular>
     </table>
@@ -736,81 +520,39 @@ TypeError: 'tuple' object does not support item assignment</pre>
           <term>Table 5: Operations on a Set in Python</term>
         </title>
         <row header="yes">
-          <cell>
-            <term>Operation Name</term>
-          </cell>
-          <cell>
-            <term>Operator</term>
-          </cell>
-          <cell>
-            <term>Explanation</term>
-          </cell>
+          <cell><term>Operation Name</term></cell>
+          <cell><term>Operator</term></cell>
+          <cell><term>Explanation</term></cell>
         </row>
         <row>
-          <cell>
-                                membership
-                            </cell>
-          <cell>
-            <c>in</c>
-          </cell>
-          <cell>
-                                Set membership
-                            </cell>
+          <cell>membership</cell>
+          <cell><c>in</c></cell>
+          <cell>Set membership</cell>
         </row>
         <row>
-          <cell>
-                                length
-                            </cell>
-          <cell>
-            <c>len</c>
-          </cell>
-          <cell>
-                                Returns the cardinality of the set
-                            </cell>
+          <cell>length</cell>
+          <cell><c>len</c></cell>
+          <cell>Returns the cardinality of the set</cell>
         </row>
         <row>
-          <cell>
-            <c>|</c>
-          </cell>
-          <cell>
-            <c>a_set | other_set</c>
-          </cell>
-          <cell>
-                                Returns a new set with all elements from both sets
-                            </cell>
+          <cell><c>|</c></cell>
+          <cell><c>a_set | other_set</c></cell>
+          <cell>Returns a new set with all elements from both sets</cell>
         </row>
         <row>
-          <cell>
-            <c>&amp;</c>
-          </cell>
-          <cell>
-            <c>a_set &amp; other_set</c>
-          </cell>
-          <cell>
-                                Returns a new set with only those elements common to both sets
-                            </cell>
+          <cell><c>&amp;</c></cell>
+          <cell><c>a_set &amp; other_set</c></cell>
+          <cell>Returns a new set with only those elements common to both sets</cell>
         </row>
         <row>
-          <cell>
-            <c>-</c>
-          </cell>
-          <cell>
-            <c>a_set - other_set</c>
-          </cell>
-          <cell>
-                                Returns a new set with all items from the first set not in the second
-                            </cell>
+          <cell><c>-</c></cell>
+          <cell><c>a_set - other_set</c></cell>
+          <cell>Returns a new set with all items from the first set not in the second</cell>
         </row>
         <row>
-          <cell>
-            <c>&lt;=</c>
-          </cell>
-          <cell>
-            <c>a_set &lt;= other_set</c>
-          </cell>
-          <cell>
-                                Asks whether all elements of  the first set are in the second
-                            </cell>
+          <cell><c>&lt;=</c></cell>
+          <cell><c>a_set &lt;= other_set</c></cell>
+          <cell>Asks whether all elements of  the first set are in the second</cell>
         </row>
       </tabular>
     </table>
@@ -833,103 +575,49 @@ False</pre>
           <term>Table 6: Methods Provided by Sets in Python</term>
         </title>
         <row header="yes">
-          <cell>
-            <term>Method Name</term>
-          </cell>
-          <cell>
-            <term>Use</term>
-          </cell>
-          <cell>
-            <term>Explanation</term>
-          </cell>
+          <cell><term>Method Name</term></cell>
+          <cell><term>Use</term></cell>
+          <cell><term>Explanation</term></cell>
         </row>
         <row>
-          <cell>
-            <c>union</c>
-          </cell>
-          <cell>
-            <c>a_set.union(other_set)</c>
-          </cell>
-          <cell>
-                                Returns a new set with all elements from both sets
-                            </cell>
+          <cell><c>union</c></cell>
+          <cell><c>a_set.union(other_set)</c></cell>
+          <cell>Returns a new set with all elements from both sets</cell>
         </row>
         <row>
-          <cell>
-            <c>intersection</c>
-          </cell>
-          <cell>
-            <c>a_set.intersection(other_set)</c>
-          </cell>
-          <cell>
-                                Returns a new set with only those elements common to both sets
-                            </cell>
+          <cell><c>intersection</c></cell>
+          <cell><c>a_set.intersection(other_set)</c></cell>
+          <cell>Returns a new set with only those elements common to both sets</cell>
         </row>
         <row>
-          <cell>
-            <c>difference</c>
-          </cell>
-          <cell>
-            <c>a_set.difference(other_set)</c>
-          </cell>
-          <cell>
-                                Returns a new set with all items from the first set not in the second
-                            </cell>
+          <cell><c>difference</c></cell>
+          <cell><c>a_set.difference(other_set)</c></cell>
+          <cell>Returns a new set with all items from the first set not in the second</cell>
         </row>
         <row>
-          <cell>
-            <c>issubset</c>
-          </cell>
-          <cell>
-            <c>a_set.issubset(othe_rset)</c>
-          </cell>
-          <cell>
-                                Asks whether all elements of one set are in the other
-                            </cell>
+          <cell><c>issubset</c></cell>
+          <cell><c>a_set.issubset(othe_rset)</c></cell>
+          <cell>Asks whether all elements of one set are in the other</cell>
         </row>
         <row>
-          <cell>
-            <c>add</c>
-          </cell>
-          <cell>
-            <c>a_set.add(item)</c>
-          </cell>
-          <cell>
-                                Adds item to the set
-                            </cell>
+          <cell><c>add</c></cell>
+          <cell><c>a_set.add(item)</c></cell>
+          <cell>Adds item to the set</cell>
         </row>
         <row>
-          <cell>
-            <c>remove</c>
-          </cell>
-          <cell>
-            <c>a_set.remove(item)</c>
-          </cell>
-          <cell>
-                                Removes item from the set
-                            </cell>
+          <cell><c>remove</c></cell>
+          <cell><c>a_set.remove(item)</c></cell>
+          <cell>Removes item from the set</cell>
         </row>
         <row>
-          <cell>
-            <c>pop</c>
-          </cell>
-          <cell>
-            <c>a_set.pop()</c>
-          </cell>
-          <cell>
-                                Removes an arbitrary element from the set
-                            </cell>
+          <cell><c>pop</c></cell>
+          <cell><c>a_set.pop()</c></cell>
+          <cell>Removes an arbitrary element from the set</cell>
         </row>
         <row>
-          <cell>
-            <c>clear</c>
-          </cell>
-          <cell>
-            <c>a_set.clear()</c>
-          </cell>
-          <cell>
-                                Removes all elements from the set
-                            </cell>
+          <cell><c>clear</c></cell>
+          <cell><c>a_set.clear()</c></cell>
+          <cell>Removes all elements from the set</cell>
         </row>
       </tabular>
     </table>
@@ -1011,48 +699,24 @@ for k in capitals:
           <term>Table 7: Operators Provided by Dictionaries in Python</term>
         </title>
         <row header="yes">
-          <cell>
-            <term>Operator</term>
-          </cell>
-          <cell>
-            <term>Use</term>
-          </cell>
-          <cell>
-            <term>Explanation</term>
-          </cell>
+          <cell><term>Operator</term></cell>
+          <cell><term>Use</term></cell>
+          <cell><term>Explanation</term></cell>
         </row>
         <row>
-          <cell>
-            <c>[]</c>
-          </cell>
-          <cell>
-            <c>a_dict[k]</c>
-          </cell>
-          <cell>
-                                Returns the value associated with <c>k</c>, otherwise its an error
-                            </cell>
+          <cell><c>[]</c></cell>
+          <cell><c>a_dict[k]</c></cell>
+          <cell>Returns the value associated with <c>k</c>, otherwise its an error</cell>
         </row>
         <row>
-          <cell>
-            <c>in</c>
-          </cell>
-          <cell>
-            <c>key in a_dict</c>
-          </cell>
-          <cell>
-                                Returns <c>True</c> if key is in the   dictionary, <c>False</c> otherwise
-                            </cell>
+          <cell><c>in</c></cell>
+          <cell><c>key in a_dict</c></cell>
+          <cell>Returns <c>True</c> if key is in the   dictionary, <c>False</c> otherwise</cell>
         </row>
         <row>
-          <cell>
-            <c>del</c>
-          </cell>
-          <cell>
-                                del <c>a_dict[key]</c>
-                            </cell>
-          <cell>
-                                Removes the entry from the dictionary
-                            </cell>
+          <cell><c>del</c></cell>
+          <cell>del <c>a_dict[key]</c></cell>
+          <cell>Removes the entry from the dictionary</cell>
         </row>
       </tabular>
     </table>
@@ -1062,70 +726,34 @@ for k in capitals:
           <term>Table 8: Methods Provided by Dictionaries in Python</term>
         </title>
         <row header="yes">
-          <cell>
-            <term>Method Name</term>
-          </cell>
-          <cell>
-            <term>Use</term>
-          </cell>
-          <cell>
-            <term>Explanation</term>
-          </cell>
+          <cell><term>Method Name</term></cell>
+          <cell><term>Use</term></cell>
+          <cell><term>Explanation</term></cell>
         </row>
         <row>
-          <cell>
-            <c>keys</c>
-          </cell>
-          <cell>
-            <c>a_dict.keys()</c>
-          </cell>
-          <cell>
-                                Returns the keys of the dictionary in a dict_keys object
-                            </cell>
+          <cell><c>keys</c></cell>
+          <cell><c>a_dict.keys()</c></cell>
+          <cell>Returns the keys of the dictionary in a dict_keys object</cell>
         </row>
         <row>
-          <cell>
-            <c>values</c>
-          </cell>
-          <cell>
-            <c>a_dict.values()</c>
-          </cell>
-          <cell>
-                                Returns the values of the dictionary in a dict_values object
-                            </cell>
+          <cell><c>values</c></cell>
+          <cell><c>a_dict.values()</c></cell>
+          <cell>Returns the values of the dictionary in a dict_values object</cell>
         </row>
         <row>
-          <cell>
-            <c>items</c>
-          </cell>
-          <cell>
-            <c>a_dict.items()</c>
-          </cell>
-          <cell>
-                                Returns the key-value pairs in a dict_items object
-                            </cell>
+          <cell><c>items</c></cell>
+          <cell><c>a_dict.items()</c></cell>
+          <cell>Returns the key-value pairs in a dict_items object</cell>
         </row>
         <row>
-          <cell>
-            <c>get</c>
-          </cell>
-          <cell>
-            <c>a_dict.get(k)</c>
-          </cell>
-          <cell>
-                                Returns the value associated with <c>k</c>, <c>None</c> otherwise
-                            </cell>
+          <cell><c>get</c></cell>
+          <cell><c>a_dict.get(k)</c></cell>
+          <cell>Returns the value associated with <c>k</c>, <c>None</c> otherwise</cell>
         </row>
         <row>
-          <cell>
-            <c>get</c>
-          </cell>
-          <cell>
-            <c>a_dict.get(k, alt)</c>
-          </cell>
-          <cell>
-                                Returns the value associated with <c>k</c>, <c>alt</c> otherwise
-                            </cell>
+          <cell><c>get</c></cell>
+          <cell><c>a_dict.get(k, alt)</c></cell>
+          <cell>Returns the value associated with <c>k</c>, <c>alt</c> otherwise</cell>
         </row>
       </tabular>
     </table>

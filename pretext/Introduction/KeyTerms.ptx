@@ -4,156 +4,74 @@
   <table>
     <tabular>
       <row>
-        <cell>
-                            abstract data type (ADT)
-                        </cell>
-        <cell>
-                            formatted strings
-                        </cell>
-        <cell>
-                            override
-                        </cell>
+        <cell>abstract data type (ADT)</cell>
+        <cell>formatted strings</cell>
+        <cell>override</cell>
       </row>
       <row>
-        <cell>
-                            abstraction
-                        </cell>
-        <cell>
-                            Has-a relationship
-                        </cell>
-        <cell>
-                            procedural abstraction
-                        </cell>
+        <cell>abstraction</cell>
+        <cell>Has-a relationship</cell>
+        <cell>procedural abstraction</cell>
       </row>
       <row>
-        <cell>
-                            algorithm
-                        </cell>
-        <cell>
-                            implementation-independent
-                        </cell>
-        <cell>
-                            programming
-                        </cell>
+        <cell>algorithm</cell>
+        <cell>implementation-independent</cell>
+        <cell>programming</cell>
       </row>
       <row>
-        <cell>
-                            class
-                        </cell>
-        <cell>
-                            information hiding
-                        </cell>
-        <cell>
-                            prompt
-                        </cell>
+        <cell>class</cell>
+        <cell>information hiding</cell>
+        <cell>prompt</cell>
       </row>
       <row>
-        <cell>
-                            computable
-                        </cell>
-        <cell>
-                            inheritance
-                        </cell>
-        <cell>
-          <c>self</c>
-        </cell>
+        <cell>computable</cell>
+        <cell>inheritance</cell>
+        <cell><c>self</c></cell>
       </row>
       <row>
-        <cell>
-                            data abstraction
-                        </cell>
-        <cell>
-                            inheritance hierarchy
-                        </cell>
-        <cell>
-                            set
-                        </cell>
+        <cell>data abstraction</cell>
+        <cell>inheritance hierarchy</cell>
+        <cell>set</cell>
       </row>
       <row>
-        <cell>
-                            data structure
-                        </cell>
-        <cell>
-                            interface
-                        </cell>
-        <cell>
-                            shallow equality
-                        </cell>
+        <cell>data structure</cell>
+        <cell>interface</cell>
+        <cell>shallow equality</cell>
       </row>
       <row>
-        <cell>
-                            data type
-                        </cell>
-        <cell>
-                            Is-a relationship
-                        </cell>
-        <cell>
-                            simulation
-                        </cell>
+        <cell>data type</cell>
+        <cell>Is-a relationship</cell>
+        <cell>simulation</cell>
       </row>
       <row>
-        <cell>
-                            deep equality
-                        </cell>
-        <cell>
-                            list
-                        </cell>
-        <cell>
-                            string
-                        </cell>
+        <cell>deep equality</cell>
+        <cell>list</cell>
+        <cell>string</cell>
       </row>
       <row>
-        <cell>
-                            dictionary
-                        </cell>
-        <cell>
-                            list comprehension
-                        </cell>
-        <cell>
-                            subclass
-                        </cell>
+        <cell>dictionary</cell>
+        <cell>list comprehension</cell>
+        <cell>subclass</cell>
       </row>
       <row>
-        <cell>
-                            encapsulation
-                        </cell>
-        <cell>
-                            method
-                        </cell>
-        <cell>
-                            superclass
-                        </cell>
+        <cell>encapsulation</cell>
+        <cell>method</cell>
+        <cell>superclass</cell>
       </row>
       <row>
-        <cell>
-                            exception
-                        </cell>
-        <cell>
-                            mutability
-                        </cell>
-        <cell>
-                            truth table
-                        </cell>
+        <cell>exception</cell>
+        <cell>mutability</cell>
+        <cell>truth table</cell>
       </row>
       <row>
-        <cell>
-                            f-string
-                        </cell>
-        <cell>
-                            object
-                        </cell>
-        <cell>
-                            tuple
-                        </cell>
+        <cell>f-string</cell>
+        <cell>object</cell>
+        <cell>tuple</cell>
       </row>
       <row>
-        <cell>
-                            format operator
-                        </cell>
-        <cell>
-                        </cell>
-        <cell>
-                        </cell>
+        <cell>format operator</cell>
+        <cell></cell>
+        <cell></cell>
       </row>
     </tabular>
   </table>

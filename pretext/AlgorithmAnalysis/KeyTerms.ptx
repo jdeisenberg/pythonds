@@ -4,59 +4,29 @@
   <table>
     <tabular>
       <row>
-        <cell>
-                            average case
-                        </cell>
-        <cell>
-                            constant
-                        </cell>
-        <cell>
-                            logarithmic
-                        </cell>
+        <cell>average case</cell>
+        <cell>constant</cell>
+        <cell>logarithmic</cell>
       </row>
       <row>
-        <cell>
-                            benchmark analysis
-                        </cell>
-        <cell>
-                            cubic
-                        </cell>
-        <cell>
-                            order of magnitude
-                        </cell>
+        <cell>benchmark analysis</cell>
+        <cell>cubic</cell>
+        <cell>order of magnitude</cell>
       </row>
       <row>
-        <cell>
-                            Big O notation
-                        </cell>
-        <cell>
-                            exponential
-                        </cell>
-        <cell>
-                            quadratic
-                        </cell>
+        <cell>Big O notation</cell>
+        <cell>exponential</cell>
+        <cell>quadratic</cell>
       </row>
       <row>
-        <cell>
-                            brute force
-                        </cell>
-        <cell>
-                            linear
-                        </cell>
-        <cell>
-                            time complexity
-                        </cell>
+        <cell>brute force</cell>
+        <cell>linear</cell>
+        <cell>time complexity</cell>
       </row>
       <row>
-        <cell>
-                            checking off
-                        </cell>
-        <cell>
-                            log linear
-                        </cell>
-        <cell>
-                            worst case
-                        </cell>
+        <cell>checking off</cell>
+        <cell>log linear</cell>
+        <cell>worst case</cell>
       </row>
     </tabular>
   </table>

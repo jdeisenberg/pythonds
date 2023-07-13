@@ -74,46 +74,22 @@ print(sequential_search(test_list, 13))
           <term>Table 1: Comparisons Used in a Sequential Search of an Unordered List</term>
         </title>
         <row header="yes">
-          <cell>
-            <term>Case</term>
-          </cell>
-          <cell>
-            <term>Best Case</term>
-          </cell>
-          <cell>
-            <term>Worst Case</term>
-          </cell>
-          <cell>
-            <term>Average Case</term>
-          </cell>
+          <cell><term>Case</term></cell>
+          <cell><term>Best Case</term></cell>
+          <cell><term>Worst Case</term></cell>
+          <cell><term>Average Case</term></cell>
         </row>
         <row>
-          <cell>
-                                item is present
-                            </cell>
-          <cell>
-            <m>1</m>
-          </cell>
-          <cell>
-            <m>n</m>
-          </cell>
-          <cell>
-            <m>\frac{n}{2}</m>
-          </cell>
+          <cell>item is present</cell>
+          <cell><m>1</m></cell>
+          <cell><m>n</m></cell>
+          <cell><m>\frac{n}{2}</m></cell>
         </row>
         <row>
-          <cell>
-                                item is not present
-                            </cell>
-          <cell>
-            <m>n</m>
-          </cell>
-          <cell>
-            <m>n</m>
-          </cell>
-          <cell>
-            <m>n</m>
-          </cell>
+          <cell>item is not present</cell>
+          <cell><m>n</m></cell>
+          <cell><m>n</m></cell>
+          <cell><m>n</m></cell>
         </row>
       </tabular>
     </table>
@@ -173,42 +149,22 @@ print(ordered_sequential_search(test_list, 13))
           <term>Table 2: Comparisons Used in Sequential Search of an Ordered List</term>
         </title>
         <row header="yes">
-          <cell>
-                            </cell>
-          <cell>
-                            </cell>
-          <cell>
-                            </cell>
-          <cell>
-                            </cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
         </row>
         <row>
-          <cell>
-                                item is present
-                            </cell>
-          <cell>
-            <m>1</m>
-          </cell>
-          <cell>
-            <m>n</m>
-          </cell>
-          <cell>
-            <m>\frac{n}{2}</m>
-          </cell>
+          <cell>item is present</cell>
+          <cell><m>1</m></cell>
+          <cell><m>n</m></cell>
+          <cell><m>\frac{n}{2}</m></cell>
         </row>
         <row>
-          <cell>
-                                item not present
-                            </cell>
-          <cell>
-            <m>1</m>
-          </cell>
-          <cell>
-            <m>n</m>
-          </cell>
-          <cell>
-            <m>\frac{n}{2}</m>
-          </cell>
+          <cell>item not present</cell>
+          <cell><m>1</m></cell>
+          <cell><m>n</m></cell>
+          <cell><m>\frac{n}{2}</m></cell>
         </row>
       </tabular>
     </table>

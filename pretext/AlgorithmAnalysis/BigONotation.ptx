@@ -79,68 +79,36 @@
         <term>Table 1: Common Functions for Big O</term>
       </title>
       <row header="yes">
-        <cell>
-          <term>f(n)</term>
-        </cell>
-        <cell>
-          <term>Name</term>
-        </cell>
+        <cell><term>f(n)</term></cell>
+        <cell><term>Name</term></cell>
       </row>
       <row>
-        <cell>
-          <m>1</m>
-        </cell>
-        <cell>
-          <term>Constant</term>
-        </cell>
+        <cell><m>1</m></cell>
+        <cell><term>Constant</term></cell>
       </row>
       <row>
-        <cell>
-          <m>\log n</m>
-        </cell>
-        <cell>
-          <term>Logarithmic</term>
-        </cell>
+        <cell><m>\log n</m></cell>
+        <cell><term>Logarithmic</term></cell>
       </row>
       <row>
-        <cell>
-          <m>n</m>
-        </cell>
-        <cell>
-          <term>Linear</term>
-        </cell>
+        <cell><m>n</m></cell>
+        <cell><term>Linear</term></cell>
       </row>
       <row>
-        <cell>
-          <m>n\log n</m>
-        </cell>
-        <cell>
-          <term>Log linear</term>
-        </cell>
+        <cell><m>n\log n</m></cell>
+        <cell><term>Log linear</term></cell>
       </row>
       <row>
-        <cell>
-          <m>n^{2}</m>
-        </cell>
-        <cell>
-          <term>Quadratic</term>
-        </cell>
+        <cell><m>n^{2}</m></cell>
+        <cell><term>Quadratic</term></cell>
       </row>
       <row>
-        <cell>
-          <m>n^{3}</m>
-        </cell>
-        <cell>
-          <term>Cubic</term>
-        </cell>
+        <cell><m>n^{3}</m></cell>
+        <cell><term>Cubic</term></cell>
       </row>
       <row>
-        <cell>
-          <m>2^{n}</m>
-        </cell>
-        <cell>
-          <term>Exponential</term>
-        </cell>
+        <cell><m>2^{n}</m></cell>
+        <cell><term>Exponential</term></cell>
       </row>
     </tabular>
   </table>

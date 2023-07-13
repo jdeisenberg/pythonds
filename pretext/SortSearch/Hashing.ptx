@@ -44,60 +44,32 @@
         <term>Table 4: Simple Hash Function Using Remainders</term>
       </title>
       <row header="yes">
-        <cell>
-          <term>Item</term>
-        </cell>
-        <cell>
-          <term>Hash Value</term>
-        </cell>
+        <cell><term>Item</term></cell>
+        <cell><term>Hash Value</term></cell>
       </row>
       <row>
-        <cell>
-                            54
-                        </cell>
-        <cell>
-                            10
-                        </cell>
+        <cell>54</cell>
+        <cell>10</cell>
       </row>
       <row>
-        <cell>
-                            26
-                        </cell>
-        <cell>
-                            4
-                        </cell>
+        <cell>26</cell>
+        <cell>4</cell>
       </row>
       <row>
-        <cell>
-                            93
-                        </cell>
-        <cell>
-                            5
-                        </cell>
+        <cell>93</cell>
+        <cell>5</cell>
       </row>
       <row>
-        <cell>
-                            17
-                        </cell>
-        <cell>
-                            6
-                        </cell>
+        <cell>17</cell>
+        <cell>6</cell>
       </row>
       <row>
-        <cell>
-                            77
-                        </cell>
-        <cell>
-                            0
-                        </cell>
+        <cell>77</cell>
+        <cell>0</cell>
       </row>
       <row>
-        <cell>
-                            31
-                        </cell>
-        <cell>
-                            9
-                        </cell>
+        <cell>31</cell>
+        <cell>9</cell>
       </row>
     </tabular>
   </table>
@@ -175,81 +147,39 @@
           <term>Table 5: Comparison of Remainder and Mid-Square Methods</term>
         </title>
         <row header="yes">
-          <cell>
-            <term>Item</term>
-          </cell>
-          <cell>
-            <term>Remainder</term>
-          </cell>
-          <cell>
-            <term>Mid-Square</term>
-          </cell>
+          <cell><term>Item</term></cell>
+          <cell><term>Remainder</term></cell>
+          <cell><term>Mid-Square</term></cell>
         </row>
         <row>
-          <cell>
-                                54
-                            </cell>
-          <cell>
-                                10
-                            </cell>
-          <cell>
-                                3
-                            </cell>
+          <cell>54</cell>
+          <cell>10</cell>
+          <cell>3</cell>
         </row>
         <row>
-          <cell>
-                                26
-                            </cell>
-          <cell>
-                                4
-                            </cell>
-          <cell>
-                                7
-                            </cell>
+          <cell>26</cell>
+          <cell>4</cell>
+          <cell>7</cell>
         </row>
         <row>
-          <cell>
-                                93
-                            </cell>
-          <cell>
-                                5
-                            </cell>
-          <cell>
-                                9
-                            </cell>
+          <cell>93</cell>
+          <cell>5</cell>
+          <cell>9</cell>
         </row>
         <row>
-          <cell>
-                                17
-                            </cell>
-          <cell>
-                                6
-                            </cell>
-          <cell>
-                                8
-                            </cell>
+          <cell>17</cell>
+          <cell>6</cell>
+          <cell>8</cell>
         </row>
         <row>
-          <cell>
-                                77
-                            </cell>
-          <cell>
-                                0
-                            </cell>
-          <cell>
-                                4
-                            </cell>
+          <cell>77</cell>
+          <cell>0</cell>
+          <cell>4</cell>
         </row>
         <row>
-          <cell>
-                                31
-                            </cell>
-          <cell>
-                                9
-                            </cell>
-          <cell>
-                                6
-                            </cell>
+          <cell>31</cell>
+          <cell>9</cell>
+          <cell>6</cell>
         </row>
       </tabular>
     </table>

@@ -24,7 +24,7 @@
   <p>The best way to think about an array is that it is one continuous block
             of bytes in the computer's memory. This block is divided up into <m>n</m>-byte
             chunks where <m>n</m> is based on the data type that is stored in the array.
-            <xref href="fig-array" /> illustrates the idea of an array that is sized
+            <xref ref="fig-array" /> illustrates the idea of an array that is sized
             to hold six floating point values.</p>
   <figure align="" xml:id="fig-array">
     <caption>An Array of Floating Point Numbers</caption>
@@ -245,20 +245,19 @@ def __setitem__(self, idx, val):
             back toward the insertion point, copying data forward. Our implementation
             of <c>insert</c> is shown in
             <xref ref="lst_arrlistins" />. Note how the <c>range</c> is
-            set up on
-            line&#xA0;<!-- <url href="#line:lst_arrlistins_range" visual="#line:lst_arrlistins_range">[line:lst_arrlistins_range]</url> --> to
+            set up on the fourth line to
             ensure that we are copying existing data into the unused part of the
             array first, and then subsequent values are copied over old values that
             have already been shifted. If the loop had started at the insertion
             point and copied that value to the next larger index position in the
             array, the old value would have been lost forever.</p>
-  <pre>def insert(self, idx, val):
+  <listing xml:id="lst_arrlistins"><pre>def insert(self, idx, val):
     if self.last_index &gt; self.max_size - 1:
         self.__resize()
-    for i in range(self.last_index, idx - 1, -1):  |\label{line:lst_arrlistins_range}|
+    for i in range(self.last_index, idx - 1, -1):
         self.my_array[i + 1] = self.my_array[i]
     self.last_index += 1
-    self.my_array[idx] = val</pre>
+    self.my_array[idx] = val</pre></listing>
   <p>The performance of the insert is <m>O(n)</m> since in the worst case we
             want to insert something at index 0 and we have to shift the entire
             array forward by one. On average we will only need to shift half of the
