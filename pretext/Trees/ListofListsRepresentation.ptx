@@ -14,7 +14,7 @@
             storage technique, let's look at an example. <xref ref="i10_id1fig-smalltree"/>
             shows a simple tree and the corresponding list implementation.</p>
   <figure align="center" xml:id="i10_id1fig-smalltree">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: A Small Tree</caption>
+    <caption>A Small Tree</caption>
     <image source="Trees/Figures/smalltree.png" width="50%"/>
   </figure>
   <pre>my_tree = [
@@ -39,7 +39,8 @@
             Another nice feature of the list of lists approach is that it
             generalizes to a tree that has many subtrees. In the case where the tree
             is more than a binary tree, another subtree is just another list.</p>
-<listing xml:id="lst-treelist1"> <program label="lst-treelist1"  interactive="activecode" language="python">
+<listing xml:id="lst-treelist1">
+<program label="lst-treelist1"  interactive="activecode" language="python">
     <input>
 my_tree = ["a", ["b", ["d", [], []], ["e", [], []]], ["c", ["f", [], []], []]]
 print(my_tree)
@@ -104,7 +105,8 @@ def get_right_child(root):
             functions we have just written. You should try it
             out for yourself. One of the exercises at the end of this chapter asks you to draw the tree
             structure resulting from this set of calls.</p>
-<listing xml:id="lst-bintreetry"> <program label="lst-bintreetry"  interactive="activecode" language="python">
+<listing xml:id="lst-bintreetry">
+<program label="lst-bintreetry"  interactive="activecode" language="python">
     <input>
 def make_binary_tree(root):
     return [root, [], []]

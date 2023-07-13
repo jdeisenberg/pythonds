@@ -59,7 +59,7 @@
                 proceed to check the second character. Whenever a mismatch occurs, we
                 simply slide the pattern one position to the right and start over.</p>
     <figure align="" xml:id="fig-bruteforce">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Simple Pattern-Matching Algorithm</caption>
+      <caption>A Simple Pattern-Matching Algorithm</caption>
       <image source="Advanced/Figures/simplematch.png" width="50%" alt="A Simple Pattern-Matching Algorithm"/>
     </figure>
     <p>In this example, we have found a match on the sixth attempt, starting at
@@ -123,7 +123,7 @@
                 matching pattern characters so far. Clearly, before processing the first
                 text character, this is the situation.</p>
     <figure align="" xml:id="fig-dfagraph">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Deterministic Finite Automaton</caption>
+      <caption>A Deterministic Finite Automaton</caption>
       <image source="Advanced/Figures/dfa.png" width="50%" alt="A Deterministic Finite Automaton"/>
     </figure>
     <p>The DFA works in a very simple way. We keep track of our current state,
@@ -152,7 +152,7 @@
                 only one next state for every current state&#x2013;current character
                 combination, the processing through the DFA graph is easy to follow.</p>
     <figure align="" xml:id="fig-statetransitiontable">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Trace of the DFA Pattern Matcher</caption>
+      <caption>A Trace of the DFA Pattern Matcher</caption>
       <image source="Advanced/Figures/steptable.png" width="50%" alt="A Trace of the DFA Pattern Matcher"/>
     </figure>
     <p>Since every character from the text is used once as input to the DFA
@@ -175,7 +175,7 @@
                 strategy using the rule that we slide the pattern over to the point
                 where the previous mismatch happened.</p>
     <figure align="" xml:id="fig-simplematch2">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Simple Pattern Matcher with Longer Shifts</caption>
+      <caption>Simple Pattern Matcher with Longer Shifts</caption>
       <image source="Advanced/Figures/simplematch2.png" width="50%" alt="Simple Pattern Matcher with Longer Shifts"/>
     </figure>
     <p>In step 1, we find that the first two positions match. Since the
@@ -215,7 +215,7 @@
                 (state 6), this time labeled with an <q>F,</q> again means success and
                 represents a termination point for the graph.</p>
     <figure align="" xml:id="fig-kmpgraph1">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">An Example KMP Graph</caption>
+      <caption>An Example KMP Graph</caption>
       <image source="Advanced/Figures/kmp.png" width="50%" alt="An Example KMP Graph"/>
     </figure>
     <p>Each remaining vertex is responsible for checking a particular character
@@ -286,7 +286,7 @@
                 state 2 where there is a correct match. This eventually leads to a
                 successful pattern match.</p>
     <figure align="" xml:id="fig-kmpexample">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Trace of the KMP Pattern Matcher</caption>
+      <caption>A Trace of the KMP Pattern Matcher</caption>
       <image source="Advanced/Figures/steptable2.png" width="50%" alt="A Trace of the KMP Pattern Matcher"/>
     </figure>
     <p>As with the DFA graph from the previous section, KMP pattern matching is

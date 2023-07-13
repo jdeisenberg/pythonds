@@ -24,7 +24,7 @@
             <c>None</c>. <xref ref="i17_id1fig-hashtable1"/> shows a hash table of size <m>m = 11</m>.
             In other words, there are <m>m</m> slots in the table, named 0 through 10.</p>
   <figure align="center" xml:id="i17_id1fig-hashtable1">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Hash Table with 11 Empty Slots</caption>
+    <caption>Hash Table with 11 Empty Slots</caption>
     <image source="SortSearch/Figures/hashtable.png" width="50%"/>
   </figure>
   <p>The mapping between an item and the slot where that item belongs in the
@@ -80,7 +80,7 @@
             <m>\lambda = \frac {number\_of\_items}{table\_size}</m>. For this example,
             <m>\lambda = \frac {6}{11}</m>.</p>
   <figure align="center" xml:id="fig-hashtable2">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Hash Table with Six Items</caption>
+    <caption>Hash Table with Six Items</caption>
     <image source="SortSearch/Figures/hashtable2.png" width="50%"/>
   </figure>
   <p>Now when we want to search for an item, we simply use the hash function
@@ -198,7 +198,7 @@
                 string and a table size and returns the hash value in the range from 0
                 to <c>table_size</c>-1.</p>
     <figure align="center" xml:id="fig-stringhash">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Hashing a String Using Ordinal Values</caption>
+      <caption>Hashing a String Using Ordinal Values</caption>
       <image source="SortSearch/Figures/stringhash.png" width="50%"/>
     </figure>
     <listing xml:id="sort-search_lst-hashfunction1"><pre>def hash_str(a_string, table_size):
@@ -209,7 +209,7 @@
                 one possible way to use the positional value as a weighting factor. The
                 modification to the <c>hash_str</c> function is left as an exercise.</p>
     <figure align="center" xml:id="fig-stringhash2">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Hashing a String Using Ordinal Values with Weighting</caption>
+      <caption>Hashing a String Using Ordinal Values with Weighting</caption>
       <image source="SortSearch/Figures/stringhash2.png" width="50%"/>
     </figure>
     <p>You may be able to think of a number of additional ways to compute hash
@@ -252,7 +252,7 @@
                 slot 9 is full, we begin to do linear probing. We visit slots 10, 0, 1,
                 and 2, and finally find an empty slot at position 3.</p>
     <figure align="center" xml:id="fig-linearprobing">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Collision Resolution with Linear Probing</caption>
+      <caption>Collision Resolution with Linear Probing</caption>
       <image source="SortSearch/Figures/linearprobing1.png" width="50%"/>
     </figure>
     <p>Once we have built a hash table using open addressing and linear
@@ -273,7 +273,7 @@
                 finally find an open position. This cluster is shown in
                 <xref ref="fig-clustering"/>.</p>
     <figure align="center" xml:id="fig-clustering">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Cluster of Items for Slot 0</caption>
+      <caption>A Cluster of Items for Slot 0</caption>
       <image source="SortSearch/Figures/clustering.png" width="50%"/>
     </figure>
     <p>One way to deal with clustering is to extend the linear probing
@@ -285,7 +285,7 @@
                 collision occurs, we will look at every third slot until we find one
                 that is empty.</p>
     <figure align="center" xml:id="fig-linearprobing2">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Collision Resolution Using a Plus 3 Probe</caption>
+      <caption>Collision Resolution Using a Plus 3 Probe</caption>
       <image source="SortSearch/Figures/linearprobing2.png" width="50%"/>
     </figure>
     <p>The general name for this process of looking for another slot after a
@@ -308,7 +308,7 @@
                 <xref ref="fig-quadratic"/> shows our example values after they are placed using
                 this technique.</p>
     <figure align="center" xml:id="fig-quadratic">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Collision Resolution with Quadratic Probing</caption>
+      <caption>Collision Resolution with Quadratic Probing</caption>
       <image source="SortSearch/Figures/quadratic.png" width="50%"/>
     </figure>
     <p>An alternative method for handling the collision problem is to allow
@@ -320,7 +320,7 @@
                 increases. <xref ref="fig-chaining"/> shows the items as they are added to a hash
                 table that uses chaining to resolve collisions.</p>
     <figure align="center" xml:id="fig-chaining">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Collision Resolution with Chaining</caption>
+      <caption>Collision Resolution with Chaining</caption>
       <image source="SortSearch/Figures/chaining.png" width="50%"/>
     </figure>
     <p>When we want to search for an item, we use the hash function to generate

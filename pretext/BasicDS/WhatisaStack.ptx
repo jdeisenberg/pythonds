@@ -22,11 +22,11 @@
             <xref ref="i117_id2fig-objectstack"/> shows another stack that contains a number
             of primitive Python data objects.</p>
   <figure align="center" xml:id="i117_id1fig-bookstack">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: A Stack of Books</caption>
+    <caption>A Stack of Books</caption>
     <image source="BasicDS/Figures/bookstack2.png" width="50%"/>
   </figure>
   <figure align="center" xml:id="i117_id2fig-objectstack">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 2: A Stack of Primitive Python Data Objects</caption>
+    <caption>A Stack of Primitive Python Data Objects</caption>
     <image source="BasicDS/Figures/primitive.png" width="50%"/>
   </figure>
   <p>One of the most useful properties of stacks can be observed
@@ -41,7 +41,7 @@
             created and then again as items are removed. Note the order of the
             objects.</p>
   <figure align="center" xml:id="fig-reversal">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 3: The Reversal Property of Stacks</caption>
+    <caption>The Reversal Property of Stacks</caption>
     <image source="BasicDS/Figures/simplereversal.png" width="50%"/>
   </figure>
   <p>Considering this reversal property, you can perhaps think of examples of

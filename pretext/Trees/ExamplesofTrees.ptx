@@ -23,7 +23,7 @@
             matter how deep we go in the classification tree, all the organisms are
             still animals.</p>
   <figure align="center" xml:id="i13_id1fig-biotree">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: Taxonomy of Some Common Animals Shown as a Tree</caption>
+    <caption>Taxonomy of Some Common Animals Shown as a Tree</caption>
     <image source="Trees/Figures/biology.png" width="50%" alt="image"/>
   </figure>
   <p>Notice that you can start at the top of the tree and follow a path made
@@ -53,7 +53,7 @@
             as a tree. <xref ref="i13_id2fig-filetree"/> illustrates a small part of a Unix file
             system hierarchy.</p>
   <figure align="center" xml:id="i13_id2fig-filetree">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 2: A Small Part of the Unix File System Hierarchy</caption>
+    <caption>A Small Part of the Unix File System Hierarchy</caption>
     <image source="Trees/Figures/directory.png" width="50%" alt="image"/>
   </figure>
   <p>Like the biological classification tree, the file system tree enables
@@ -86,7 +86,7 @@
 &lt;/body&gt;
 &lt;/html&gt;</pre>
   <figure align="center" xml:id="fig-html">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 3: A Tree Corresponding to the Markup Elements of a Web Page</caption>
+    <caption>A Tree Corresponding to the Markup Elements of a Web Page</caption>
     <image source="Trees/Figures/htmltree.png" width="50%" alt="image"/>
   </figure>
   <p>The HTML source code and the tree accompanying the source illustrate

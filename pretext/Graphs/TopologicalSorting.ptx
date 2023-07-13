@@ -12,7 +12,7 @@
             to heat up some syrup. <xref ref="i177_id1fig-pancakes"/> illustrates this process as
             a dependency graph.</p>
   <figure align="center" xml:id="i177_id1fig-pancakes">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 27: The Steps for Making Pancakes</caption>
+    <caption>The Steps for Making Pancakes</caption>
     <image source="Graphs/Figures/pancakes.png" width="50%"/>
   </figure>
   <p>The difficult thing about making pancakes is knowing what to do first.
@@ -49,14 +49,14 @@
   <p><xref ref="i177_id2fig-pancakesdfs"/> shows the depth-first forest constructed by
             <c>dfs</c> on the pancake-making graph shown in <xref ref="i177_id1fig-pancakes"/>.</p>
   <figure align="center" xml:id="i177_id2fig-pancakesdfs">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 28: Result of Depth-First Search on the Pancake Graph</caption>
+    <caption>Result of Depth-First Search on the Pancake Graph</caption>
     <image source="Graphs/Figures/pancakesDFS.png" width="50%"/>
   </figure>
   <p>Finally, <xref ref="fig-pancakests"/> shows the results of applying the
             topological sort algorithm to our graph. Now all the ambiguity has been
             removed and we know exactly the order in which to perform the pancake-making steps.</p>
   <figure align="center" xml:id="fig-pancakests">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 29: Result of Topological Sort on Directed Acyclic Graph</caption>
+    <caption>Result of Topological Sort on Directed Acyclic Graph</caption>
     <image source="Graphs/Figures/pancakesTS.png" width="50%"/>
   </figure>
 </section>

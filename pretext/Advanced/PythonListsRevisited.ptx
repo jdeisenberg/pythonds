@@ -236,7 +236,7 @@ def __setitem__(self, idx, val):
             ahead by one index position in order to make room for the item we are
             inserting. The process is illustrated in <xref ref="fig-arrlistins" />.</p>
   <figure align="" xml:id="fig-arrlistins">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Inserting 27.1 at Index 2 in an ArrayList</caption>
+    <caption>Inserting 27.1 at Index 2 in an ArrayList</caption>
     <image source="Advanced/Figures/insertArray.png" width="50%" alt="Inserting 27.1 at index 2 in an ArrayList"/>
   </figure>
   <p>The key to implementing <c>insert</c> correctly is to realize that as you

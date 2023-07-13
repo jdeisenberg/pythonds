@@ -21,7 +21,7 @@
             algorithm can quickly find the value 54. The complete function is shown
             in <xref ref="lst-binarysearchpy"/>.</p>
   <figure align="center" xml:id="i13_id1fig-binsearch">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Binary Search of an Ordered List of Integers</caption>
+    <caption>Binary Search of an Ordered List of Integers</caption>
     <image source="SortSearch/Figures/binsearch.png" width="50%"/>
   </figure>
   <listing xml:id="lst-binarysearchpy">

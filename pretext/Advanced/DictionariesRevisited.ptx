@@ -17,7 +17,7 @@
             example shows, if a key (93) is provided to the map, the associated
             value (be) is returned.</p>
   <figure align="" xml:id="fig-mappic">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">An Example Map</caption>
+    <caption>An Example Map</caption>
     <image source="Advanced/Figures/mappic.png" width="50%" alt="An Example Map"/>
   </figure>
 </introduction>
@@ -77,7 +77,7 @@
                 upper left corner. Note that this is the only entry point into the skip
                 list structure.</p>
     <figure align="" xml:id="fig-initskiplist">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">An Example Skip List</caption>
+      <caption>An Example Skip List</caption>
       <image source="Advanced/Figures/initskiplist.png" width="50%" alt="An Example Skip List"/>
     </figure>
     <p>Before moving on to the details of skip-list processing it will be
@@ -87,12 +87,12 @@
                 there are two references from each data node. <xref ref="fig-skipdatanode"/>
                 shows a detailed view of a single data node.</p>
     <figure align="" xml:id="fig-vocab1">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">The Body of the Skip List Is Made Up of Data Nodes</caption>
+      <caption>The Body of the Skip List Is Made Up of Data Nodes</caption>
       <image source="Advanced/Figures/vocabskiplist1.png" width="50%" alt="The Body of the Skip List Is Made Up of Data Nodes"/>
     </figure>
 
     <figure align="" xml:id="fig-skipdatanode">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Single Data Node</caption>
+      <caption>A Single Data Node</caption>
       <image source="Advanced/Figures/datanode.png" width="50%" alt="A Single Data Node"/>
     </figure>
     <p><xref ref="fig-vocab2"/> shows two different vertical columns. The
@@ -102,11 +102,11 @@
                 refers to the next lower header node. A detailed view of a header node
                 can be seen in <xref ref="fig-headernode"/>.</p>
     <figure align="" xml:id="fig-vocab2">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Header Nodes and Towers</caption>
+      <caption>Header Nodes and Towers</caption>
       <image source="Advanced/Figures/vocabskiplist2.png" width="50%" alt="Header Nodes and Towers"/>
     </figure>
     <figure align="" xml:id="fig-headernode">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Each Header Node Holds Two References</caption>
+      <caption>Each Header Node Holds Two References</caption>
       <image source="Advanced/Figures/headernode.png" width="50%" alt="Each Header Node Holds Two References"/>
     </figure>
     <p>The columns of data nodes are known as <term>towers</term>. Towers are linked
@@ -126,7 +126,7 @@
                 search. Again, it can be seen that the number of nodes at each level is
                 directly related to the height of the towers.</p>
     <figure align="" xml:id="fig-vocab3">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Each Horizontal Group of Data Nodes Is a Level</caption>
+      <caption>Each Horizontal Group of Data Nodes Is a Level</caption>
       <image source="Advanced/Figures/vocabskiplist3.png" width="50%" alt="Each Horizontal Group of Data Nodes Is a Level"/>
     </figure>
     <p>Classes for the two types of nodes described above can easily be
@@ -216,7 +216,7 @@
                     nodes marked by stars represent those that are considered during the
                     search process.</p>
       <figure align="" xml:id="fig-searchskip">
-        <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Searching for the Key 77</caption>
+        <caption>Searching for the Key 77</caption>
         <image source="Advanced/Figures/searchskiplist.png" width="50%" alt="Searching for the Key 77"/>
       </figure>
       <p>As we search for 77, we begin at the head of the skip list. The first
@@ -283,7 +283,7 @@
                     used the stars once again to show the path of the search process as it
                     proceeds through the skip list.</p>
       <figure align="" xml:id="fig-skiplistadd">
-        <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Searching for the Key 65</caption>
+        <caption>Searching for the Key 65</caption>
         <image source="Advanced/Figures/addskiplist.png" width="50%" alt="Searching for the Key 65"/>
       </figure>
       <p>As we proceed using the same search strategy as in the previous
@@ -304,7 +304,7 @@
                     the tower. Each time the coin comes up heads, we will add one more level
                     to the current tower.</p>
       <figure align="" xml:id="fig-skiplistadd2">
-        <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Adding the Data Node and Tower for 65</caption>
+        <caption>Adding the Data Node and Tower for 65</caption>
         <image source="Advanced/Figures/addskiplist2.png" width="50%" alt="Adding the Data Node and Tower for 65"/>
       </figure>
       <p>It is easy to use a random number generator to simulate a coin flip.
