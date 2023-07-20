@@ -41,7 +41,7 @@
             and is currently empty, then <xref ref="basic-ds_tbl-dequeoperations"/> shows the results
             of a sequence of deque operations. Note that the contents in front are
             listed on the right. It is very important to keep track of the front and
-            the rear as you move items in and out of the collection as things can
+            the rear as you move items in and out of the collection, as things can
             get a bit confusing.</p>
   <table xml:id="basic-ds_tbl-dequeoperations">
     <tabular>

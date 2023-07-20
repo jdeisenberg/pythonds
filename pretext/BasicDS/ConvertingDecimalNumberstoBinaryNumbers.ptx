@@ -71,7 +71,7 @@ print(divide_by_2(31))
         </input>
   </program>
 </listing>
-  <p>The algorithm for binary conversion can easily be extended to perform
+<p>The algorithm for binary conversion can easily--> be extended to perform
             the conversion for any base. In computer science it is common to use a
             number of different encodings. The most common of these are binary,
             octal (base 8), and hexadecimal (base 16).</p>
@@ -96,7 +96,7 @@ print(divide_by_2(31))
             numbers need a maximum of 10 digits, so the typical digit characters 0
             through 9 work fine. The problem comes when we go
             beyond base 10. We can no longer simply use the remainders, as they are
-            themselves represented as two-digit decimal numbers. Instead we need to
+            themselves represented as two-digit decimal numbers. Instead, we need to
             create a set of digits that can be used to represent those remainders
             beyond 9.</p>
 <listing xml:id="lst-baseconverter">

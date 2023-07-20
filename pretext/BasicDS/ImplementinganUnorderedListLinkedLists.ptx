@@ -157,7 +157,7 @@ class UnorderedList:
                 by accessing the first node and then following <c>next</c> links. This
                 means that the easiest place to add the new node is right at the head,
                 or beginning, of the list. In other words, we will make the new item the
-                first item of the list and the existing items will need to be linked to
+                first item of the list, and the existing items will need to be linked to
                 this new first item so that they follow.</p>
     <p>The linked list shown in <xref ref="fig-linkedlist"/> was built by calling
                 the <c>add</c> method a number of times.</p>
@@ -213,12 +213,12 @@ def add(self, item):
                 <xref ref="basic-ds_lst-length"/> shows the Python code for counting the number of
                 nodes in the list. The external reference is called <c>current</c> and is
                 initialized to the head of the list in line 2. At the start of the
-                process we have not seen any nodes so the count is set to <m>0</m>.
+                process we have not seen any nodes, so the count is set to <m>0</m>.
                 Lines 4&#x2013;6 actually implement the traversal. As long as the current
-                reference has not seen the end of the list (<c>None</c>), we move current
+                reference has not seen the end of the list (<c>None</c>), we move <c>current</c>
                 along to the next node via the assignment statement in line 6. Again,
                 the ability to compare a reference to <c>None</c> is very useful. Every
-                time current moves to a new node, we add <m>1</m> to <c>count</c>.
+                time <c>current</c> moves to a new node, we add <m>1</m> to <c>count</c>.
                 Finally, <c>count</c> gets returned after the iteration stops.
                 <xref ref="fig-traversal"/> shows this process as it proceeds down the list.</p>
     <listing xml:id="basic-ds_lst-length"><program language="python">
@@ -239,7 +239,7 @@ def size(self):
     </figure>
     <p>Searching for a value in a linked list implementation of an unordered
                 list also uses the traversal technique. As we visit each node in the
-                linked list we will ask whether the data stored there matches the item
+                linked list, we will ask whether the data stored there matches the item
                 we are looking for. In this case, however, we may not have to traverse
                 all the way to the end of the list. In fact, if we do get to the end of
                 the list, that means that the item we are looking for must not be
