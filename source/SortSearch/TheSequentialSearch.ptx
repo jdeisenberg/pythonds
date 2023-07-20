@@ -22,7 +22,7 @@
             <xref ref="lst-seqsearchpython"/>. The function needs two items&#x2013;the list and the item we
             are looking for&#x2013;and returns a Boolean value as to whether it is present.</p>
 <listing xml:id="lst-seqsearchpython">
-<program label="lst-seqsearchpython"   interactive="codelens" language="python">
+<program label="lst-seqsearchpython" interactive="codelens" language="python">
     <input>
 def sequential_search(a_list, item):
     pos = 0
