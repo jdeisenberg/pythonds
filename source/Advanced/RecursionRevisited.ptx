@@ -120,12 +120,12 @@
     <p>The above approach makes the computation simpler because we are keeping
                 the result smaller rather than following it out to its full precision.
                 However, we can do even better using a recursive approach.</p>
-    <math_block docname="Advanced/RecursionRevisited"  nowrap="False" number="True" xml:space="preserve">x^n =
+    <me>x^n =
    \begin{cases}
    (x \cdot x)^{ n/2 } &amp; \text{if <m>n</m> is even} \\
    (x \cdot x^{n-1}) = x \cdot (x \cdot x)^{\lfloor n/2 \rfloor} &amp; \text{if <m>n</m> is odd}
    \end{cases}
-   \label{eqn:pow}</math_block>
+   \label{eqn:pow}</me>
     <p>Remember that for a floating point number <m>n</m> the floor operation,
                 <m>\lfloor n \rfloor</m>, results in the largest integer smaller than
                 <m>n</m>. Python's integer division operator returns the floor of the
@@ -263,10 +263,10 @@
                 <m>B</m>. Further, we know that <m>d = Ax + By</m>. To figure out what
                 <m>A</m> and <m>B</m> should be, let's rearrange the equation as
                 follows:</p>
-    <math_block docname="Advanced/RecursionRevisited"  nowrap="False" number="True" xml:space="preserve">\begin{aligned}
+    <me>\begin{aligned}
 d = &amp; ay + b(x \mod{y}) \\
   = &amp; ay + b(x - \lfloor x / y \rfloor y) \\
-  = &amp; bx + (a - \lfloor x / y \rfloor b)y\end{aligned}</math_block>
+  = &amp; bx + (a - \lfloor x / y \rfloor b)y\end{aligned}</me>
     <p>Note the substitution made in the second line,
                 <m>x \mod{y} = x - \lfloor x / y \rfloor</m>. This is legal because
                 this is how we would normally calculate the remainder of x / y
@@ -301,15 +301,12 @@ d = &amp; ay + b(x \mod{y}) \\
                 a fun and easy algorithm to implement.</p>
     <p>To generate the two keys, choose two large prime numbers <m>p</m> and
                 <m>q</m>. Then compute the product</p>
-    <math_block docname="Advanced/RecursionRevisited"  nowrap="False" number="True" xml:space="preserve">n = p \times q
+              <me>n = p \times q</me>
 
-</math_block>
     <p>The next step is to randomly choose the encryption key <m>e</m> such
                 that <m>e</m> and <m>(p - 1) \times (q - 1)</m> are relatively prime;
                 that is</p>
-    <math_block docname="Advanced/RecursionRevisited"  nowrap="False" number="True" xml:space="preserve">gcd(e, (p - 1) \times (q-1)) = 1
-
-</math_block>
+    <me>gcd(e, (p - 1) \times (q-1)) = 1</me>
     <p>Finally, the decryption key <m>d</m> is simply the multiplicative
                 inverse of <m>e</m> modulo <m>(p - 1) \times (q - 1)</m>. For this we
                 can use our extended version of Euclid's algorithm.</p>
@@ -322,11 +319,11 @@ d = &amp; ay + b(x \mod{y}) \\
                 <m>m = c^d \pmod{n}</m>.</p>
     <p>It is easy to see that this works when you remember that <m>d</m> is
                 the multiplicative inverse of <m>e \pmod{n}</m>.</p>
-    <math_block docname="Advanced/RecursionRevisited"  nowrap="False" number="True" xml:space="preserve">\begin{aligned}
+    <me>\begin{aligned}
    c^d &amp; = (m^e)^d  \pmod{n} \\
        &amp; = m^{ed}   \pmod{n} \\
        &amp; = m^1  \pmod{n} \\
-       &amp; = m \pmod{n} \end{aligned}</math_block>
+       &amp; = m \pmod{n} \end{aligned}</me>
     <p>Before we turn all these equations into Python code, we need to talk
                 about a couple of other details. First, how do we take a text message
                 like <q>hello world</q> and turn it into a number? The easiest way is to
@@ -381,8 +378,7 @@ d = &amp; ay + b(x \mod{y}) \\
     </table>
     <p>Putting all the hexadecimal digits together we could convert that large
                 hex number into a decimal integer:</p>
-    <math_block docname="Advanced/RecursionRevisited"  nowrap="False" number="True" xml:space="preserve">m =
-126207244316550804821666916</math_block>
+    <me>m = 126207244316550804821666916</me>
     <p>Python can handle this large number just fine. However, there are two
                 reasons that real programs using RSA encryption break the message up
                 into smaller chunks and encrypt each chunk. The first reason is
@@ -432,20 +428,18 @@ d = &amp; ay + b(x \mod{y}) \\
                 <m>(p - 1) \times (q - 1) = 45552780</m>. Remember that we are looking
                 for an <m>e</m> that is relatively prime to 45,552,780. The number
                 1,471 will work nicely for this example.</p>
-    <math_block docname="Advanced/RecursionRevisited"  nowrap="False" number="True" xml:space="preserve">\begin{aligned}
+    <me>\begin{aligned}
 d &amp; = ext\_gcd(45552780, 1471) \\
   &amp; = -11705609  \\
   &amp; = 45552780-11705609  \\
-  &amp; = 33847171\end{aligned}</math_block>
+  &amp; = 33847171\end{aligned}</me>
     <p>Let's use this information to encrypt the first chunk of our message:</p>
-    <math_block docname="Advanced/RecursionRevisited"  nowrap="False" number="True" xml:space="preserve">c = 6841708^{1471} \pmod{45566533} = 16310024
+    <me>c = 6841708^{1471} \pmod{45566533} = 16310024</me>
 
-</math_block>
     <p>To check our work, let's decrypt <m>c</m> to make sure we recover the
                 original value:</p>
-    <math_block docname="Advanced/RecursionRevisited"  nowrap="False" number="True" xml:space="preserve">m = 16310024^{33847171} \pmod{45566533} = 6841708
+              <me>m = 16310024^{33847171} \pmod{45566533} = 6841708</me>
 
-</math_block>
     <p>The remaining chunks of the message can be encrypted using the same
                 procedure and sent all together as the encrypted message.</p>
     <p>Finally, let's look at three Python functions.</p>

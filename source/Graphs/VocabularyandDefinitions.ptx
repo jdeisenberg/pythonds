@@ -42,12 +42,12 @@
   <p><xref ref="i188_id1fig-dgsimple"/> shows another example of a simple weighted
             digraph. Formally we can represent this graph as the set of six
             vertices:</p>
-  <math_block docname="Graphs/VocabularyandDefinitions"  nowrap="False" number="True" xml:space="preserve">V = \left\{ v_0, v_1, v_2, v_3, v_4, v_5 \right\}</math_block>
+  <me>V = \left\{ v_0, v_1, v_2, v_3, v_4, v_5 \right\}</me>
   <p>and the set of nine edges:</p>
-  <math_block docname="Graphs/VocabularyandDefinitions"  nowrap="False" number="True" xml:space="preserve">E = \left\{ \begin{array}{l}(v_0, v_1, 5), (v_1, v_2, 4), (v_2, v_3, 9), \\
+  <me>E = \left\{ \begin{array}{l}(v_0, v_1, 5), (v_1, v_2, 4), (v_2, v_3, 9), \\
                              (v_3, v_4, 7), (v_4, v_0, 1), (v_0, v_5, 2), \\
                              (v_5, v_4, 8), (v_3, v_5, 3), (v_5, v_2, 1)
-             \end{array} \right\}</math_block>
+             \end{array} \right\}</me>
   <figure align="center" xml:id="i188_id1fig-dgsimple">
     <caption>A Simple Example of a Directed Graph</caption>
     <image source="Graphs/Figures/digraph.png" width="50%"/>
