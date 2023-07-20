@@ -76,31 +76,7 @@ print(a_list)
         </input>
   </program>
 </listing>
-  <raw format="html" xml:space="preserve">&lt;script src="../_static/sortmodels.js"&gt;&lt;/script&gt;
-&lt;script src="../_static/sortviewers.js"&gt;&lt;/script&gt;
 
-&lt;div id="shell_anim" class=""&gt;
-&lt;canvas id="shell_anim_canvas" width="400" height="400" style="border:4px solid blue"&gt;&lt;/canvas&gt;
-&lt;br /&gt;
-&lt;button onclick="shell_anim_anim = shell_anim_init('shell_anim')"&gt;Initialize&lt;/button&gt;
-&lt;button onclick="shell_anim_anim.run('shell_anim_anim')"&gt;Run&lt;/button&gt;
-&lt;button onclick="shell_anim_anim.stop()"&gt;Stop&lt;/button&gt; &lt;/br&gt;
-&lt;button onclick="shell_anim_anim.begin()"&gt;Beginning&lt;/button&gt;
-&lt;button onclick="shell_anim_anim.forward()"&gt;Step Forward&lt;/button&gt;
-&lt;button onclick="shell_anim_anim.backward()"&gt;Step Backward&lt;/button&gt;
-&lt;button onclick="shell_anim_anim.end()"&gt;End&lt;/button&gt;
-
-&lt;script&gt;
-shell_anim_init = function(divid)
-{
-   var a = new Animator(new ShellSortModel(), new BarViewer(), divid)
-   a.init()
-   return a
-}
-&lt;/script&gt;
-
-&lt;/div&gt;
-</raw>
   <!--For more detail, CodeLens 5 allows you to step through the algorithm.-->
   <!---->
   <!---->
