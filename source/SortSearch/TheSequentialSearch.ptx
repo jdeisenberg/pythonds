@@ -149,10 +149,10 @@ print(ordered_sequential_search(test_list, 13))
           <term>Table 2: Comparisons Used in Sequential Search of an Ordered List</term>
         </title>
         <row header="yes">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
+          <cell>Case</cell>
+          <cell>Best Case</cell>
+          <cell>Worst Case</cell>
+          <cell>Average Case</cell>
         </row>
         <row>
           <cell>item is present</cell>
