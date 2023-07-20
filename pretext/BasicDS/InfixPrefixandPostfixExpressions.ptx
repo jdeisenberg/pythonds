@@ -395,7 +395,7 @@ print(infix_to_postfix("( A + B ) * C - ( D - E ) * ( F + G )"))
                 operands for the division are popped from the stack, they are reversed.
                 Since division is <em>not</em> a commutative operator, in other words
                 <m>15/5</m> is not the same as <m>5/15</m>, we must be sure that
-                the order of the operands is not switched.</p>
+                the order of the operands is not switched. (This also applies to subtraction.)</p>
     <figure align="center" xml:id="fig-evalpost2">
       <caption>A More Complex Example of Evaluation</caption>
       <image source="BasicDS/Figures/evalpostfix2.png" width="50%"/>

@@ -23,7 +23,7 @@
 ( ( ( ) ] ) )
 
 [ { ( ) ]</pre>
-  <p>The simple parentheses checker from the previous section can easily be
+<p>The simple parentheses checker from the previous section can easily be
             extended to handle these new types of symbols. Recall that each opening
             symbol is simply pushed on the stack to wait for the matching closing
             symbol to appear later in the sequence. When a closing symbol does
@@ -37,7 +37,8 @@
             assist with symbol-matching. Each symbol that is removed from the stack
             must be checked to see that it matches the current closing symbol. If a
             mismatch occurs, the balance checker returns <c>False</c> immediately.</p>
-<listing xml:id="lst-balcheck"> <program label="lst-balcheck"  interactive="activecode" language="python">
+<listing xml:id="lst-balcheck">
+<program label="lst-balcheck"  interactive="activecode" language="python">
     <input>
 from pythonds3.basic import Stack
 
