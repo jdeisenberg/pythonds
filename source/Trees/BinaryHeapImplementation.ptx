@@ -170,7 +170,7 @@ def _get_min_child(self, i):
       <caption>Building a Heap from the List [9, 6, 5, 2, 3]</caption>
       <image source="Trees/Figures/buildheap.png" width="50%" alt="image"/>
     </figure>
-    <p><xref ref="fig-buildheap"/> shows the swaps that the <c>hepify</c> method
+    <p><xref ref="fig-buildheap"/> shows the swaps that the <c>heapify</c> method
                 makes as it moves the nodes in an initial tree of [9, 6, 5, 2, 3] into
                 their proper positions. Although we start out in the middle of the tree
                 and work our way back toward the root, the <c>_perc_down</c> method ensures
