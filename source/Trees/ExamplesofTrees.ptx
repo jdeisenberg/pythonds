@@ -38,7 +38,7 @@
             common name.</p>
   <p>A second property of trees is that all of the children of one node are
             independent of the children of another node. For example, the genus
-            <em>Thermobia</em> has a children <em>domestica</em>. The genus <em>Musca</em> also has a
+            <em>Thermobia</em> has a child named <em>domestica</em>. The genus <em>Musca</em> also has a
             child named <em>domestica</em>, but it is a different node and is independent of
             the <em>domestica</em> child of <em>Thermobia</em>. This means that we can change the node
             that is the child of <em>Musca</em> without affecting the child of <em>Thermobia</em>.</p>
