@@ -87,31 +87,7 @@ print(a_list)
             will not divide evenly. The first split gives <c>[44]</c> and the second gives
             <c>[55, 20]</c>. It is easy to see how the splitting process eventually yields a
             list that can be immediately merged with other sorted lists.</p>
-  <raw format="html" xml:space="preserve">&lt;script src="../_static/sortmodels.js"&gt;&lt;/script&gt;
-&lt;script src="../_static/sortviewers.js"&gt;&lt;/script&gt;
 
-&lt;div id="merge_anim" class=""&gt;
-&lt;canvas id="merge_anim_canvas" width="400" height="400" style="border:4px solid blue"&gt;&lt;/canvas&gt;
-&lt;br /&gt;
-&lt;button onclick="merge_anim_anim = merge_anim_init('merge_anim')"&gt;Initialize&lt;/button&gt;
-&lt;button onclick="merge_anim_anim.run('merge_anim_anim')"&gt;Run&lt;/button&gt;
-&lt;button onclick="merge_anim_anim.stop()"&gt;Stop&lt;/button&gt; &lt;/br&gt;
-&lt;button onclick="merge_anim_anim.begin()"&gt;Beginning&lt;/button&gt;
-&lt;button onclick="merge_anim_anim.forward()"&gt;Step Forward&lt;/button&gt;
-&lt;button onclick="merge_anim_anim.backward()"&gt;Step Backward&lt;/button&gt;
-&lt;button onclick="merge_anim_anim.end()"&gt;End&lt;/button&gt;
-
-&lt;script&gt;
-merge_anim_init = function(divid)
-{
-   var a = new Animator(new MergeSortModel(), new BarViewer(), divid)
-   a.init()
-   return a
-}
-&lt;/script&gt;
-
-&lt;/div&gt;
-</raw>
   <!--For more detail, CodeLens 6 allows you to step through the algorithm.-->
   <!---->
   <!---->
