@@ -16,8 +16,8 @@
                 Each pixel in an image represents a particular color in the image. On a
                 computer, the color of each pixel is determined by a mixture of three
                 primary colors: red, green, and blue. A simple example of how pixels are
-                arranged to form a picture is shown in Figure&#xA0;<url href="#fig_smallimage" visual="#fig_smallimage">1</url>.</p>
-    <figure align="" xml:id="fig-smallimage">
+                arranged to form a picture is shown in <xref ref="fig_smallimage"/>.</p>
+    <figure align="" xml:id="fig_smallimage">
       <caption>A Simple Image Composed of Pixels</caption>
       <image source="Advanced/Figures/8by8image.png" width="50%" alt="A Simple Image"/>
     </figure>
@@ -40,7 +40,7 @@
                 each of the red, green, and blue components. In other languages, such as
                 C++ and Java, an image could be represented as a two-dimensional array.
                 The list of lists representation of the first two rows of the image in
-                Figure&#xA0;<url href="#fig_smallimage" visual="#fig_smallimage">1</url> is shown below:</p>
+                <xref ref="fig_smallimage"/> is shown below:</p>
     <pre>im = [[(255,255,255),(255,255,255),(255,255,255),(12,28,255),
       (12,28,255),(255,255,255),(255,255,255),(255,255,255),],
       [(255,255,255),(255,255,255),(12,28,255),(255,255,255),
@@ -88,20 +88,23 @@
                 taking the <m>256 \times 256 \times 256</m> cube and turning it into an
                 <m>8 \times 8 \times 8</m> cube. The overall size of the cube stays the
                 same, but now many colors in the old cube are represented by a single
-                color in the new cube. Figure&#xA0;<url href="#fig_colorcube" visual="#fig_colorcube">2</url> shows an example of
+                color in the new cube. <xref ref="fig_colorcube"/> shows an example of
                 the quantization just described.</p>
-    <figure align="" xml:id="fig-colorcube">
+    <figure align="" xml:id="fig_colorcube">
       <caption>Color Quantization</caption>
       <image source="Advanced/Figures/quantizeCube.png" width="50%" alt="Color Quantization"/>
     </figure>
     <p>We can turn this simple idea of color quantization into the Python
-                program shown in Listing&#xA0;<url href="#lst_simplequant" visual="#lst_simplequant">[lst_simplequant]</url>. The
+                program shown in <xref ref="lst_simple_quant"/>. The
                 <c>simple_quant</c> algorithm works by mapping the color components for
                 each pixel represented by its full 256 bits to the color at the center
                 of the cube in its area. This is easy to do using integer division in
                 Python. In the <c>simple_quant</c> algorithm there are seven distinct
                 values in the red dimension and six distinct values in the green and
                 blue dimensions.</p>
+
+              <listing xml:id="lst_simple_quant">
+              <title>Simple Quantization</title>
     <pre>from PIL import Image
 
 
@@ -117,16 +120,19 @@ def simple_quant(filename):
             im.putpixel((col, row), (r, g, b))
     im.show()
 
-simple_quant("bubbles.jpg")</pre>
-    <p>Figure&#xA0;<url href="#fig_simplecompare" visual="#fig_simplecompare">[fig_simplecompare]</url> shows a before and
-                after comparison of original and quantized images. Of course, these
-                are color pictures that have been converted to gray scale for
-                publication.
+simple_quant("tabby_original.jpg")</pre>
+</listing>
+  <p><xref ref="fig_simple_compare"/> shows a before and
+                after comparison of original and quantized images.
                 You can use any JPEG color image from your collection and run the program to see the real difference in full color.
                 Notice how much
-                detail is lost in the quantized picture. The grass has lost nearly all
-                its detail and is uniformly green, and the skin tones have been reduced
-                to two shades of tan.</p>
+                detail is lost in the quantized picture. The cat's white fur has lost nearly all
+                its detail, and the color of the ground at the top of the picture is inaccurate.</p>
+                  <figure align="" xml:id="fig_simple_compare">
+      <caption>Comparison of Original and Quantized Image</caption>
+      <image source="Advanced/Figures/simple_comparison.png" width="50%" alt="tabby cat original at left, quantized at right"/>
+    </figure>
+
   </subsection>
   <subsection xml:id="advanced_an-improved-quantization-algorithm-using-octrees">
     <title>An Improved Quantization Algorithm Using Octrees</title>
@@ -134,12 +140,12 @@ simple_quant("bubbles.jpg")</pre>
                 that the colors in most pictures are not evenly distributed throughout
                 the color cube. Many colors may not appear in the image, so parts of
                 the cube may go completely unused. Allocating an unused color to the
-                quantized image is a waste. Figure&#xA0;<url href="#fig_colordist" visual="#fig_colordist">3</url> shows the
+                quantized image is a waste. <xref ref="fig_colordist"/> shows the
                 distribution of the colors that are used in the example image. Notice
                 how little of the color cube space is actually used.</p>
-    <figure align="" xml:id="fig-colordist">
+    <figure align="" xml:id="fig_colordist">
       <caption>Plot of Colors Used in Image as Points in Color Cube</caption>
-      <image source="Advanced/Figures/colorcube.png" width="50%" alt="Plot of Colors Used in Image as Points in Color Cube"/>
+      <image source="Advanced/Figures/tabby_color_cube.png" width="70%" alt="Plot of Colors Used in Image as Points in Color Cube"/>
     </figure>
     <p>To make a better quantized image we need to find a way to do a better
                 job of selecting the set of colors we want to use to represent our
@@ -250,39 +256,43 @@ simple_quant("bubbles.jpg")</pre>
     </p>
     <p>The ideas outlined above are encoded as a Python function to read,
                 quantize, and display an image in the function <c>build_and_display()</c>
-                in Listing&#xA0;<url href="#lst_bad" visual="#lst_bad">[lst_bad]</url>.</p>
+                in <xref ref="lst_build_and_display"/>.</p>
+
+              <listing xml:id="lst_build_and_display">
     <pre>def build_and_display(filename):
     img = Image.open(filename)
     w, h = img.size
     ot = Octree()
-    for row in range(h):
-        for col in range(w):
+    for row in range(h):     # (A)
+        for col in range(w): # (B)
             r, g, b = img.getpixel((col, row))
             ot.insert(r, g, b)
-    ot.reduce(256)
+    ot.reduce(256)           # (C)
 
     for row in range(h):
         for col in range(w):
             r, g, b = img.getpixel((col, row))
-            nr, ng, nb = ot.find(r, g, b)
+            nr, ng, nb = ot.find(r, g, b)  # (D)
             img.putpixel((col, row), (nr, ng, nb))
     img.show()</pre>
+</listing>
+
     <p>The <c>build_and_display</c> function follows the basic process just described.
-                First, the loops in lines
-                <url href="#lst_bad:line_bldotstrt" visual="#lst_bad:line_bldotstrt">[lst_bad:line_bldotstrt]</url>&#x2013;<url href="#lst_bad:line_bldotend" visual="#lst_bad:line_bldotend">[lst_bad:line_bldotend]</url>
+      First, the loops in lines (A) and (B) in <xref ref="lst_build_and_display"/>
                 read each pixel and add it to the octree.
                 Second, the
-                number of leaf nodes is reduced by the <c>reduce</c> method on line
-                <url href="#lst_bad:line_callotreduce" visual="#lst_bad:line_callotreduce">[lst_bad:line_callotreduce]</url>.
+                number of leaf nodes is reduced by the <c>reduce</c> method on line (C)
                 Finally, the image is updated by searching for a color, using <c>find</c>,
-                in the reduced octree on line
-                <url href="#lst_bad:line_otfind" visual="#lst_bad:line_otfind">[lst_bad:line_otfind]</url>.</p>
+                in the reduced octree on line (D).</p>
     <p>We are using the Python image library to
                 open an existing image file (<c>Image.open</c>), read a pixel
                 (<c>getpixel</c>), write a pixel (<c>putpixel</c>), and display the
                 result to the screen (<c>show</c>). <c>build_and_display</c> interacts with the octree
-                using an instance of the <c>Octree</c> class (Listing&#xA0;<url href="#lst_octreedef" visual="#lst_octreedef">[lst_octreedef]</url>).</p>
-    <pre>class octree:
+                using an instance of the <c>Octree</c> class (<xref ref="lst_octreedef"/>).</p>
+
+              <listing xml:id="lst_octreedef">
+                <title>Definition of Octree</title>
+    <pre>class Octree:
     def __init__(self):
         self.root = None
         self.max_level = 5
@@ -291,7 +301,7 @@ simple_quant("bubbles.jpg")</pre>
 
     def insert(self, r, g, b):
         if not self.root:
-            self.root = self.OTNode(outer=self)
+            self.root = OTNode(outer=self)
         self.root.insert(r, g, b, 0, self)
 
     def find(self, r, g, b):
@@ -301,7 +311,7 @@ simple_quant("bubbles.jpg")</pre>
     def reduce(self, max_cubes):  # (A)
         while len(self.all_leaves) &gt; max_cubes:
             smallest = self.find_min_cube()
-            smallest.parent.merge()  |\label{lst_octreedef:line_otredmerge}|
+            smallest.parent.merge()  # (B)
             self.all_leaves.append(smallest.parent)
             self.num_leaves = self.num_leaves + 1
 
@@ -318,6 +328,8 @@ simple_quant("bubbles.jpg")</pre>
                 min_count = i.count
                 max_level = i.level
         return min_cube</pre>
+    </listing>
+
     <p>First notice that the constructor for an <c>Octree</c> initializes the
                 root node to <c>None</c>. Then it sets up three important attributes that
                 all the nodes of an octree may need to access. Those attributes
@@ -332,21 +344,18 @@ simple_quant("bubbles.jpg")</pre>
                 leaves without traversing all the way down the tree. We will see why
                 this is important shortly.</p>
     <p>The <c>insert</c> and <c>find</c> methods behave exactly like their cousins in
-                chapter <url href="#chap_tree" visual="#chap_tree">[chap_tree]</url>. They each check to see if a root
+                chapter <xref ref="chapter-trees"/>. They each check to see if a root
                 node exists, and then call the corresponding method in the root node.
                 Notice that <c>insert</c> and <c>find</c> both use the red, green, and blue
                 components (<c>(r, g, b)</c>) to identify a node in the tree.</p>
-    <p>The <c>reduce</c> method is defined on line (A) <!--
-      <url href="#lst_octreedef:line_otreduce" visual="#lst_octreedef:line_otreduce">[lst_octreedef:line_otreduce]</url> --> of
-                Listing&#xA0;<url href="#lst:octreedef" visual="#lst:octreedef">[lst:octreedef]</url>. This method simply loops
+              <p>The <c>reduce</c> method is defined on line (A) of <xref ref="lst_octreedef"/>. This method simply loops
                 until the number of leaves in the leaf list is less than the total
                 number of colors we want to have in the final image (defined by the
                 parameter <c>max_cubes</c>). <c>reduce</c> makes use of a helper function
                 <c>find_min_cube</c> to find the node in the octree with the smallest
                 reference count. Once the node with the smallest reference count is
                 found, that node is merged into a single node with all of its siblings
-                (see line
-                <url href="#lst_octreedef:line_otredmerge" visual="#lst_octreedef:line_otredmerge">[lst_octreedef:line_otredmerge]</url>).</p>
+                (see line (B) of <xref ref="lst_octreedef"/>).</p>
     <p>The <c>find_min_cube</c> method is implemented using the <c>all_leaves</c> and
                 a simple find minimum loop pattern. When the number of leaf nodes is
                 large, and it could be as large is 16.7 million, this approach is not
@@ -364,7 +373,7 @@ simple_quant("bubbles.jpg")</pre>
                 else needs to know about. This is a good software engineering practice
                 known as <em>information hiding</em>.</p>
     <p>Now let's look at the class definition for the nodes in an octree
-                (Listing&#xA0;<url href="#lst_otnodedef" visual="#lst_otnodedef">[lst_otnodedef]</url>).
+                (<xref ref="lst_otnodedef"/>).
                 The constructor for the <c>OTNode</c> class has three optional parameters: <c>parent</c>,
                 <c>level</c>, and <c>outer</c>.
                 These parameters allow the <c>Octree</c> methods to construct new
@@ -384,6 +393,8 @@ simple_quant("bubbles.jpg")</pre>
                 each node can have up to eight children we initialize a list of eight
                 references to keep track of them all. Rather than a left and right child
                 as in binary trees, an octree has 0&#x2013;7 children.</p>
+              <listing xml:id="lst_otnodedef">
+                <title>Defining an OTNode</title>
     <pre>class OTNode:
     def __init__(self, parent=None, level=0, outer=None):
         self.red = 0
@@ -394,9 +405,11 @@ simple_quant("bubbles.jpg")</pre>
         self.level = level
         self.oTree = outer
         self.children = [None] * 8</pre>
+    </listing>
+
     <p>Now we get into the really interesting parts of the octree
                 implementation. The Python code for inserting a new node into an
-                octree is shown in Listing&#xA0;<url href="#lst_otninsert" visual="#lst_otninsert">[lst_otninsert]</url>.
+                octree is shown in <xref ref="lst_otninsert"/>.
                 The first problem we need to solve is how to figure out where to place a
                 new node in the tree. In a binary search tree we used the rule that a
                 new node with a key less than its parent went in the left subtree, and a
@@ -404,19 +417,19 @@ simple_quant("bubbles.jpg")</pre>
                 But with eight possible children for each node it is not that simple. In
                 addition, when indexing colors it is not obvious what the key for each
                 node should be. In an <c>octree</c> we will use the information from the
-                three color components. Figure&#xA0;<url href="#fig_otindex" visual="#fig_otindex">4</url> shows how we can use
+                three color components. <xref ref="fig_otindex"/> shows how we can use
                 the red, green, and blue color values to compute an index for the
                 position of the new node at each level of the tree. The corresponding
-                Python code for computing the index is on
-                line&#xA0;<url href="#lst_otninsert:line_otci" visual="#lst_otninsert:line_otci">[lst_otninsert:line_otci]</url> of
-                Listing&#xA0;<url href="#lst_otninsert" visual="#lst_otninsert">[lst_otninsert]</url>.</p>
+                Python code for computing the index is on line (A) of <xref ref="lst_otninsert"/>.</p>
+              <listing xml:id="lst_otninsert">
+                <title>Insert into OCtree</title>
     <pre>def insert(self, r, g, b, level, outer):
     if level &lt; self.oTree.max_level:
         idx = self.compute_index(
             r, g, b, level
         )
         if self.children[idx] == None:
-            self.children[idx] = outer.OTNode(
+            self.children[idx] = OTNode(
                 parent=self,
                 level=level + 1,
                 outer=outer,
@@ -435,23 +448,23 @@ simple_quant("bubbles.jpg")</pre>
         self.blue += b
         self.count = self.count + 1
 
-def compute_index(self, r, g, b, l):  |\label{lst_otninsert:line_otci}|
+def compute_index(self, r, g, b, l):  # (A)
     shift = 8 - l
     rc = r &gt;&gt; shift - 2 &amp; 0x4
     gc = g &gt;&gt; shift - 1 &amp; 0x2
     bc = b &gt;&gt; shift &amp; 0x1
     return rc | gc | bc</pre>
+</listing>
+
     <p>The computation of the index combines bits from each of the red, green,
                 and blue color components, starting at the top of the tree with the
-                highest order bits. Figure&#xA0;<url href="#fig_otindex" visual="#fig_otindex">4</url> shows the binary
+                highest order bits. <xref ref="fig_otindex"/> shows the binary
                 representation of the red, green, and blue components of 163, 98, 231.
                 At the root of the tree we start with the most significant bit from each
                 of the three color components; in this case the three bits are 1, 0, and
                 1. Putting these bits together we get binary 101 or decimal 5. You can
                 see the binary manipulation of the red, green, and blue numbers in the
-                <c>compute_index</c> method on
-                line&#xA0;<url href="#lst_otninsert:line_otci" visual="#lst_otninsert:line_otci">[lst_otninsert:line_otci]</url> in
-                Listing&#xA0;<url href="#lst_otninsert" visual="#lst_otninsert">[lst_otninsert]</url>.</p>
+                <c>compute_index</c> method on line (A) in <xref ref="lst_otninsert"/>.</p>
     <p>The operators used in the <c>compute_index</c> may be unfamiliar to you.
                 The <c>&gt;&gt;</c> operator is the right shift operation. The <c>&amp;</c> is bitwise
                 <c>and</c>, and <c>|</c> is logical <c>or</c>. The bitwise <c>or</c> and bitwise
@@ -461,8 +474,8 @@ def compute_index(self, r, g, b, l):  |\label{lst_otninsert:line_otci}|
                 filling in with zeros on the left and dropping the bits as they go off
                 the right.</p>
     <p>Once we have computed the index appropriate for the current level of the tree,
-                we traverse down into the subtree. In the example in
-                Figure&#xA0;<url href="#fig_otindex" visual="#fig_otindex">4</url> we follow the link at position&#xA0;5 in the
+      we traverse down into the subtree. In the example in <xref ref="fig_otindex"/>
+                we follow the link at position&#xA0;5 in the
                 <c>children</c> array. If there is no node at position&#xA0;5, we create one. We
                 keep traversing down the tree until we get to <c>max_level</c>. At
                 <c>max_level</c> we stop searching and store the data. Notice that we do
@@ -471,14 +484,16 @@ def compute_index(self, r, g, b, l):  |\label{lst_otninsert:line_otci}|
                 counter. This allows us to compute the average of any color below the
                 current node in the color cube. In this way, a leaf node in the
                 <c>octree</c> may represent a number of similar colors in the color cube.</p>
-    <figure align="" xml:id="fig-otindex">
+    <figure align="" xml:id="fig_otindex">
       <caption>Computing an Index to Insert a Node in an octree</caption>
       <image source="Advanced/Figures/OctTreeIndex.png" width="50%" alt="Computing an Index to Insert a Node in an octree"/>
     </figure>
-    <p>The <c>find</c> method, shown in Listing&#xA0;<url href="#lst_otnfind" visual="#lst_otnfind">[lst_otnfind]</url>,
+    <p>The <c>find</c> method, shown in <xref ref="lst_otnfind"/>,
                 uses the same method of index computation as the <c>insert</c> method to
                 traverse the tree in search of a node matching the red, green, and blue
                 components.</p>
+
+              <listing xml:id="lst_otnfind">
     <pre>def find(self, r, g, b, level):
     if level &lt; self.oTree.max_level:
         idx = self.compute_index(r, g, b, level)
@@ -500,6 +515,8 @@ def compute_index(self, r, g, b, l):  |\label{lst_otninsert:line_otci}|
             self.green // self.count,
             self.blue // self.count,
         )</pre>
+    </listing>
+
     <p>The <c>find</c> method has three exit conditions:</p>
     <p>
       <ol marker="1">
@@ -524,21 +541,22 @@ def compute_index(self, r, g, b, l):  |\label{lst_otninsert:line_otci}|
                 siblings we are effectively taking a weighted average of the colors
                 represented by each of those siblings. Since all the siblings are
                 relatively close to each other in color space, the average is a good
-                representation of all of them. Figure&#xA0;<url href="#fig_otmerge" visual="#fig_otmerge">5</url> illustrates
+                representation of all of them. <xref ref="fig_otmerge"/> illustrates
                 the merge process for some sibling nodes.</p>
-    <figure align="" xml:id="fig-otmerge">
+    <figure align="" xml:id="fig_otmerge">
       <caption>Merging Four Leaf Nodes of an <literal>octree</literal></caption>
       <image source="Advanced/Figures/otMerge.png" width="50%" alt="Merging Four Leaf Nodes of an ``octree``"/>
     </figure>
-    <p>Figure&#xA0;<url href="#fig_otmerge" visual="#fig_otmerge">5</url> shows the red, green, and blue components
+    <p><xref ref="fig_otmerge"/> shows the red, green, and blue components
                 represented by the four leaf nodes whose identifying color values are
                 (101, 122, 167), (100, 122, 183), (123, 108, 163), and (126, 113, 166).
-                As you can see in Listing&#xA0;<url href="#lst_otnfind" visual="#lst_otnfind">[lst_otnfind]</url>,
+                As you can see in <xref ref="lst_otnfind"/>,
                 the identifying values are calculated by dividing the color values by the count.
                 Notice how close they are in the overall color space. The leaf node that gets
                 created from all of these has an ID of (112, 115, 168). This is close to
                 the average of the four, but weighted more towards the third color tuple
                 due to the fact that it had a reference count of 12.</p>
+        <listing xml:id="lst_otmerge">
     <pre>def merge(self):
     for child in [c for c in self.children if c]:
         if child.count &gt; 0:
@@ -553,12 +571,18 @@ def compute_index(self, r, g, b, l):  |\label{lst_otninsert:line_otci}|
         self.blue += child.blue
     for i in range(8):
         self.children[i] = None</pre>
+    </listing>
+
     <p>Because the <c>octree</c> uses only colors that are really present in the
                 image and faithfully preserves colors that are often used, the final
                 quantized image from the <c>octree</c> is much higher quality than the
-                simple method we used to start this section.
-                Figure&#xA0;<url href="#fig_otquantcompare" visual="#fig_otquantcompare">[fig_otquantcompare]</url> shows a comparison
+                simple method we used to start this section. <xref ref="fig_octree_quant_compare"/> shows a comparison
                 of the original image with the quantized image.</p>
+
+               <figure align="" xml:id="fig_octree_quant_compare">
+      <caption>Comparison of Original and Octree-Quantized Image</caption>
+      <image source="Advanced/Figures/octree_comparison.png" width="50%" alt="tabby cat original at left, quantized at right"/>
+    </figure>
     <p>There are many additional ways to compress images using techniques such
                 as run-length encoding, discrete cosine transform, and Huffman coding.
                 Any of these algorithms are within your grasp, and we encourage you to
