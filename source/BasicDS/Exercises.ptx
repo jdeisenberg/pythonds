@@ -18,9 +18,9 @@
 <exercise><p>Convert the following infix expressions to prefix (use full
         parentheses):</p>
     <p><ul>
-        <exercise>(A + B) · ( C + D) · (E + F)</exercise>
-        <exercise>A + ((B + C) · (D + E))</exercise>
-        <exercise>A · B · C · D + E + F</exercise>
+        <li>(A + B) · ( C + D) · (E + F)</li>
+        <li>A + ((B + C) · (D + E))</li>
+        <li>A · B · C · D + E + F</li>
     </ul></p>
 </exercise>
 
