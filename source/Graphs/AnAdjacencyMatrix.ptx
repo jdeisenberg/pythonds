@@ -16,7 +16,7 @@
   </figure>
   <p>The advantage of the adjacency matrix is that it is simple, and for
             small graphs it is easy to see which nodes are connected to other nodes.
-            However, otice that most of the cells in the matrix are empty;
+            However, notice that most of the cells in the matrix are empty;
             we can say that this matrix is <em>sparse</em>. A
             matrix is not a very efficient way to store sparse data. In fact, in
             Python you must go out of your way to even create a matrix structure

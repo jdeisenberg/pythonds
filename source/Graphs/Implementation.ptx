@@ -2,10 +2,10 @@
 <section xml:id="graphs_implementation">
   <title>Implementation</title>
   <p>Using dictionaries, it is easy to implement the adjacency list in
-            Python. In our implementation of the graph abstract data type we will
+            Python. In our implementation of the graph abstract data type, we will
             create two classes:
             <c>Vertex</c>, which will represent each vertex in the graph
-            (see <xref ref="graphs_lst-vertex"/>) and
+            (see <xref ref="graphs_lst-vertex"/>), and
             <c>Graph</c>, which holds the master list of vertices (see <xref ref="graphs_lst-graph"/>).</p>
   <p>Each <c>Vertex</c> uses a dictionary to keep track of the vertices to which
             it is connected and the weight of each edge. This dictionary is called

@@ -21,8 +21,10 @@
             back through the same routers to get to your browser. Inside the cloud
             labeled <q>Internet</q> in <xref ref="i175_id1fig-inet"/> are additional routers. The job
             of all of these routers is to work together to get your information from
-            place to place. You can see there are many routers for yourself if your
-            computer supports the <c>traceroute</c> command. The text below shows
+            place to place. <!--You can see there are many routers for yourself if your
+            computer supports the <c>traceroute</c> command.--> If your computer supports the
+            <c>traceroute</c> command, you can see for yourself that there are many routers.
+            The text below shows
             the output of the <c>traceroute</c> command, which illustrates that there
             are 13 routers between the web server at Luther College and the mail
             server at the University of Minnesota.</p>
