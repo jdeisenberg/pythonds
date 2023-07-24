@@ -19,12 +19,12 @@
             find it or split the list in half, therefore eliminating another large
             part of our possible search space. <xref ref="i13_id1fig-binsearch"/> shows how this
             algorithm can quickly find the value 54. The complete function is shown
-            in <xref ref="lst-binarysearchpy"/>.</p>
+            in the following program.<!--<xref ref="lst-binarysearchpy"/>.--></p>
   <figure align="center" xml:id="i13_id1fig-binsearch">
     <caption>Binary Search of an Ordered List of Integers</caption>
     <image source="SortSearch/Figures/binsearch.png" width="50%"/>
   </figure>
-  <listing xml:id="lst-binarysearchpy">
+  <!--<listing xml:id="lst-binarysearchpy">-->
 <program label="lst-binarysearchpy"   interactive="codelens" language="python">
     <input>
 def binary_search(a_list, item):
@@ -49,7 +49,7 @@ print(binary_search(test_list, 3))
 print(binary_search(test_list, 13))
     </input>
   </program>
-  </listing>
+  <!--</listing>-->
   <p>Before we move on to the analysis, we should note that this algorithm is
             a great example of a divide and conquer strategy. <em>Divide and conquer</em>
             means that we divide the problem into smaller pieces, solve the smaller
@@ -59,9 +59,9 @@ print(binary_search(test_list, 13))
             item, we can simply perform a binary search of the left half of the
             original list. Likewise, if the item is greater, we can perform a binary
             search of the right half. Either way, this is a recursive call to the
-            binary search function passing a smaller list. <xref ref="lst-recbinarysearch"/>
+            binary search function passing a smaller list. <!--<xref ref="lst-recbinarysearch"/>-->The following program
             shows this recursive version.</p>
-<listing xml:id="lst-recbinarysearch">
+          <!--<listing xml:id="lst-recbinarysearch">-->
 <program label="lst-recbinarysearch"  interactive="codelens" language="python">
     <input>
 def binary_search_rec(a_list, item):
@@ -82,7 +82,7 @@ print(binary_search_rec(test_list, 3))
 print(binary_search_rec(test_list, 13))
     </input>
   </program>
-</listing>
+  <!--</listing>-->
 </introduction>
   <subsection xml:id="sort-search_analysis-of-binary-search">
     <title>Analysis of Binary Search</title>
@@ -145,7 +145,7 @@ print(binary_search_rec(test_list, 13))
                 actually <m>O(k)</m>. This means that the binary search using slicing will not
                 perform in strict logarithmic time. Luckily this can be remedied by
                 passing the list along with the starting and ending indices. The indices
-                can be calculated as we did in <xref ref="lst-binarysearchpy"/>. We leave this
+                can be calculated as we did in the preceding binary search code<!--<xref ref="lst-binarysearchpy"/>-->. We leave this
                 implementation as an exercise.</p>
     <p>Even though a binary search is generally better than a sequential
                 search, it is important to note that for small values of <m>n</m>, the

@@ -286,7 +286,9 @@ d = &amp; ay + b(x \mod{y}) \\
   <subsection xml:id="advanced_rsa-algorithm">
     <title>RSA Algorithm</title>
     <p>Now we have all the tools we need to write the RSA encryption algorithm.
-                The <term>RSA algorithm</term> is perhaps the easiest to understand of all the
+                The <term>RSA algorithm</term> (named after the people who first
+                publicly described it: Rivest, Shamir, and Adleman)
+                is perhaps the easiest to understand of all the
                 public key encryption algorithms. Public key cryptography was invented
                 by Whitfield Diffie and Martin Hellman and independently by Ralph
                 Merkle. The major contribution of public key cryptography was the idea

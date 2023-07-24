@@ -75,7 +75,7 @@
     <p>Right now you are probably asking yourself how to take an image that
                 may have as many as 16 million colors and reduce it
                 to just 256? The answer is a process called <term>quantization</term>. To
-                understand the process of quantization let's think about colors as a
+                understand the process of quantization, let's think about colors as a
                 three-dimensional space. Each color can be represented by a point in
                 space where the red component is the <em>x</em> axis, the green component is the
                 <em>y</em> axis, and the blue component is the <em>z</em> axis. We can think of the space
@@ -298,7 +298,7 @@ simple_quant("bubbles.jpg")</pre>
         if self.root:
             return self.root.find(r, g, b, 0)
 
-    def reduce(self, max_cubes):  |\label{lst_octreedef:line_otreduce}|
+    def reduce(self, max_cubes):  # (A)
         while len(self.all_leaves) &gt; max_cubes:
             smallest = self.find_min_cube()
             smallest.parent.merge()  |\label{lst_octreedef:line_otredmerge}|
@@ -336,8 +336,8 @@ simple_quant("bubbles.jpg")</pre>
                 node exists, and then call the corresponding method in the root node.
                 Notice that <c>insert</c> and <c>find</c> both use the red, green, and blue
                 components (<c>(r, g, b)</c>) to identify a node in the tree.</p>
-    <p>The <c>reduce</c> method is defined on line
-                <url href="#lst_octreedef:line_otreduce" visual="#lst_octreedef:line_otreduce">[lst_octreedef:line_otreduce]</url> of
+    <p>The <c>reduce</c> method is defined on line (A) <!--
+      <url href="#lst_octreedef:line_otreduce" visual="#lst_octreedef:line_otreduce">[lst_octreedef:line_otreduce]</url> --> of
                 Listing&#xA0;<url href="#lst:octreedef" visual="#lst:octreedef">[lst:octreedef]</url>. This method simply loops
                 until the number of leaves in the leaf list is less than the total
                 number of colors we want to have in the final image (defined by the
@@ -512,8 +512,7 @@ def compute_index(self, r, g, b, l):  |\label{lst_otninsert:line_otci}|
                         This is possible only after the tree has been reduced. See below.</p>
         </li>
         <li>
-          <p>We try to follow a path into a nonexistent subtree, which is an
-                        error.</p>
+          <p>We try to follow a path into a nonexistent subtree, which is an error.</p>
         </li>
       </ol>
     </p>
@@ -534,8 +533,8 @@ def compute_index(self, r, g, b, l):  |\label{lst_otninsert:line_otci}|
     <p>Figure&#xA0;<url href="#fig_otmerge" visual="#fig_otmerge">5</url> shows the red, green, and blue components
                 represented by the four leaf nodes whose identifying color values are
                 (101, 122, 167), (100, 122, 183), (123, 108, 163), and (126, 113, 166).
-                As you can see in Listing&#xA0;<url href="#lst_otnfind" visual="#lst_otnfind">[lst_otnfind]</url>
-                the identifying values are calculated dividing the color values by the count.
+                As you can see in Listing&#xA0;<url href="#lst_otnfind" visual="#lst_otnfind">[lst_otnfind]</url>,
+                the identifying values are calculated by dividing the color values by the count.
                 Notice how close they are in the overall color space. The leaf node that gets
                 created from all of these has an ID of (112, 115, 168). This is close to
                 the average of the four, but weighted more towards the third color tuple
@@ -562,7 +561,7 @@ def compute_index(self, r, g, b, l):  |\label{lst_otninsert:line_otci}|
                 of the original image with the quantized image.</p>
     <p>There are many additional ways to compress images using techniques such
                 as run-length encoding, discrete cosine transform, and Huffman coding.
-                Any of these algorithms are within your grasp and we encourage you to
+                Any of these algorithms are within your grasp, and we encourage you to
                 look them up and read about them. In addition, quantized images can be
                 improved by using a technique known as <term>dithering</term>. Dithering is a
                 process by which different colors are placed near each other so that
