@@ -64,7 +64,7 @@
       </exercise>
 
       <exercise>
-        <p>Modify <c>encrypt</c> method of the Caesar cipher (Listing&#xA0;<url href="#lst_enc" visual="#lst_enc">[lst_enc]</url>)
+        <p>Modify <c>encrypt</c> method of the Caesar cipher (<xref ref="lst_enc"/>)
                     to accept a parameter that specifies the encryption key.</p>
       </exercise>
 
@@ -127,7 +127,7 @@
       </exercise>
 
       <exercise>
-        <p>Modify the graph implementation from Chapter&#xA0;<url href="#graphs" visual="#graphs">[graphs]</url>
+        <p>Modify the graph implementation from <xref ref="chapter-graphs"/>
                     so that it can be used to represent KMP graphs. Using the
                     <c>mismatched_links</c> method, write a method that will take a pattern
                     and create the complete KMP graph. With the graph complete, write a

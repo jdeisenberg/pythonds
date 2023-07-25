@@ -233,7 +233,7 @@
                 text character and simply move back to a previous point in the pattern.
                 To compute this, we use a simple algorithm that basically
                 checks the pattern against itself, looking for overlap between a prefix
-                and a suffix (see <xref ref="lst_mismatchedlinks"/>. If such an overlap is found,
+                and a suffix (see <xref ref="lst_mismatchedlinks"/>). If such an overlap is found,
                 its length tells us how far
                 back to place the mismatched link in the KMP graph. It is important to
                 note that new text characters are not processed when a mismatched link is
