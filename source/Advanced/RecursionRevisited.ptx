@@ -18,9 +18,10 @@
             results are 0&#x2013;9.</p>
   <p>One of the earliest forms of cryptography used only simple modular
             arithmetic. Take the string <c>"uryybjbeyq"</c>, for example. Can you guess
-            what message is encrypted? Listing&#xA0;<url href="#lst_enc" visual="#lst_enc">[lst_enc]</url> shows you
+            what message is encrypted? <xref ref="lst_enc"/> shows you
             the function that produced the message. Look at the listing and see if
             you can figure it out.</p>
+          <listing xml:id="lst_enc">
   <pre>def encrypt(m):
     s = "abcdefghijklmnopqrstuvwxyz"
     n = ""
@@ -28,6 +29,7 @@
         j = (s.find(i) + 13) % 26
         n = n + s[j]
     return n</pre>
+</listing>
   <p>The <c>encrypt</c> function illustrates a form of encryption known as the
             Caesar Cipher. It also goes by the name ROT13, which is a bit more
             descriptive. <c>encrypt</c> simply takes each letter in the message and
@@ -46,10 +48,11 @@
             In cryptographic terms, the rotation parameter is called the <em>key</em> and
             would be the number of positions to rotate. Given the message and the
             key, the encryption and decryption algorithms can do their jobs.
-            Listing&#xA0;<url href="#lst_dec_key" visual="#lst_dec_key">[lst_dec_key]</url> shows the decryption algorithm
+            <xref ref="lst_dec_key"/> shows the decryption algorithm
             that takes the amount of rotation as a parameter. As an exercise you
-            should be able to modify Listing&#xA0;<url href="#lst_enc" visual="#lst_enc">[lst_enc]</url> to accept a
+            should be able to modify <xref ref="lst_dec_key"/> to accept a
             parameter that specifies a key.</p>
+          <listing xml:id="lst_dec_key">
   <pre>def decrypt(m, k):
     s = "abcdefghijklmnopqrstuvwxyz"
     n = ""
@@ -57,6 +60,7 @@
         j = (s.find(i) + 26 - k) % 26
         n = n + s[j]
     return n</pre>
+</listing>
   <p>Even if you keep the number <c>k</c> from everyone except the person you
             are sending the message to, this simple form of encryption is not going
             to stop anyone from stealing your secrets for very long. In the
@@ -135,6 +139,7 @@
                 a base case. Recall that for any number <m>x</m>, <m>x^0 = 1</m>.
                 Since we are reducing the size of our exponent in each recursive call,
                 checking for the condition <m>n = 0</m> is a good base case.</p>
+              <listing xml:id="lst_pow">
     <pre>def modexp(x, n, p):
     if n == 0:
         return 1
@@ -143,12 +148,13 @@
     if n % 2 != 0:
         tmp = (tmp * x) % p
     return tmp</pre>
+</listing>
     <p>Notice that in the above equation both the even and odd cases include a
                 factor of <m>(x \cdot x)^{\lfloor n/2 \rfloor}</m>, so we compute that
                 unconditionally and store it in the variable <c>tmp</c>. Also note that
                 since we are computing modulo <c>p</c> we still apply the modulo operator
                 at each step of the calculation. The solution in
-                Listing&#xA0;<url href="#lst_pow" visual="#lst_pow">[lst_pow]</url> keeps the result size small and uses
+                <xref ref="lst_pow"/> keeps the result size small and uses
                 many fewer multiplications than a purely iterative approach.</p>
   </subsection>
   <subsection xml:id="advanced_the-greatest-common-divisor-and-multiplicative-inverses">
@@ -205,13 +211,15 @@
                 possibilities for a recursive call: when <m>a &lt; b</m>, we swap
                 <m>a</m> and <m>b</m> and make a recursive call. Otherwise, we can
                 make a recursive call passing <m>a - b</m> in place of <m>a</m>.
-                Euclid's algorithm is shown in Listing&#xA0;<url href="#lst_gcd1" visual="#lst_gcd1">[lst_gcd1]</url>.</p>
+                Euclid's algorithm is shown in <xref ref="lst_gcd1"/>.</p>
+              <listing xml:id="lst_gcd1">
     <pre>def gcd(a, b):
     if b == 0:
         return a
     elif a &lt; b:
         return gcd(b, a)
     return gcd(a - b, b)</pre>
+</listing>
     <p>Although Euclid's algorithm is quite easy to understand and program, it
                 is not as efficient as we would like, particularly if <m>a &gt;&gt; b</m>.
                 Once again, modular arithmetic comes to our rescue. Notice that the
@@ -219,11 +227,13 @@
                 same as the remainder of <m>a</m> divided by <m>b</m>. With that in
                 mind, we can cut out all of the subtractions and combine the swap of
                 <m>a</m> and <m>b</m> in one recursive call. A revised algorithm is
-                shown in Listing&#xA0;<url href="#lst_gcd2" visual="#lst_gcd2">[lst_gcd2]</url>.</p>
+                shown in Listing&#xA0;<xref ref="lst_gcd2"/>.</p>
+              <listing xml:id="lst_gcd2">
     <pre>def gcd(a, b):
     if b == 0:
         return a
     return gcd(b, a % b)</pre>
+</listing>
     <p>Now that we have a way to know whether two numbers <m>x</m> and
                 <m>m</m> will have a multiplicative inverse, our next task is to write
                 an efficient algorithm to compute the inverse. Suppose that for any pair
@@ -244,13 +254,15 @@
                 as well. We will take two numbers <m>x &gt;= y</m> and return a tuple
                 <m>(d, a, b)</m> such that <m>d = gcd(x, y)</m> and
                 <m>d = ax + by</m>. The extension to Euclid's algorithm is shown in
-                Listing&#xA0;<url href="#lst_gcd3" visual="#lst_gcd3">[lst_gcd3]</url>.</p>
+                <xref ref="lst_gcd3"/>.</p>
+              <listing xml:id="lst_gcd3">
     <pre>def ext_gcd(x, y):
     if y == 0:
         return (x, 1, 0)
     else:
         (d, a, b) = ext_gcd(y, x % y)
-        return (d, b, a - (x // y) * b)  |\label{line:gcd3_return}|</pre>
+        return (d, b, a - (x // y) * b)</pre> <!--  |\label{line:gcd3_return}|-->
+    </listing>
     <p>Notice that when we get the base case <m>y = 0</m>, we return
                 <m>d = x</m> just like the original Euclid's algorithm. However, we
                 return two additional values <m>a =1</m> and <m>b = 0</m>. Together
@@ -272,7 +284,7 @@ d = &amp; ay + b(x \mod{y}) \\
                 this is how we would normally calculate the remainder of x / y
                 (<m>x \mod{y}</m>). Looking at the rearranged equation, we can see that
                 <m>A = b</m> and <m>B = a - \lfloor x / y \rfloor b</m>. Notice that
-                this is exactly what line <!-- <url href="#line:gcd3_return" visual="#line:gcd3_return">[line:gcd3_return]</url> -->
+                this is exactly what the expression in the <c>return</c> in <xref ref="lst_gcd3"/> <!--line <url href="#line:gcd3_return" visual="#line:gcd3_return">[line:gcd3_return]</url> -->
                 does! To check this, note that at each return step in the algorithm the
                 return values satisfy the equation <m>d = ax + by</m>.
                 To understand how our extended GCD algorithm works, let's start with an
@@ -502,11 +514,12 @@ def decrypt(cipher_chunks, d, n):
 Python
 &gt;&gt;&gt;</pre>
     <p>The last thing to look at is the two helper functions that break our
-                string into chunks and merge chunks into a string (Listing&#xA0;<url href="#lst_chunk" visual="#lst_chunk">[lst_chunk]</url>).
+                string into chunks and merge chunks into a string (<xref ref="lst_chunk"/>).
                 These functions make use of Python <c>bytearray</c> objects, which allow us to store
                 any string as a sequence of bytes.  This makes it very convenient for
                 us to convert a string to a sequence of hexadecimal digits and allows
                 us to convert a sequence of hexadecimal digits back to a string.</p>
+              <listing xml:id="lst_chunk">
     <pre>def str_to_chunks(msg, chunk_size):
     msg_bytes = bytes(msg, "utf-8")
     hex_str = "".join([f"{b:02x}" for b in msg_bytes])
@@ -534,7 +547,8 @@ def chunks_to_str(chunk_list, chunk_size):
     hstring = "".join(hex_list)
     msg_array = bytearray.fromhex(hstring)
     return msg_array.decode("utf-8")</pre>
-    <p>In Listing&#xA0;<url href="#lst_chunk" visual="#lst_chunk">[lst_chunk]</url> we see the procedure for turning
+</listing>
+    <p>In <xref ref="lst_chunk"/> we see the procedure for turning
                 a string into a list of chunks. One important thing to note is that we
                 must always make sure that our hexadecimal number corresponds to a
                 character that is exactly two digits long. This means that sometimes we
