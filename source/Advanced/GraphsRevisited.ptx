@@ -53,12 +53,12 @@
     <p>Our first approach is likely the solution that comes immediately to your
                 mind for solving the DNA string pattern-matching problem. We will simply
                 try all possibilities for matching the pattern to the text.
-                Figure&#xA0;<url href="#fig_bruteforce" visual="#fig_bruteforce">1</url> shows how the algorithm will work. We
+                <xref ref="fig_bruteforce"/> shows how the algorithm will work. We
                 will start out comparing the pattern from left to right with the text,
                 starting at the first character in both. If there is a match, then we
                 proceed to check the second character. Whenever a mismatch occurs, we
                 simply slide the pattern one position to the right and start over.</p>
-    <figure align="" xml:id="fig-bruteforce">
+    <figure align="" xml:id="fig_bruteforce">
       <caption>A Simple Pattern-Matching Algorithm</caption>
       <image source="Advanced/Figures/simplematch.png" width="50%" alt="A Simple Pattern-Matching Algorithm"/>
     </figure>
