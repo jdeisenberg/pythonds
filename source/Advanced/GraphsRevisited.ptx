@@ -64,12 +64,13 @@
     </figure>
     <p>In this example, we have found a match on the sixth attempt, starting at
                 position 5. The shaded characters denote the partial matches that
-                occurred as we moved the pattern.
-                Listing&#xA0;<url href="#lst_simplematcher" visual="#lst_simplematcher">[lst_simplematcher]</url> shows the Python
+                occurred as we moved the pattern. <xref ref="lst_simplematcher"/>
+                shows the Python
                 implementation for this method. It takes the pattern and the text as
                 parameters. If there is a pattern match, it returns the position of the
                 starting text character. Otherwise, it returns <c>-1</c> to signal that the
                 search failed.</p>
+              <listing xml:id="lst_simplematcher">
     <pre>def simple_matcher(pattern, text):
    i = j = 0
 
@@ -84,20 +85,21 @@
             return -1
       if j == len(pattern):
             return i - j</pre>
+        </listing>
     <p>The variables <c>i</c> and <c>j</c> serve as indices into the text and pattern
                 respectively. The loop repeats until either the text or the pattern
                 ends.</p>
-    <p>Line&#xA0;<url href="#lst_simplematcher:line_checkmatch" visual="#lst_simplematcher:line_checkmatch">[lst_simplematcher:line_checkmatch]</url>
+              <p>The first <c>if</c> statement
                 checks for a match between the current text character and the current
                 pattern character. If the match occurs, pattern index is incremented. If
                 the match fails, we reset the pattern back to its beginning
-                (line&#xA0;<url href="#lst_simplematcher:line_patternreset" visual="#lst_simplematcher:line_patternreset">[lst_simplematcher:line_patternreset]</url>).
+                (<c>j = 0</c>).
                 In both cases we move to the next position in the text. At every
-                iteration of the loop we check if there is more text to process
-                (line&#xA0;<url href="#lst_simplematcher:line_textended" visual="#lst_simplematcher:line_textended">[lst_simplematcher:line_textended]</url>)
+                iteration of the loop, we check if there is more text to process
+                (<c>i == len(text)</c>)
                 and return -1 if not.
-                Line&#xA0;<url href="#lst_simplematcher:line_patternended" visual="#lst_simplematcher:line_patternended">[lst_simplematcher:line_patternended]</url>
-                checks to see if every character in the pattern has been processed. If
+                The code then checks (<c>j == len(pattern)</c>)
+                to see if every character in the pattern has been processed. If
                 so, a match has been found and we return its starting index.</p>
     <p>If we assume that the length of the text is <m>n</m> characters and the
                 length of the pattern is <m>m</m> characters, then it is easy to see
@@ -117,12 +119,12 @@
                 is a state, keeping track of the amount of the pattern that has been
                 seen so far. Each edge of the graph represents a transition that takes
                 place after processing a character from the text.</p>
-    <p>Figure&#xA0;<url href="#fig_dfagraph" visual="#fig_dfagraph">2</url> shows a DFA for the example pattern from
+    <p><xref ref="fig_dfagraph"/> shows a DFA for the example pattern from
                 the last section (ACATA). The first vertex (state 0) is known as the
                 <em>start state</em> (or <em>initial state</em>) and denotes that we have not seen any
                 matching pattern characters so far. Clearly, before processing the first
                 text character, this is the situation.</p>
-    <figure align="" xml:id="fig-dfagraph">
+    <figure align="" xml:id="fig_dfagraph">
       <caption>A Deterministic Finite Automaton</caption>
       <image source="Advanced/Figures/dfa.png" width="50%" alt="A Deterministic Finite Automaton"/>
     </figure>
@@ -145,13 +147,13 @@
                 pattern. On the other hand, if we run out of text characters and the
                 current state is somewhere else in the DFA, known as a <em>nonfinal</em> state,
                 we know that the pattern did not occur.</p>
-    <p>Figure&#xA0;<url href="#fig_statetransitiontable" visual="#fig_statetransitiontable">3</url> shows a step-by-step trace of
+    <p><xref ref="fig_statetransitiontable"/> shows a step-by-step trace of
                 the example DFA as it works through the text string ACGACACATA looking
                 for the substring ACATA. The next state computed by the DFA always
                 becomes the current state in the subsequent step. Since there is one and
                 only one next state for every current state&#x2013;current character
                 combination, the processing through the DFA graph is easy to follow.</p>
-    <figure align="" xml:id="fig-statetransitiontable">
+    <figure align="" xml:id="fig_statetransitiontable">
       <caption>A Trace of the DFA Pattern Matcher</caption>
       <image source="Advanced/Figures/steptable.png" width="50%" alt="A Trace of the DFA Pattern Matcher"/>
     </figure>
@@ -171,10 +173,10 @@
                 proved to be a waste of time since the actual starting point for the
                 match was farther down the text string. A possible solution to this
                 inefficiency would be to slide the pattern more than one text character
-                if a mismatch occurs. Figure&#xA0;<url href="#fig_simplematch2" visual="#fig_simplematch2">4</url> shows this
+                if a mismatch occurs. <xref ref="fig_simplematch2"/> shows this
                 strategy using the rule that we slide the pattern over to the point
                 where the previous mismatch happened.</p>
-    <figure align="" xml:id="fig-simplematch2">
+    <figure align="" xml:id="fig_simplematch2">
       <caption>Simple Pattern Matcher with Longer Shifts</caption>
       <image source="Advanced/Figures/simplematch2.png" width="50%" alt="Simple Pattern Matcher with Longer Shifts"/>
     </figure>
@@ -204,7 +206,7 @@
                 of states and transitions (vertices and edges). However, unlike the DFA
                 graph from the previous section, there will be only two transitions
                 leaving each state.</p>
-    <p>Figure&#xA0;<url href="#fig_KMPgraph1" visual="#fig_KMPgraph1">5</url> shows the complete KMP graph for the
+    <p><xref ref="fig_kmp_graph1"/> shows the complete KMP graph for the
                 example pattern. There are two special states for a KMP graph,
                 the initial state and the final state. The initial state,
                 marked <q>get,</q> is responsible for reading the next character from the
@@ -214,7 +216,7 @@
                 transition immediately to the next state (state 1). The final state
                 (state 6), this time labeled with an <q>F,</q> again means success and
                 represents a termination point for the graph.</p>
-    <figure align="" xml:id="fig-kmpgraph1">
+    <figure align="" xml:id="fig_kmp_graph1">
       <caption>An Example KMP Graph</caption>
       <image source="Advanced/Figures/kmp.png" width="50%" alt="An Example KMP Graph"/>
     </figure>
@@ -231,11 +233,12 @@
                 text character and simply move back to a previous point in the pattern.
                 To compute this, we use a simple algorithm that basically
                 checks the pattern against itself, looking for overlap between a prefix
-                and a suffix (see
-                Listing&#xA0;<url href="#lst_mismatchedlinks" visual="#lst_mismatchedlinks">[lst_mismatchedlinks]</url>). If such an overlap is found, its length tells us how far
+                and a suffix (see <xref ref="lst_mismatchedlinks"/>. If such an overlap is found,
+                its length tells us how far
                 back to place the mismatched link in the KMP graph. It is important to
                 note that new text characters are not processed when a mismatched link is
                 used.</p>
+              <listing xml:id="lst_mismatchedlinks">
     <pre>def mismatched_links(pattern):
     aug_pattern = "0" + pattern
     links = {1: 0}
@@ -247,7 +250,7 @@
             else:
                 s = links[s]
         links[k] = s + 1
-    return links</pre>
+        return links</pre></listing>
     <p>Here is the example pattern as it is being processed by the
                 <c>mismatched_links</c> method:</p>
     <pre>&gt;&gt;&gt; mismatched_links("ACATA")
@@ -265,14 +268,14 @@
                 state is state 0, we have used the <c>'0'</c> symbol as a placeholder. Now the
                 characters 1 to <m>m</m> in the augmented pattern correspond directly
                 with the states 1 to <m>m</m> in the graph.</p>
-    <p>Line&#xA0;<url href="#lst_mismatchedlinks:line_initdict" visual="#lst_mismatchedlinks:line_initdict">[lst_mismatchedlinks:line_initdict]</url>
+              <p>The line <c>links = {1: 0}</c>
                 creates the first dictionary entry, which is always a transition from
                 vertex 1 back to the initial state where a new character is
                 automatically read from the text string. The iteration that follows
                 simply checks larger and larger pieces of the pattern, looking for
                 prefix and suffix overlap. If such an overlap occurs, the length of the
                 overlap can be used to set the next link.</p>
-    <p>Figure&#xA0;<url href="#fig_KMPexample" visual="#fig_KMPexample">6</url> shows the KMP graph as it is being used
+    <p><xref ref="fig_kmp_example"/> shows the KMP graph as it is being used
                 to locate the example pattern in the text string ACGACACATA. Again,
                 notice that the current character changes only when a match link has
                 been used. In the case of a mismatch, as in steps 4 and 5, the current
@@ -285,7 +288,7 @@
                 seen a partial match at that point, the mismatched link reverts back to
                 state 2 where there is a correct match. This eventually leads to a
                 successful pattern match.</p>
-    <figure align="" xml:id="fig-kmpexample">
+    <figure align="" xml:id="fig_kmp_example">
       <caption>A Trace of the KMP Pattern Matcher</caption>
       <image source="Advanced/Figures/steptable2.png" width="50%" alt="A Trace of the KMP Pattern Matcher"/>
     </figure>

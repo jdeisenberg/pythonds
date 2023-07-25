@@ -213,7 +213,7 @@ simple_quant("tabby_original.jpg")</pre>
         <li>
           <p>For each pixel in the image:</p>
           <p>
-            <ol marker="1">
+            <ol marker="a">
               <li>
                 <p>Search for the color of this pixel in the octree. The color
                                 will be a leaf node at the eighth level.</p>
@@ -233,7 +233,7 @@ simple_quant("tabby_original.jpg")</pre>
           <p>Repeat until the number of leaf nodes is less than or equal to the
                         target number of colors.</p>
           <p>
-            <ol marker="1">
+            <ol marker="a">
               <li>
                 <p>Find the deepest leaf node with the smallest number of uses.</p>
               </li>
