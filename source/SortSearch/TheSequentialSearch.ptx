@@ -18,12 +18,12 @@
     <caption>Sequential Search of a List of Integers</caption>
     <image source="SortSearch/Figures/seqsearch.png" width="50%"/>
   </figure>
-  <p>The Python implementation for this algorithm is shown in the following program.
+  <p>The Python implementation for this algorithm is shown in <xref ref="lst-seqsearchpython"/>.
             The function needs two items&#x2013;the list and the item we
             are looking for&#x2013;and returns a Boolean value as to whether it is present.</p>
 
-          <!--<listing xml:id="lst-seqsearchpython">-->
-            <program xml:id="prog-seqsearchpython" interactive="codelens" language="python"> <!--  -->
+          <listing xml:id="lst-seqsearchpython">
+            <program xml:id="prog-seqsearchpython" label="lbl-seqsearchpython" interactive="codelens" language="python"> <!--  -->
     <input>
 def sequential_search(a_list, item):
     pos = 0
@@ -41,7 +41,7 @@ print(sequential_search(test_list, 3))
 print(sequential_search(test_list, 13))
     </input>
   </program>
-  <!--</listing>-->
+  </listing>
 
 </introduction>
   <subsection xml:id="sort-search_analysis-of-sequential-search">
@@ -111,14 +111,14 @@ print(sequential_search(test_list, 13))
                 other elements beyond 54 can work either since the list is sorted. In
                 this case, the algorithm does not have to continue looking through all
                 of the items to report that the item was not found. It can stop
-                immediately. <!--<xref ref="lst-seqsearchpython2"/>--> The following program shows this variation of the
+                immediately. <xref ref="lst-seqsearchpython2"/> shows this variation of the
                 sequential search function.</p>
     <figure align="center" xml:id="fig-seqsearch2">
       <caption>Sequential Search of an Ordered List of Integers</caption>
       <image source="SortSearch/Figures/seqsearch2.png" width="50%"/>
     </figure>
-    <!-- <listing xml:id="lst-seqsearchpython2"> -->
-<program xml:id="prog-seqsearchpython2" label="lst-seqsearchpython2"  interactive="codelens" language="python">
+    <listing xml:id="lst-seqsearchpython2">
+<program xml:id="prog-seqsearchpython2" label="lbl-seqsearchpython2" interactive="codelens" language="python">
       <input>
 def ordered_sequential_search(a_list, item):
     pos = 0
@@ -138,7 +138,8 @@ print(ordered_sequential_search(test_list, 3))
 print(ordered_sequential_search(test_list, 13))
     </input>
     </program>
-    <!--</listing>-->
+    </listing>
+
     <p><xref ref="sort-search_tbl-seqsearchtable2"/> summarizes these results. Note that in the best
                 case we might discover that the item is not in the list by looking at
                 only one item. On average, we will know after looking through only

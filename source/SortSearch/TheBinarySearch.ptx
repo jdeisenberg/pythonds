@@ -19,13 +19,13 @@
             find it or split the list in half, therefore eliminating another large
             part of our possible search space. <xref ref="i13_id1fig-binsearch"/> shows how this
             algorithm can quickly find the value 54. The complete function is shown
-            in the following program.<!--<xref ref="lst-binarysearchpy"/>.--></p>
+            in <xref ref="lst-binarysearchpy"/>.</p>
   <figure align="center" xml:id="i13_id1fig-binsearch">
     <caption>Binary Search of an Ordered List of Integers</caption>
     <image source="SortSearch/Figures/binsearch.png" width="50%"/>
   </figure>
-  <!--<listing xml:id="lst-binarysearchpy">-->
-<program label="lst-binarysearchpy"   interactive="codelens" language="python">
+  <listing xml:id="lst-binarysearchpy">
+<program label="lbl-binarysearchpy"  xml:id="prog-binarysearchpy" interactive="codelens" language="python">
     <input>
 def binary_search(a_list, item):
     first = 0
@@ -49,7 +49,7 @@ print(binary_search(test_list, 3))
 print(binary_search(test_list, 13))
     </input>
   </program>
-  <!--</listing>-->
+  </listing>
   <p>Before we move on to the analysis, we should note that this algorithm is
             a great example of a divide and conquer strategy. <em>Divide and conquer</em>
             means that we divide the problem into smaller pieces, solve the smaller
@@ -59,10 +59,10 @@ print(binary_search(test_list, 13))
             item, we can simply perform a binary search of the left half of the
             original list. Likewise, if the item is greater, we can perform a binary
             search of the right half. Either way, this is a recursive call to the
-            binary search function passing a smaller list. <!--<xref ref="lst-recbinarysearch"/>-->The following program
+            binary search function passing a smaller list. <xref ref="lst-recbinarysearch"/>
             shows this recursive version.</p>
-          <!--<listing xml:id="lst-recbinarysearch">-->
-<program label="lst-recbinarysearch"  interactive="codelens" language="python">
+          <listing xml:id="lst-recbinarysearch">
+<program label="lbl-recbinarysearch" xml:id="prog-recbinarysearch" interactive="codelens" language="python">
     <input>
 def binary_search_rec(a_list, item):
     if len(a_list) == 0:
@@ -82,7 +82,8 @@ print(binary_search_rec(test_list, 3))
 print(binary_search_rec(test_list, 13))
     </input>
   </program>
-  <!--</listing>-->
+  </listing>
+
 </introduction>
   <subsection xml:id="sort-search_analysis-of-binary-search">
     <title>Analysis of Binary Search</title>
