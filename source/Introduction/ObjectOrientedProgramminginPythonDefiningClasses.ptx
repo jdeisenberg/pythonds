@@ -117,7 +117,7 @@
 <program label="introduction_lst-showmethod" names="lst_showmethod"  language="python">
         <input>
         def show(self):
-        print(f"{self.num}/{self.den}")
+            print(f"{self.num}/{self.den}")
         </input>
       </program>
     </listing>
@@ -148,7 +148,7 @@
 <program label="introduction_lst-str" names="lst_str"  language="python">
         <input>
         def __str__(self):
-        return f"{self.num}/{self.den}"
+            return f"{self.num}/{self.den}"
         </input>
       </program>
     </listing>
